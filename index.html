@@ -12,7 +12,7 @@
 <body>
     <!-- NAV -->
     <header class="site-header">
-        <nav class="nav">
+        <!-- <nav class="nav">
             <a href="index.html" class="logo">
                 <img src="images/logo.png" alt="Series Trail">
             </a>
@@ -23,7 +23,7 @@
             </button>
             <ul class="nav-menu">
                 <li><a href="index.html">หน้าแรก</a></li>
-                <li><a href="series.html">ซีรีย์ทั้งหมด</a></li>
+                <li><a href="/pages/series.html">ซีรีย์ทั้งหมด</a></li>
                 <li class="dropdown">
                     <a href="#">ประเทศ</a>
                     <ul class="dropdown-menu">
@@ -86,8 +86,12 @@
                 </li>
                 
             </ul>
-        </nav>
+        </nav> -->
+        <div id="navbar"></div>
     </header>
+    
+   
+
     <main>
         <!-- HERO -->
         <section class="hero">
@@ -97,8 +101,8 @@
                 <h1>เที่ยวตามรอย<br><span>ซีรีย์ที่คุณชื่นชอบ</span></h1>
                 <p class="hero-text">ค้นพบสถานที่จริงจากฉากในซีรีย์ พร้อมสำรวจสถานที่ท่องเที่ยว คาเฟ่ ร้านอาหาร และที่พัก</p>
                 <div class="hero-buttons">
-                    <a href="series.html" class="btn btn-primary">ดูซีรีย์ทั้งหมด</a>
-                    <a href="korea-places.html" class="btn btn-outline">สำรวจสถานที่</a>
+                    <a href="/pages/series.html" class="btn btn-primary">ดูซีรีย์ทั้งหมด</a>
+                    <a href="/pages/korea-places.html" class="btn btn-outline">สำรวจสถานที่</a>
                 </div>
             </div>
         </section>
@@ -116,24 +120,18 @@
                 <div class="series-grid">
                     <article class="series-card">
                         <div class="series-image">
-                            <img src="images/series/series-01.jpg" alt="ซีรีย์แนะนำ">
-                            <span class="country-tag">ไทย</span>
-                        </div>
-                        <div class="series-content">
-                            <h3>แปลรักฉันด้วยใจเธอ</h3>
-                            <p>ตามรอยสถานที่ที่มีชื่อเสียงจากซีรีย์</p>
-                            <a href="series-detail.html" class="card-link">ดูรายละเอียด ></a>
+                            <img src="images/series/series.jpg" alt="ซีรีย์แนะนำ">
                         </div>
                         <div class="section-heading">
                             <div>
                                 <p class="section-label">FEATURED SERIES</p>
                                 <h2 class="section-title">ซีรีย์แนะนำ</h2>
                                 <p>
-                                    <span>แปลรักฉันด้วยใจเธอ</span><br> 
+                                    <span>ค้นหาซีรี่ย์ในดวงใจ</span><br> 
                                     พร้อมพาไปค้นพบ สถานที่จริงที่ปรากฏในเรื่องราว และบรรยากาศที่คุณสามารถตามรอยได้
                                 </p>
                             </div>
-                            <a href="series.html">ดูซีรีย์ทั้งหมด ></a>
+                            <a href="/pages/series.html">ดูซีรีย์ทั้งหมด ></a>
                         </div>
                     </article>
                     <article class="series-card">
@@ -144,7 +142,7 @@
                         <div class="series-content">
                             <h3>Can This Love Be Translated?</h3>
                             <p>สำรวจสถานที่สำคัญที่ปรากฏในเรื่อง</p>
-                            <a href="series-detail.html" class="card-link">ดูรายละเอียด ></a>
+                            <a href="/pages/series-detail.html" class="card-link">ดูรายละเอียด ></a>
                         </div>
                     </article>
                     <article class="series-card">
@@ -155,7 +153,7 @@
                         <div class="series-content">
                             <h3>Hidden Love</h3>
                             <p>ค้นพบสถานที่และบรรยากาศ จากเรื่องราวในซีรีย์</p>
-                            <a href="series-detail.html" class="card-link">ดูรายละเอียด ></a>
+                            <a href="/pages/series-detail.html" class="card-link">ดูรายละเอียด ></a>
                         </div>
                     </article>
                     <article class="series-card">
@@ -166,7 +164,7 @@
                         <div class="series-content">
                             <h3>First Love</h3>
                             <p>ค้นพบสถานที่สถานที่สำคัญ จากเรื่องราวในซีรีย์</p>
-                            <a href="series-detail.html" class="card-link">ดูรายละเอียด ></a>
+                            <a href="/pages/series-detail.html" class="card-link">ดูรายละเอียด ></a>
                         </div>
                     </article>
                 </div>
@@ -174,33 +172,28 @@
         </section>
 
         <section class="locations section">
-            <div class="container">
-                <div class="section-heading">
-                    <div>
-                        <p class="section-label">FILMING LOCATIONS</p>
-                        <h2 class="section-title">สถานที่น่าสนใจ</h2>
+                <div class="locations-featured">
+                    <div class="locations-content">
+                        <p class="section-label">
+                            DESTINATIONS FROM SERIES
+                        </p>
+                        <h2 class="section-title">
+                            สถานที่จากในซีรีย์
+                        </h2>
+                        <p class="locations-description">
+                            สถานที่ถ่ายทำจากซีรีย์ที่น่าสนใจ
+                            พาคุณไปค้นพบสถานที่จริงที่ปรากฏในเรื่องราว
+                            พร้อมบรรยากาศและเรื่องราวที่น่าสนใจ
+                        </p>
+                        <a href="/pages/korea-places.html" class="locations-button">
+                            ดูสถานที่ทั้งหมด >
+                        </a>
                     </div>
-                    <a href="korea-places.html" class="view-all">สถานที่น่าสนใจ ></a>
-                </div>
-                <div class="locations-grid">
-                    <a href="place-detail.html" class="location-card">
-                        <img src="images/place/place-01.jpg" alt="Phuket Old Town">
-                        <div class="locations-overlay">
-                            <span>THAILAND</span>
-                            <h3>Phuket Old Town</h3>
-                            <p>สำรวจสถานที่ ></p>
-                        </div>
-                    </a>
-                    <a href="place-detail.html" class="location-card">
-                        <img src="images/place/place-02.jpg" alt="Powerlong No.1 City">
-                        <div class="locations-overlay">
-                            <span>Korea</span>
-                            <h3>Pinodia Expo Tower</h3>
-                            <p>สำรวจสถานที่ ></p>
-                        </div>
+                    <a href="/pages/place-detail.html" class="locations-image">
+                        <img src="images/place/place-01.jpg"
+                            alt="สถานที่ถ่ายทำจากซีรีย์">
                     </a>
                 </div>
-            </div>
         </section>
 
         <section class="countries section">
@@ -211,7 +204,7 @@
                     <p class="section-text">เลือกประเทศที่สนใจ เพื่อค้นหาซีรีย์ สถานที่ท่องเที่ยว คาเฟ่ ร้านอาหาร และที่พัก</p>
                 </div>
                 <div class="country-grid">
-                    <a href="thai-places.html" class="country-card">
+                    <a href="/pages/thai-places.html" class="country-card">
                         <img src="images/countries/thai.jpg" alt="ไทย">
                         <div class="country-overlay">
                             <span>EXPLORE</span>
@@ -248,26 +241,32 @@
         </section>
 
         <section class="travel-guide section">
-            <div class="container">
-                <div class="guide-grid">
+            <!-- <div class="container"> -->
+                <!-- <div class="guide-grid"> -->
                     <article class="guide-card trip">
                         <div class="guide-content">
                             <p class="section-label">TRAVEL GUIDE</p>
                             <h2>ตัวอย่างทริป</h2>
                             <p>สำรวจตัวอย่างเส้นทาง และสถานที่ที่น่าสนใจ สำหรับการตามรอยซีรีย์</p>
-                            <a href="trips.html" class="btn btn-light">ดูตัวอย่างทริป</a>
+                            <a href="/pages/trips.html" class="btn btn-light">
+                                ดูตัวอย่างทริป >
+                            </a>
                         </div>
+                        <div class="guide-image"></div>
                     </article>
                     <article class="guide-card season">
+                        <div class="guide-image"></div>
                         <div class="guide-content">
                             <p class="section-label">SEASON GUIDE</p>
                             <h2>แนะนำตามฤดูกาล</h2>
                             <p>ค้นหาสถานที่ที่น่าสนใจ ตามช่วงฤดูกาลต่าง ๆ</p>
-                            <a href="rainy.html" class="btn btn-light">ดูคำแนะนำ</a>
+                            <a href="/pages/rainy.html" class="btn btn-light">
+                                ดูคำแนะนำ >
+                            </a>
                         </div>
                     </article>
-                </div>
-            </div>
+                <!-- </div> -->
+            <!-- </div> -->
         </section>
     </main>
 
@@ -279,9 +278,9 @@
             </div>
             <div>
                 <h4>Quick Links</h4>
-                <a href="series.html">ซีรีย์ทั้งหมด</a>
-                <a href="series.html">ตัวอย่างทริป</a>
-                <a href="series.html">เกี่ยวกับ</a>
+                <a href="/pages/series.html">ซีรีย์ทั้งหมด</a>
+                <a href="/pages/trip.html">ตัวอย่างทริป</a>
+                <a href="/pages/about.html">เกี่ยวกับ</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -318,18 +317,6 @@
             });
         });
     </script>
-
-    <script>
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            const linkPage = link.getAttribute('href')?.split('/').pop();
-
-            if(linkPage === currentPage){
-                link.classList.add('active');
-            }
-        });
-    </script>
-
+    <script src="/js/components.js"></script>
 </body>
 </html>

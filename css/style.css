@@ -44,7 +44,7 @@ a{
     /* backdrop-filter:blur(px); */
     /* border:1px solid rgba(255,255,255,.28); */
     box-shadow:0 6px 22px rgba(0,40,60,0.12);
-    border-radius:18px;
+    border-radius:10px;
     /* -webkit-backdrop-filter:blur(14px); */
 
 }
