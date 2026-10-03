@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สถานที่ท่องเที่ยว | Series Trail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/place_detail.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main>
+        <section class="place-detail-hero">
+            <div class="place-detail-hero-image">
+                <img id="placeHeroImage" src="" alt="">
+            </div>
+            <div class="place-detail-hero-content">
+                <span id="placeCountry" class="place-country"></span>
+                <h1 id="placeName"></h1>
+                <p id="placeLocation">
+                    <i class="bi bi-geo-alt"></i>
+                    <span></span>
+                </p>
+            </div>
+        </section>
+
+        <section class="place-detail-container">
+            <div class="place-detail-layout">
+                <article class="place-main">
+                    <section class="place-section">
+                        <p class="section-label">ABOUT THE PLACE</p>
+                        <h2>เรื่องราวของสถานที่</h2>
+                        <p id="placeDescription"></p>
+                    </section>
+
+                    <section class="place-section">
+                        <p class="section-label">FILMING SCENE</p>
+                        <h2>ฉากในซีรีย์</h2>
+                        <div class="scene-info">
+                            <div class="scene-item">
+                                <span>ซีรีย์</span>
+                                <strong id="sceneSeries"></strong>
+                            </div>
+                            <div class="scene-item">
+                                <span>EP</span>
+                                <strong id="sceneEpisode"></strong>
+                            </div>
+                            <div class="scene-item">
+                                <span>ฉาก</span>
+                                <p id="sceneDescription"></p>
+                            </div>
+                            <div class="scene-item">
+                                <span>เหตุการณ์</span>
+                                <p id="sceneEvent"></p>
+                            </div>
+                            <div class="scene-item">
+                                <span>ความสำคัญ</span>
+                                <p id="sceneSignificance"></p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="place-section">
+                        <p class="section-label">GALLERY</p>
+                        <h2>รูปเพิ่มเติม</h2>
+
+                        <div id="placeGallery" class="place-gallery"></div>
+                    </section>
+                </article>
+
+                <aside class="place-sidebar">
+                    <div class="travel-card">
+                        <p class="section-label">TRAVEL INFO</p>
+                        <h2>ข้อมูลการเดินทาง</h2>
+                        <div class="travel-info">
+                            <div class="travel-item">
+                                <span>
+                                    <i class="bi bi-geo-alt"></i>
+                                    ที่อยู่
+                                </span>
+                                <p id="travelAddress"></p>
+                            </div>
+                            <div class="travel-item">
+                                <span>
+                                    <i class="bi bi-clock"></i>
+                                    เวลาเปิด-ปิด
+                                </span>
+                                <p id="travelOpeningHours"></p>
+                            </div>
+                            <div class="travel-item">
+                                <span>
+                                    <i class="bi bi-ticket-perforated"></i>
+                                    ค่าเข้าชม
+                                </span>
+                                <p id="travelAdmission"></p>
+                            </div>
+                            <div class="travel-item">
+                                <span>
+                                    <i class="bi bi-car-front"></i>
+                                    การเดินทาง
+                                </span>
+                                <p id="travelTransportation"></p>
+                            </div>
+                        </div>
+                        <div class="place-detail-actions">
+                            <a id="mapButton" href="#" class="place-map-button">
+                                <i class="bi bi-map"></i>
+                                ดูแผนที่
+                            </a>
+
+                            <button id="favoriteButton" type="button" class="place-favorite-button"
+                                aria-label="เพิ่มในรายการโปรด" title="เพิ่มในรายการโปรด">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <section class="nearby-section">
+                <div class="nearby-header">
+                    <div>
+                        <p class="section-label">NEARBY</p>
+                        <h2>คาเฟ่ ร้านอาหาร และที่พักใกล้เคียง</h2>
+                    </div>
+                </div>
+
+                <div id="nearbyGrid" class="nearby-grid"></div>
+            </section>
+    </main>
+
+
+    <div id="footer"></div>
+
+    <script src="/js/components.js"></script>
+    <script src="/js/places.js"></script>
+    <script src="/js/restaurants.js"></script>
+    <script src="/js/hotels.js"></script>
+    <script src="/js/place_detail.js"></script>
+
+</body>
+
+</html>

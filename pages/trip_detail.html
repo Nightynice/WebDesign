@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดทริป | Series Trail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/trip_detail.css">
+</head>
+<body>
+    
+    <div id="navbar"></div>
+
+    <main id="tripDetail">
+        <section class="trip-hero">
+            <div class="trip-hero-image">
+                <img id="tripImage" src="" alt="">
+            </div>
+            <div class="trip-hero-overlay"></div>
+            <div class="trip-hero-content container">
+                <span id="tripCountry" class="trip-country"></span>
+                <h1 id="tripTitle"></h1>
+                <p id="tripSubtitle"></p>
+                <div class="trip-meta">
+                    <span id="tripDuration"></span>
+                    <span id="tripSeason"></span>
+                    <span id="tripSeries"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="trip-intro container">
+            <div class="trip-intro-content">
+                <span class="section-label">TRIP GUIDE</span>
+                <h2>รายละเอียดทริป</h2>
+                <p id="tripDescription"></p>
+            </div>
+            <div class="trip-actions">
+                <button id="favoriteTrip" class="favorite-button">
+                    <i class="bi bi-heart"> </i><span>เพิ่มในรายการโปรด</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="itinerary-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">ITINERARY</span>
+                    <h2>กำหนดการเดินทาง</h2>
+                    <p>เส้นทางแนะนำสำหรับการตามรอยซีรีย์ในแต่ละวัน</p>
+                </div>
+                <div id="itineraryList" class="itinerary-list"></div>
+            </div>
+        </section>
+
+        <section class="trip-places-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">PLACES TO VISIT</span>
+                    <h2>สถานที่ในทริป</h2>
+                </div>
+                <div id="tripPlaces" class="trip-card-grid"></div>
+            </div>
+        </section>
+
+        <section class="trip-extra-section">
+            <div class="container trip-extra-grid">
+                <div>
+                    <div class="section-heading left">
+                        <span class="section-label">FOOD & CAFE</span>
+                        <h2>ร้านอาหารและคาเฟ่</h2>
+                    </div>
+                    <div id="tripRestaurants" class="extra-list"></div>
+                </div>
+
+                <div>
+                    <div class="section-heading left">
+                        <span class="section-label">STAY</span>
+                        <h2>ที่พักแนะนำ</h2>
+                    </div>
+                    <div id="tripHotels" class="extra-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trip-bottom-cta">
+            <div class="container">
+                <div class="cta-box">
+                    <div>
+                        <span class="section-label">PLAN YOUR JOURNEY</span>
+                        <h2>อยากออกเดินทางตามรอยทริปนี้?</h2>
+                        <p>
+                            เพิ่มสถานที่ที่สนใจลงในแผนทริป
+                            แล้วจัดเส้นทางของคุณเองได้เลย
+                        </p>
+                    </div>
+                    <a href="/pages/planner.html" class="cta-button">
+                        วางแผนทริป
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/js/components.js"></script>
+    <script src="/js/trip_detail.js"></script>
+
+
+</body>
+</html>

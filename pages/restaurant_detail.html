@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดร้าน | Series Trail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/restaurant_detail.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main>
+        <section class="restaurant-hero">
+            <div class="restaurant-hero-image">
+                <img id="restaurantHeroImage" src="" alt="">
+            </div>
+        </section>
+
+        <section class="restaurant-gallery-section">
+            <div id="restaurantGallery" class="restaurant-gallery"></div>
+        </section>
+        >
+        <section class="restaurant-container">
+            <div class="restaurant-layout">
+                <div class="restaurant-main">
+                    <section class="restaurant-section">
+                        <p class="section-label">RECOMMENDED MENU</p>
+                        <h2>เมนูแนะนำที่ควรลอง</h2>
+                        <div id="restaurantMenu" class="menu-list"></div>
+                    </section>
+
+                    <section class="restaurant-section trail-section">
+                        <p class="section-label">SERIES TRAIL</p>
+                        <h2>ตามรอยซีรีย์</h2>
+                        <div class="trail-card">
+                            <div class="trail-icon">
+                                <i class="bi bi-camera"></i>
+                            </div>
+                            <div class="trail-content">
+                                <span>ร้านนี้อยู่ใกล้</span>
+                                <h3 id="nearbyPlace"></h3>
+                                <p id="nearbySeries"></p>
+                                <a id="nearbyPlaceLink" href="#">
+                                    ดูรายละเอียดสถานที่
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="restaurant-section review-section">
+                        <p class="section-label">TRAVELER VOICES</p>
+                        <h2>เสียงจากคนที่ไปตามรอยจริง</h2>
+                        <div id="restaurantReviews" class="review-list"></div>
+                    </section>
+                </div>
+
+                <aside class="restaurant-sidebar">
+                    <div class="restaurant-info-card">
+                        <p class="section-label">RESTAURANT INFO</p>
+                        <h1 id="restaurantName"></h1>
+                        <p id="restaurantType" class="restaurant-type"></p>
+                        <div class="restaurant-rating">
+                            <span>
+                                <i class="bi bi-star-fill"></i>
+                                <strong id="restaurantRating"></strong>
+                            </span>
+                            <span>จากรีวิว</span>
+                        </div>
+                        <div class="restaurant-info-list">
+                            <div class="restaurant-info-item">
+                                <i class="bi bi-geo-alt"></i>
+                                <div>
+                                    <span>สถานที่</span>
+                                    <p id="restaurantLocation"></p>
+                                </div>
+                            </div>
+                            <div class="restaurant-info-item">
+                                <i class="bi bi-clock"></i>
+                                <div>
+                                    <span>เวลาเปิด-ปิด</span>
+                                    <p id="restaurantOpeningHours"></p>
+                                </div>
+                            </div>
+                            <div class="restaurant-info-item">
+                                <i class="bi bi-wallet2"></i>
+                                <div>
+                                    <span>ราคาโดยประมาณ</span>
+                                    <p id="restaurantPrice"></p>
+                                </div>
+                            </div>
+                            <div class="restaurant-info-item">
+                                <i class="bi bi-camera"></i>
+                                <div>
+                                    <span>ใกล้สถานที่ตามรอย</span>
+                                    <p id="restaurantPlace"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="restaurant-detail-actions">
+                            <a id="restaurantMapButton" href="#" class="restaurant-map-button">
+                                <i class="bi bi-map"></i>
+                                ดูแผนที่
+                            </a>
+
+                            <button id="favoriteButton" type="button" class="restaurant-favorite-button"
+                                aria-label="เพิ่มในรายการโปรด" title="เพิ่มในรายการโปรด">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/js/components.js"></script>
+    <script src="/js/restaurants.js"></script>
+    <script src="/js/places.js"></script>
+    <script src="/js/restaurant_detail.js"></script>
+
+</body>
+
+</html>

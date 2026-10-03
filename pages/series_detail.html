@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดซีรีย์ | Series Trail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/series_detail.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <main>
+        <section class="series-detail-hero">
+            <div class="series-detail-poster">
+                <img id="seriesPoster" src="" alt="">
+            </div>
+            <div class="series-detail-info">
+                <p class="section-label">SERIES DETAIL</p>
+                <span id="seriesCountry" class="series-country"></span>
+                <h1 id="seriesName"></h1>
+                <div class="series-synopsis">
+                    <h2>เรื่องย่อ</h2>
+                    <p id="seriesSynopsis"></p>
+                </div>
+                <div class="series-summary">
+                    <div class="summary-item">
+                        <span>สถานที่</span>
+                        <strong id="seriesPlaceCount"></strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>ประเทศ</span>
+                        <strong id="seriesCountrySummary"></strong>
+                    </div>
+                    <div class="summary-item">
+                        <span>ฤดูที่เหมาะ</span>
+                        <strong id="seriesSeason"></strong>
+                    </div>
+                </div>
+
+                <div class="series-detail-actions">
+                    <a id="mapButton" href="#" class="series-map-button">
+                        <i class="bi bi-map"></i>
+                        ดูแผนที่
+                    </a>
+
+                    <button id="favoriteButton" type="button" class="series-favorite-button"
+                        aria-label="เพิ่มในรายการโปรด" title="เพิ่มในรายการโปรด">
+                        <i class="bi bi-heart"></i>
+                    </button>
+                </div>
+
+                <a id="tripButton" href="/pages/trips.html" class="series-trip-button">
+                    วางแผนทริปตามซีรีย์
+                    <span>></span>
+                </a>
+            </div>
+        </section>
+
+        <section class="filming-section">
+            <div class="section-heading">
+                <p class="section-label">FILMING LOCATIONS</p>
+                <h2>สถานที่ที่ปรากฏในซีรีย์</h2>
+            </div>
+            <div id="filmingLocations" class="filming-list"></div>
+        </section>
+
+        <section class="similar-section">
+            <div class="section-heading">
+                <p class="section-label">YOU MAY ALSO LIKE</p>
+                <h2>ซีรีย์ที่คล้ายกัน</h2>
+            </div>
+            <div id="similarSeries" class="similar-grid"></div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/js/components.js"></script>
+    <script src="/js/places.js"></script>
+    <script src="/js/series_detail.js"></script>
+
+</body>
+
+</html>

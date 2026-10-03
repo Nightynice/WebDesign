@@ -111,21 +111,21 @@ button {
   width: min(1180px, 88%);
   min-height: 60px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 18px 0 20px;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 25px;
+  gap: 20px;
 
   background: rgba(24, 100, 133, 0.35);
   box-shadow: var(--shadow-nav);
-  border-radius: 10px;
+  border-radius: var(--radius-nav);
 }
 
 .logo {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   text-decoration: none;
 }
 
@@ -169,34 +169,34 @@ button {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 18px;
+
+  flex: 1;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .nav-menu > li {
   position: relative;
+  flex-shrink: 0;
 }
 
 .nav-menu a {
   display: block;
-  padding: 9px 2px;
   color: var(--color-white);
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 400;
   text-decoration: none;
-  transition: color 0.25s ease, background 0.25s ease;
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
 }
 
 .nav-menu > li > a {
   position: relative;
-  display: block;
   padding: 9px 2px;
-  color: var(--color-white);
-  font-size: 0.88rem;
-  font-weight: 400;
-  text-decoration: none;
 }
 
 .nav-menu > li > a::after {
@@ -209,6 +209,10 @@ button {
   background-color: var(--color-white);
   border-radius: 2px;
   transition: width 0.25s ease;
+}
+
+.nav-menu > li.dropdown > a::after {
+  display: none;
 }
 
 .nav-menu > li > a:hover {
@@ -229,6 +233,94 @@ button {
 
 
 /* =========================================================
+   FAVORITES
+   ========================================================= */
+
+.nav-favorite {
+  margin-left: 2px;
+}
+
+.nav-favorite > a {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+}
+
+.favorite-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;
+  height: 25px;
+
+  font-size: 23px;
+  line-height: 1;
+  color: var(--color-white);
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.nav-favorite > a:hover {
+  color: var(--color-white);
+}
+
+.nav-favorite > a:hover .favorite-icon {
+  color: #ffedf2;
+  transform: scale(1.1);
+}
+
+
+/* =========================================================
+   TRIP PLANNER BUTTON
+   ========================================================= */
+
+.nav-planner {
+  margin-left: 2px;
+}
+
+.planner-button {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 40px;
+  padding: 8px 17px !important;
+
+  color: var(--color-white) !important;
+  background: var(--color-primary);
+
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-button);
+
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.planner-button::after {
+  display: none !important;
+}
+
+.planner-button:hover {
+  color: var(--color-white) !important;
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(8, 120, 169, 0.2);
+}
+
+
+/* =========================================================
    DROPDOWN
    ========================================================= */
 
@@ -238,16 +330,17 @@ button {
   left: 0;
 
   display: block;
-  min-width: 200px;
+  min-width: 205px;
   margin-top: 8px;
   padding: 7px 0;
 
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 0.97);
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-dropdown);
   box-shadow: var(--shadow-dropdown);
 
   list-style: none;
+
   opacity: 0;
   visibility: hidden;
   transform: translateY(6px);
@@ -290,16 +383,17 @@ button {
   left: 100%;
 
   display: block;
-  min-width: 200px;
+  min-width: 205px;
   margin-left: 4px;
   padding: 7px 0;
 
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 0.97);
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-dropdown);
   box-shadow: var(--shadow-dropdown);
 
   list-style: none;
+
   opacity: 0;
   visibility: hidden;
   transform: translateX(6px);
@@ -327,114 +421,111 @@ button {
   background: var(--color-surface-hover);
 }
 
-
-/* =========================================================
-   BUTTONS
-   ========================================================= */
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 42px;
-  padding: 8px 16px;
-
-  border-radius: var(--radius-button);
-  text-decoration: none;
-  font-size: 0.8rem;
-  font-weight: 600;
-
-  transition:
-    color 0.25s ease,
-    background 0.25s ease,
-    border-color 0.25s ease,
-    transform 0.25s ease;
-}
-
-.btn-primary {
-  color: var(--color-white);
-  background: var(--color-primary);
-  border: 1px solid var(--color-primary);
-}
-
-.btn-primary:hover {
-  color: var(--color-white);
-  background: var(--color-primary-hover);
-  border-color: var(--color-primary-hover);
-  transform: translateY(-2px);
-}
-
-.btn-outline {
-  color: var(--color-primary);
-  background: var(--color-white);
-  border: 1px solid var(--color-primary);
-}
-
-.btn-outline:hover {
-  color: var(--color-white);
-  background: var(--color-primary);
-}
-
-.btn-light {
-  color: var(--color-primary);
-  background: var(--color-white);
-  border: 1px solid var(--color-border-light);
-}
-
-.btn-light:hover {
-  color: var(--color-white);
-  background: var(--color-primary);
-}
-
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
 .footer {
-  color: var(--color-white);
-  background: var(--color-footer);
+    margin-top: 80px;
+    background: #166B91;
+    color: #fff;
 }
 
-.footer-content {
-  padding: 60px 0;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 60px;
+.footer-main {
+    padding: 55px 0 45px;
 }
 
-.footer h3,
-.footer h4 {
-  margin-top: 0;
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr 1fr 1fr;
+    gap: 50px;
 }
 
-.footer p {
-  max-width: 450px;
-  color: rgba(255, 255, 255, 0.78);
+.footer-brand {
+    max-width: 340px;
 }
 
-.footer a {
-  display: block;
-  margin-bottom: 8px;
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 18px;
 }
 
-.footer a:hover {
-  color: var(--color-white);
+.footer-logo img {
+    width: 125px;
+    height: auto;
+}
+
+.footer-brand p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.footer-column h4 {
+    margin: 4px 0 18px;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.footer-column a {
+    width: fit-content;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.86rem;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #fff;
+    transform: translateX(3px);
 }
 
 .footer-bottom {
-  padding: 20px;
-  text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-bottom-inner {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .footer-bottom p {
-  margin: 0;
-  max-width: none;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.75rem;
 }
 
+/* Tablet */
+@media (max-width: 768px) {
+    .footer-main {
+        padding: 45px 0 35px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 30px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        max-width: 500px;
+    }
+
+    .footer-bottom-inner {
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0;
+        text-align: center;
+    }
+}
 
 /* =========================================================
    TABLET — ≤ 768px
@@ -449,7 +540,7 @@ button {
   .nav {
     width: 92%;
     min-height: 58px;
-    padding: 10px 16px;
+    padding: 8px 16px;
     gap: 0;
   }
 
@@ -457,9 +548,9 @@ button {
     width: 95px;
   }
 
-  /* Hamburger */
   .menu-toggle {
     display: block;
+    margin-left: auto;
   }
 
   .nav-menu {
@@ -468,18 +559,20 @@ button {
     left: 4%;
 
     width: 92%;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
 
     display: none;
     flex-direction: column;
     align-items: stretch;
-    gap: 0;
+    gap: 2px;
 
     margin-top: 8px;
     padding: 10px;
 
     background: rgba(255, 255, 255, 0.97);
     border: 1px solid var(--color-border-light);
-    border-radius: 15px;
+    border-radius: var(--radius-nav);
     box-shadow: var(--shadow-dropdown);
   }
 
@@ -505,7 +598,8 @@ button {
     border-radius: 8px;
   }
 
-  /* Dropdown becomes part of the mobile menu */
+  /* Mobile dropdown */
+
   .dropdown-menu,
   .submenu {
     position: static;
@@ -534,22 +628,63 @@ button {
   .dropdown-menu a,
   .submenu a {
     color: var(--color-secondary);
+    padding: 8px 12px;
+  }
+
+  /* Favorite */
+
+  .nav-favorite {
+    margin-left: 0;
+  }
+
+  .nav-favorite > a {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .favorite-icon {
+    color: var(--color-primary);
+  }
+
+  .favorite-text {
+    display: inline;
+  }
+
+  /* Trip Planner */
+
+  .nav-planner {
+    margin: 5px 0 0;
+    padding-top: 5px;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .planner-button {
+    width: 100%;
+    min-height: 42px;
   }
 
   /* Footer */
-  .footer-content {
-    padding: var(--space-xl) 0;
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
 
-  .footer p {
-    max-width: 100%;
-  }
+  .footer-main {
+        padding: 45px 0 35px;
+    }
 
-  .footer-bottom {
-    padding: 18px 14px;
-  }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 30px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+        max-width: 500px;
+    }
+
+    .footer-bottom-inner {
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0;
+        text-align: center;
+    }
 }
 
 
@@ -559,19 +694,11 @@ button {
 
 @media (max-width: 400px) {
 
-  .container {
-    width: calc(100% - 28px);
-  }
-
-  .site-header {
-    padding: 8px 0;
-  }
-
   .nav {
     width: calc(100% - 28px);
     min-height: 54px;
     padding: 8px 12px;
-    border-radius: 10px;
+    border-radius: var(--radius-nav);
   }
 
   .logo img {
@@ -594,7 +721,6 @@ button {
     width: calc(100% - 28px);
     padding: 8px;
     margin-top: 7px;
-    border-radius: 12px;
   }
 
   .nav-menu a,
@@ -614,38 +740,47 @@ button {
     font-size: 0.75rem;
   }
 
-  /* Buttons */
-  .btn {
-    min-height: 40px;
-    padding: 7px 14px;
-    font-size: 0.75rem;
+  .planner-button {
+    font-size: 0.78rem !important;
   }
 
-  /* Footer */
-  .footer-content {
-    padding: 55px 0;
-    gap: 28px;
-  }
+  .footer {
+        margin-top: 55px;
+    }
 
-  .footer h3 {
-    font-size: 1.15rem;
-  }
+    .footer-main {
+        padding: 40px 0 30px;
+    }
 
-  .footer h4 {
-    font-size: 0.95rem;
-  }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+    }
 
-  .footer p,
-  .footer a {
-    font-size: 0.82rem;
-  }
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
 
-  .footer-bottom {
-    padding: 16px 12px;
-    font-size: 0.75rem;
-  }
+    .footer-logo img {
+        width: 110px;
+    }
+
+    .footer-brand p {
+        font-size: 0.82rem;
+    }
+
+    .footer-column h4 {
+        font-size: 0.88rem;
+    }
+
+    .footer-column a {
+        font-size: 0.78rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.7rem;
+    }
 }
-
 
 /* =========================================================
    TOUCH DEVICES

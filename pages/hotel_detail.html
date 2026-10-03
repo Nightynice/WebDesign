@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>รายละเอียดที่พัก | Series Trail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/hotel_detail.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main>
+        <section class="hotel-detail-hero">
+            <div class="hotel-gallery">
+                <div class="hotel-main-image">
+                    <img id="hotelMainImage" src="" alt="">
+                </div>
+                <div id="hotelGallery" class="hotel-gallery-list"></div>
+            </div>
+
+            <div class="hotel-hero-info">
+                <p class="section-label">HOTEL / ACCOMMODATION</p>
+                <span id="hotelType" class="hotel-type"></span>
+                <h1 id="hotelName"></h1>
+                <p id="hotelDescription" class="hotel-description"></p>
+                <div class="hotel-location">
+                    <i class="bi bi-geo-alt"></i>
+                    <span id="hotelLocation"></span>
+                </div>
+
+                <div class="hotel-series">
+                    <i class="bi bi-film"></i>
+                    <span>
+                        ใกล้สถานที่จาก
+                        <strong id="hotelSeries"></strong>
+                    </span>
+                </div>
+                <div class="hotel-detail-actions">
+                    <a id="mapButton" href="#" target="_blank" class="hotel-map-button">
+                        <i class="bi bi-map"></i>
+                        ดูแผนที่
+                    </a>
+
+                    <button id="favoriteButton" type="button" class="hotel-favorite-button"
+                        aria-label="เพิ่มในรายการโปรด" title="เพิ่มในรายการโปรด">
+                        <i class="bi bi-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="hotel-summary-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">ABOUT THE STAY</p>
+                    <h2>ข้อมูลที่พัก</h2>
+                </div>
+            </div>
+            <div class="hotel-summary">
+                <div class="summary-item">
+                    <span>ประเภทที่พัก</span>
+                    <strong id="summaryType"></strong>
+                </div>
+                <div class="summary-item">
+                    <span>สถานที่</span>
+                    <strong id="summaryLocation"></strong>
+                </div>
+                <div class="summary-item">
+                    <span>ประเทศ</span>
+                    <strong id="summaryCountry"></strong>
+                </div>
+                <div class="summary-item">
+                    <span>เหมาะสำหรับ</span>
+                    <strong id="summaryStay"></strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="hotel-rooms-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">ROOM TYPES</p>
+                    <h2>ประเภทห้องพัก</h2>
+                    <p>
+                        ตัวอย่างห้องพักและข้อมูลราคาเพื่อช่วยประกอบการวางแผน
+                    </p>
+                </div>
+            </div>
+            <div id="hotelRooms" class="hotel-rooms"></div>
+        </section>
+
+        <section class="hotel-info-section">
+            <div class="planning-card">
+                <p class="section-label">PLANNING INFO</p>
+                <h2>ข้อมูลสำหรับวางแผน</h2>
+                <div id="planningInfo" class="planning-list"></div>
+                <a id="placeButton" href="#" class="hotel-secondary-button">
+                    ดูสถานที่ถ่ายทำใกล้เคียง
+                    <span>→</span>
+                </a>
+            </div>
+
+            <div class="facilities-card">
+                <p class="section-label">FACILITIES</p>
+                <h2>สิ่งอำนวยความสะดวก</h2>
+                <div id="hotelFacilities" class="facilities-list">
+                </div>
+            </div>
+        </section>
+
+        <section class="hotel-note">
+            <i class="bi bi-info-circle"></i>
+            <div>
+                <strong>ข้อมูลสำหรับการวางแผน</strong>
+                <p>
+                    ข้อมูลราคาและห้องพักใช้สำหรับประกอบการวางแผนการเดินทาง
+                    ควรตรวจสอบรายละเอียดกับที่พักอีกครั้งก่อนเดินทาง
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/js/components.js"></script>
+    <script src="/js/hotels.js"></script>
+    <script src="/js/hotel_detail.js"></script>
+
+</body>
+
+</html>
