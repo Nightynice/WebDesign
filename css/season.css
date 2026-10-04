@@ -1,0 +1,1383 @@
+/* =========================================================
+   SERIES TRAIL — SEASON PAGES
+   Shared layout + Theme variables
+   Rainy / Summer / Winter
+========================================================= */
+
+
+/* =========================================================
+   01. BASE THEME SYSTEM
+========================================================= */
+
+.season-page {
+    /* -------------------------
+       BRAND / ACCENT
+    ------------------------- */
+    --season-primary: #3d8da8;
+    --season-primary-hover: #2b7189;
+
+    /* -------------------------
+       TEXT
+    ------------------------- */
+    --season-heading: #234f63;
+    --season-text: #365f70;
+    --season-secondary: #607d89;
+    --season-muted: #78909a;
+
+    /* -------------------------
+       SURFACES
+    ------------------------- */
+    --season-page: #edf6f7;
+    --season-surface: #e4f0f2;
+    --season-surface-alt: #f8fbfb;
+    --season-card: #ffffff;
+
+    /* -------------------------
+       BORDER
+    ------------------------- */
+    --season-border: #d2e3e7;
+    --season-border-accent: #9fc3cd;
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+    --season-hero: #dceef2;
+    --season-label: #dff3f7;
+
+    /* -------------------------
+       DECORATION
+    ------------------------- */
+    --season-decoration: rgba(255, 255, 255, 0.35);
+
+    /* -------------------------
+       SHADOW
+    ------------------------- */
+    --season-shadow: rgba(35, 79, 99, 0.08);
+
+    background: var(--season-page);
+    color: var(--season-text);
+}
+
+
+/* Make images behave consistently */
+.season-page main img {
+    display: block;
+    width: 100%;
+}
+
+
+/* =========================================================
+   02. COMMON
+========================================================= */
+
+.section-padding {
+    padding: 50px 0;
+}
+
+
+/* Section heading */
+
+.season-page .section-heading {
+    max-width: 680px;
+    margin: 0 auto 32px;
+    text-align: center;
+}
+
+.season-page .section-heading h2 {
+    margin: 7px 0 8px;
+
+    color: var(--season-heading);
+
+    font-size: clamp(1.8rem, 3vw, 2.3rem);
+    line-height: 1.25;
+}
+
+.season-page .section-heading p {
+    margin: 0;
+
+    color: var(--season-secondary);
+
+    line-height: 1.65;
+}
+
+
+/* Section labels */
+
+.season-label,
+.section-label {
+    display: inline-block;
+
+    color: var(--season-primary);
+
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+
+/* =========================================================
+   03. HERO
+========================================================= */
+
+.season-hero {
+    position: relative;
+
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background: var(--season-hero);
+}
+
+.season-hero-bg {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(28, 73, 88, 0.72) 0%,
+            rgba(28, 73, 88, 0.48) 42%,
+            rgba(28, 73, 88, 0.18) 75%,
+            rgba(28, 73, 88, 0.06) 100%
+        ),
+        url("/images/rainyhero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.season-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    padding-top: 80px;
+    padding-bottom: 55px;
+}
+
+.season-hero-text {
+    max-width: 650px;
+
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+
+/* Hero label */
+
+.season-hero .season-label {
+    margin-bottom: 10px;
+
+    color: var(--season-label);
+}
+
+
+/* Hero heading */
+
+.season-hero h1 {
+    margin: 14px 0 18px;
+
+    color: #fff;
+
+    font-size: clamp(2.4rem, 4.5vw, 4rem);
+    line-height: 1.15;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* Hero paragraph */
+
+.season-hero-text > p {
+    max-width: 500px;
+
+    margin: 0 0 22px;
+
+    color: rgba(255, 255, 255, 0.92);
+
+    font-size: 0.95rem;
+    line-height: 1.75;
+}
+
+
+/* Hero button */
+
+.season-hero-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    min-height: 42px;
+
+    padding: 10px 20px;
+
+    border: 1px solid var(--season-primary);
+    border-radius: 22px;
+
+    background: var(--season-primary);
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.season-hero-button:hover {
+    background: var(--season-primary-hover);
+    border-color: var(--season-primary-hover);
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   04. RAIN DECORATION
+========================================================= */
+
+.rain-decoration {
+    position: absolute;
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+.rain-drop {
+    width: 2px;
+    height: 30px;
+
+    border-radius: 2px;
+
+    background: var(--season-decoration);
+
+    transform: rotate(18deg);
+}
+
+.drop-1 {
+    top: 25%;
+    right: 15%;
+}
+
+.drop-2 {
+    top: 58%;
+    right: 8%;
+}
+
+.drop-3 {
+    top: 72%;
+    left: 48%;
+}
+
+
+/* =========================================================
+   05. SUMMER DECORATION
+========================================================= */
+
+.sun-decoration {
+    position: absolute;
+    z-index: 3;
+
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    background: var(--season-decoration);
+
+    top: 110px;
+    right: 12%;
+
+    pointer-events: none;
+}
+
+.sun-decoration.sun-2 {
+    width: 55px;
+    height: 55px;
+
+    top: 260px;
+    right: 7%;
+}
+
+
+/* =========================================================
+   06. WINTER DECORATION
+========================================================= */
+
+.snow-decoration {
+    position: absolute;
+    z-index: 3;
+
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: var(--season-decoration);
+
+    pointer-events: none;
+}
+
+.snow-1 {
+    top: 150px;
+    right: 16%;
+}
+
+.snow-2 {
+    width: 9px;
+    height: 9px;
+
+    top: 260px;
+    right: 9%;
+}
+
+.snow-3 {
+    width: 18px;
+    height: 18px;
+
+    top: 340px;
+    right: 20%;
+}
+
+
+/* =========================================================
+   07. INTRO
+========================================================= */
+
+.season-intro {
+    background: var(--season-surface-alt);
+}
+
+.season-intro-grid {
+    display: grid;
+
+    grid-template-columns: 0.95fr 1.05fr;
+
+    align-items: center;
+
+    gap: 45px;
+}
+
+.season-intro-image {
+    height: 340px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+.season-intro-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.season-intro-content h2 {
+    margin: 0 0 13px;
+
+    color: var(--season-heading);
+
+    font-size: clamp(1.9rem, 3vw, 2.5rem);
+    line-height: 1.2;
+}
+
+.season-intro-content > p {
+    margin: 0 0 9px;
+
+    color: var(--season-secondary);
+
+    line-height: 1.7;
+}
+
+
+/* Intro facts */
+
+.season-facts {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.season-facts > div {
+    padding: 14px;
+
+    border: 1px solid var(--season-border);
+    border-radius: 18px;
+
+    background: var(--season-surface);
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.season-facts > div:hover {
+    border-color: var(--season-border-accent);
+
+    transform: translateY(-2px);
+}
+
+.season-facts strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--season-primary);
+
+    font-size: 1.05rem;
+}
+
+.season-facts span {
+    display: block;
+
+    color: var(--season-heading);
+
+    font-size: 0.76rem;
+    font-weight: 700;
+}
+
+.season-facts p {
+    margin: 3px 0 0;
+
+    color: var(--season-secondary);
+
+    font-size: 0.73rem;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   08. DESTINATIONS
+========================================================= */
+
+.season-destinations {
+    background: var(--season-surface);
+}
+
+.season-place {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 45px;
+
+    margin-bottom: 50px;
+}
+
+.season-place:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Reverse layout */
+
+.season-place-reverse .season-place-image {
+    order: 2;
+}
+
+.season-place-reverse .season-place-content {
+    order: 1;
+}
+
+
+/* Destination image */
+
+.season-place-image {
+    height: 310px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+.season-place-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.season-place:hover .season-place-image img {
+    transform: scale(1.03);
+}
+
+
+/* Destination content */
+
+.place-number {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--season-primary);
+
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.place-country {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: var(--season-muted);
+
+    font-size: 0.67rem;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+}
+
+.season-place-content h3 {
+    margin: 0 0 5px;
+
+    color: var(--season-heading);
+
+    font-size: 1.75rem;
+}
+
+.place-series {
+    margin: 0 0 12px;
+
+    color: var(--season-primary-hover);
+
+    font-size: 0.81rem;
+    font-weight: 600;
+}
+
+.season-place-content > p:not(.place-series) {
+    max-width: 500px;
+
+    margin: 0;
+
+    color: var(--season-secondary);
+
+    line-height: 1.7;
+}
+
+
+/* Destination link */
+
+.season-place-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 12px;
+
+    color: var(--season-primary-hover);
+
+    text-decoration: none;
+
+    font-size: 0.81rem;
+    font-weight: 600;
+
+    transition: color 0.2s ease;
+}
+
+.season-place-link:hover {
+    color: var(--season-primary);
+}
+
+
+/* =========================================================
+   09. ACTIVITIES
+========================================================= */
+
+.season-activities {
+    background: var(--season-surface-alt);
+}
+
+.season-activities-layout {
+    display: grid;
+
+    grid-template-columns: 0.95fr 1.05fr;
+
+    align-items: center;
+
+    gap: 45px;
+}
+
+.activity-image {
+    height: 340px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+}
+
+.activity-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Activity list */
+
+.activity-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-item {
+    display: grid;
+
+    grid-template-columns: 42px 1fr;
+
+    gap: 14px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid var(--season-border);
+}
+
+.activity-item:first-child {
+    padding-top: 0;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-item > span {
+    color: var(--season-primary);
+
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.activity-item h3 {
+    margin: 0 0 4px;
+
+    color: var(--season-heading);
+
+    font-size: 1.02rem;
+}
+
+.activity-item p {
+    margin: 0;
+
+    color: var(--season-secondary);
+
+    line-height: 1.6;
+
+    font-size: 0.83rem;
+}
+
+
+/* =========================================================
+   10. TRAVEL TIPS
+========================================================= */
+
+.season-tips {
+    background: var(--season-page);
+}
+
+.season-tips-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+.season-tip {
+    padding: 21px;
+
+    border: 1px solid var(--season-border);
+
+    border-radius: 18px;
+
+    background: var(--season-card);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.season-tip:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--season-border-accent);
+
+    box-shadow:
+        0 12px 30px var(--season-shadow);
+}
+
+
+/* Tip image */
+
+.season-tip-image {
+    height: 92px;
+
+    margin: -21px -21px 17px;
+
+    overflow: hidden;
+
+    border-radius: 17px 17px 12px 12px;
+}
+
+.season-tip-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+.season-tip:hover .season-tip-image img {
+    transform: scale(1.035);
+}
+
+
+/* Tip number */
+
+.season-tip > span {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--season-primary);
+
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+
+/* Tip title */
+
+.season-tip h3 {
+    margin: 0 0 7px;
+
+    color: var(--season-heading);
+
+    font-size: 1.02rem;
+}
+
+.season-tip p {
+    margin: 0;
+
+    color: var(--season-secondary);
+
+    line-height: 1.65;
+
+    font-size: 0.82rem;
+}
+
+
+/* =========================================================
+   11. CTA
+========================================================= */
+
+.season-cta {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 60px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--season-heading),
+            var(--season-primary)
+        );
+}
+
+.season-cta-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.season-cta-content > span {
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 0.67rem;
+    font-weight: 700;
+
+    letter-spacing: 0.14em;
+}
+
+.season-cta h2 {
+    margin: 8px 0;
+
+    color: #fff;
+
+    font-size: clamp(1.9rem, 4vw, 2.7rem);
+}
+
+.season-cta p {
+    max-width: 470px;
+
+    margin: 0 auto 20px;
+
+    color: rgba(255, 255, 255, 0.86);
+
+    line-height: 1.65;
+}
+
+
+/* CTA button */
+
+.season-cta-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    min-height: 42px;
+
+    padding: 10px 22px;
+
+    border-radius: 22px;
+
+    background: var(--season-primary);
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.season-cta-button:hover {
+    background: var(--season-primary-hover);
+
+    color: #fff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   12. RAINY THEME
+   Blue / Mist / Muted
+========================================================= */
+
+.rainy-page {
+
+    /* Accent */
+    --season-primary: #3d8da8;
+    --season-primary-hover: #2b7189;
+
+    /* Text */
+    --season-heading: #234f63;
+    --season-text: #365f70;
+    --season-secondary: #607d89;
+    --season-muted: #78909a;
+
+    /* Surface */
+    --season-page: #edf6f7;
+    --season-surface: #e4f0f2;
+    --season-surface-alt: #f8fbfb;
+    --season-card: #ffffff;
+
+    /* Border */
+    --season-border: #d2e3e7;
+    --season-border-accent: #9fc3cd;
+
+    /* Hero */
+    --season-hero: #dceef2;
+    --season-label: #dff3f7;
+
+    /* Decoration */
+    --season-decoration: rgba(220, 243, 247, 0.38);
+
+    /* Shadow */
+    --season-shadow: rgba(35, 79, 99, 0.08);
+}
+
+
+/* Rainy hero */
+
+.rainy-page .season-hero-bg {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(28, 73, 88, 0.76),
+            rgba(28, 73, 88, 0.45),
+            rgba(28, 73, 88, 0.12)
+        ),
+        url("/images/rainyhero.jpg") center / cover no-repeat;
+}
+
+
+/* Rainy CTA */
+
+.rainy-page .season-cta {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(28, 73, 88, 0.94),
+            rgba(61, 141, 168, 0.78)
+        ),
+        url("/images/rainy.jpg") center 42% / cover no-repeat;
+}
+
+
+/* =========================================================
+   13. SUMMER THEME
+   Orange / Warm / Cream
+========================================================= */
+
+.summer-page {
+
+    /* Accent */
+    --season-primary: #e47b32;
+    --season-primary-hover: #c95f20;
+
+    /* Text */
+    --season-heading: #713b22;
+    --season-text: #684735;
+    --season-secondary: #8a6855;
+    --season-muted: #a18470;
+
+    /* Surface */
+    --season-page: #fff8f0;
+    --season-surface: #fff1e4;
+    --season-surface-alt: #fffaf5;
+    --season-card: #ffffff;
+
+    /* Border */
+    --season-border: #f1d8c4;
+    --season-border-accent: #e9b995;
+
+    /* Hero */
+    --season-hero: #f7dcc5;
+    --season-label: #ffe8cc;
+
+    /* Decoration */
+    --season-decoration: rgba(255, 225, 173, 0.46);
+
+    /* Shadow */
+    --season-shadow: rgba(126, 70, 37, 0.10);
+}
+
+
+/* Summer hero */
+
+.summer-page .season-hero-bg {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(119, 54, 22, 0.72),
+            rgba(190, 92, 30, 0.42),
+            rgba(228, 123, 50, 0.08)
+        ),
+        url("/images/summerhero2.jpg") center / cover no-repeat;
+}
+
+
+/* Summer CTA */
+
+.summer-page .season-cta {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(119, 54, 22, 0.92),
+            rgba(228, 123, 50, 0.72)
+        ),
+        url("/images/summer.jpg") center 48% / cover no-repeat;
+}
+
+
+/* =========================================================
+   14. WINTER THEME
+   Ice Blue / White / Cool Gray
+========================================================= */
+
+.winter-page {
+
+    /* Accent */
+    --season-primary: #69a9c7;
+    --season-primary-hover: #4b8eaf;
+
+    /* Text */
+    --season-heading: #365b70;
+    --season-text: #506d7c;
+    --season-secondary: #718793;
+    --season-muted: #91a4af;
+
+    /* Surface */
+    --season-page: #f4faff;
+    --season-surface: #eaf5fb;
+    --season-surface-alt: #ffffff;
+    --season-card: #ffffff;
+
+    /* Border */
+    --season-border: #d7e8f1;
+    --season-border-accent: #b2d2e2;
+
+    /* Hero */
+    --season-hero: #e5f3fa;
+    --season-label: #eefaff;
+
+    /* Decoration */
+    --season-decoration: rgba(255, 255, 255, 0.76);
+
+    /* Shadow */
+    --season-shadow: rgba(61, 101, 121, 0.08);
+}
+
+
+/* Winter hero */
+
+.winter-page .season-hero-bg {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(66, 112, 137, 0.72),
+            rgba(105, 169, 199, 0.40),
+            rgba(180, 220, 236, 0.08)
+        ),
+        url("/images/winterhero.jpg") center / cover no-repeat;
+}
+
+
+/* Winter CTA */
+
+.winter-page .season-cta {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(66, 112, 137, 0.92),
+            rgba(105, 169, 199, 0.68)
+        ),
+        url("/images/winter.jpg") center 48% / cover no-repeat;
+}
+
+
+/* =========================================================
+   15. RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .season-intro-grid,
+    .season-place,
+    .season-activities-layout {
+        gap: 30px;
+    }
+
+    .season-place {
+        margin-bottom: 42px;
+    }
+
+    .season-intro-image,
+    .activity-image {
+        height: 310px;
+    }
+
+    .season-place-image {
+        height: 290px;
+    }
+}
+
+
+/* =========================================================
+   16. RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .section-padding {
+        padding: 45px 0;
+    }
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    .season-hero {
+        min-height: 500px;
+    }
+
+    .season-hero-content {
+        min-height: 500px;
+
+        padding-top: 100px;
+        padding-bottom: 45px;
+    }
+
+    .season-hero-text {
+        max-width: 100%;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .season-hero h1 {
+        white-space: normal;
+    }
+
+
+    /* -------------------------
+       MOBILE HERO IMAGES
+    ------------------------- */
+
+    .rainy-page .season-hero-bg {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(28, 73, 88, 0.78),
+                rgba(28, 73, 88, 0.38)
+            ),
+            url("/images/rainyhero.jpg") center / cover no-repeat;
+    }
+
+    .summer-page .season-hero-bg {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(119, 54, 22, 0.76),
+                rgba(228, 123, 50, 0.32)
+            ),
+            url("/images/summerhero2.jpg") center / cover no-repeat;
+    }
+
+    .winter-page .season-hero-bg {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(66, 112, 137, 0.72),
+                rgba(105, 169, 199, 0.32)
+            ),
+            url("/images/winterhero.jpg") center / cover no-repeat;
+    }
+
+
+    /* -------------------------
+       GRID
+    ------------------------- */
+
+    .season-intro-grid,
+    .season-place,
+    .season-activities-layout {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -------------------------
+       INTRO / ACTIVITY
+    ------------------------- */
+
+    .season-intro-image,
+    .activity-image {
+        height: 300px;
+    }
+
+
+    /* -------------------------
+       DESTINATION
+    ------------------------- */
+
+    .season-place-reverse .season-place-image {
+        order: 1;
+    }
+
+    .season-place-reverse .season-place-content {
+        order: 2;
+    }
+
+    .season-place-image {
+        height: 300px;
+    }
+
+
+    /* -------------------------
+       FACTS
+    ------------------------- */
+
+    .season-facts {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -------------------------
+       TIPS
+    ------------------------- */
+
+    .season-tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -------------------------
+       DECORATIONS
+    ------------------------- */
+
+    .sun-decoration {
+        right: 7%;
+        top: 120px;
+
+        width: 75px;
+        height: 75px;
+    }
+
+    .sun-decoration.sun-2 {
+        right: 5%;
+
+        width: 38px;
+        height: 38px;
+
+        top: 250px;
+    }
+
+    .snow-1 {
+        right: 10%;
+    }
+
+    .snow-2 {
+        right: 5%;
+    }
+
+    .snow-3 {
+        right: 14%;
+    }
+}
+
+
+/* =========================================================
+   17. RESPONSIVE — SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .section-padding {
+        padding: 40px 0;
+    }
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    .season-hero {
+        min-height: 470px;
+    }
+
+    .season-hero-content {
+        min-height: 470px;
+
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+
+    .season-hero-text {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .season-hero h1 {
+        font-size: 2.45rem;
+    }
+
+    .season-hero-text > p {
+        font-size: 0.88rem;
+        line-height: 1.65;
+    }
+
+
+    /* -------------------------
+       IMAGES
+    ------------------------- */
+
+    .season-intro-image,
+    .season-place-image,
+    .activity-image {
+        height: 270px;
+
+        border-radius: 18px;
+    }
+
+
+    /* -------------------------
+       DESTINATION
+    ------------------------- */
+
+    .season-place-content h3 {
+        font-size: 1.55rem;
+    }
+
+
+    /* -------------------------
+       CTA
+    ------------------------- */
+
+    .season-cta {
+        padding: 50px 0;
+    }
+}
+
+
+/* =========================================================
+   18. RESPONSIVE — VERY SMALL
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .season-hero {
+        min-height: 450px;
+    }
+
+    .season-hero-content {
+        min-height: 450px;
+
+        padding-top: 85px;
+    }
+
+    .season-hero-text {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .season-hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .season-hero-text > p {
+        font-size: 0.85rem;
+    }
+}

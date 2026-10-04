@@ -42,9 +42,9 @@ const restaurantExtraData = {
         ],
 
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg",
-            "/images/countries/thai.jpg"
+            "/images/restaurants/rayarestaurant.png",
+            "/images/place/place-oldtown.jpg",
+            "/images/place/lampromtep.jpg"
         ]
     },
 
@@ -88,8 +88,8 @@ const restaurantExtraData = {
         ],
 
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/countries/thai.jpg"
+            "/images/restaurants/promthepcaperestaurant.jpg",
+            "/images/place/lampromtep.jpg"
         ]
     },
 
@@ -133,7 +133,8 @@ const restaurantExtraData = {
         ],
 
         gallery: [
-            "/images/countries/korea.jpg"
+            "/images/restaurants/cheonghamarketfood.jpg",
+            "/images/place/cheonghamarket.jpg"
         ]
     },
 
@@ -177,7 +178,8 @@ const restaurantExtraData = {
         ],
 
         gallery: [
-            "/images/countries/korea.jpg"
+            "/images/restaurants/wolpobeachcafe.png",
+            "/images/place/wolpobeach.jpg"
         ]
     },
 
@@ -221,7 +223,8 @@ const restaurantExtraData = {
         ],
 
         gallery: [
-            "/images/countries/japan.jpg"
+            "/images/restaurants/otarucanalcafe.jpg",
+            "/images/place/otarucanal.jpg"
         ]
     },
 
@@ -265,7 +268,8 @@ const restaurantExtraData = {
         ],
 
         gallery: [
-            "/images/countries/japan.jpg"
+            "/images/restaurants/yuigahamabeachcafe.jpg",
+            "/images/place/yuigahamabeach.png"
         ]
     },
 
@@ -309,7 +313,8 @@ const restaurantExtraData = {
         ],
 
         gallery: [
-            "/images/countries/chainas.jpg"
+            "/images/restaurants/shapoweicafe.jpg",
+            "/images/place/shapowei.jpg"
         ]
     },
 
@@ -353,7 +358,8 @@ const restaurantExtraData = {
         ],
 
         gallery: [
-            "/images/countries/chainas.jpg"
+            "/images/restaurants/erhailakecafe.jpg",
+            "/images/place/erhailake.jpg"
         ]
     }
 };

@@ -6,7 +6,7 @@ const seriesDetailData = {
         name: "แปลรักฉันด้วยใจเธอ",
         country: "ไทย",
         season: "ฤดูร้อน",
-        poster: "/images/series/series-01.jpg",
+        poster: "/images/series/itoldsunsetaboutyou.jpg",
         synopsis: "เรื่องราวความรักของเต๋าและโอ้เอ๋วที่เกิดขึ้นท่ามกลางบรรยากาศของภูเก็ต โดยเมืองเก่า ทะเล และพระอาทิตย์ตกกลายเป็นส่วนสำคัญของเรื่อง",
         placeIds: [
             "phuket-old-town",
@@ -16,13 +16,13 @@ const seriesDetailData = {
             {
                 name: "Hometown Cha-Cha-Cha",
                 country: "เกาหลีใต้",
-                image: "/images/series/series.jpg",
+                image: "/images/series/hometownchacha.jpg",
                 link: "/pages/series_detail.html?series=hometown-cha-cha-cha"
             },
             {
                 name: "First Love",
                 country: "ญี่ปุ่น",
-                image: "/images/series/series.jpg",
+                image: "/images/series/firstlove.jpg",
                 link: "/pages/series_detail.html?series=first-love"
             }
         ]
@@ -32,7 +32,7 @@ const seriesDetailData = {
         name: "นิทานพันดาว",
         country: "ไทย",
         season: "ฤดูหนาว",
-        poster: "/images/series/series-02.jpg",
+        poster: "/images/series/firstlove.jpg",
         synopsis: "เรื่องราวของเทียนที่เดินทางขึ้นดอยเพื่อเริ่มต้นชีวิตใหม่ในชุมชนผาปันดาว และได้พบกับภูผา ความสัมพันธ์ของทั้งคู่ค่อย ๆ เติบโตท่ามกลางธรรมชาติและวิถีชีวิตบนดอย",
         placeIds: [
             "phapan-dao-village",
@@ -42,13 +42,13 @@ const seriesDetailData = {
             {
                 name: "Meet Yourself",
                 country: "จีน",
-                image: "/images/series/series.jpg",
+                image: "/images/series/meetyourself.jpg",
                 link: "/pages/series_detail.html?series=meet-yourself"
             },
             {
                 name: "Hometown Cha-Cha-Cha",
                 country: "เกาหลีใต้",
-                image: "/images/series/series.jpg",
+                image: "/images/series/hometownchacha.jpg",
                 link: "/pages/series_detail.html?series=hometown-cha-cha-cha"
             }
         ]
@@ -58,7 +58,7 @@ const seriesDetailData = {
         name: "บุพเพสันนิวาส",
         country: "ไทย",
         season: "ฤดูหนาว",
-        poster: "/images/series/series-03.jpg",
+        poster: "/images/series/meetyourself.jpg",
         synopsis: "เรื่องราวของเกศสุรางค์หญิงสาวจากยุคปัจจุบันที่เดินทางข้ามเวลาไปยังกรุงศรีอยุธยา และได้เรียนรู้ประวัติศาสตร์ วิถีชีวิต และความสัมพันธ์ในโลกอดีต",
         placeIds: [
             "wat-chaiwatthanaram",
@@ -68,13 +68,13 @@ const seriesDetailData = {
             {
                 name: "A Dream of Splendor",
                 country: "จีน",
-                image: "/images/series/series.jpg",
+                image: "/images/series/adreamofsplendor.jpg",
                 link: "/pages/series_detail.html?series=a-dream-of-splendor"
             },
             {
                 name: "Eternal Love",
                 country: "จีน",
-                image: "/images/series/series.jpg",
+                image: "/images/series/eternallove.jpg",
                 link: "/pages/series_detail.html?series=eternal-love"
             }
         ]
@@ -84,7 +84,7 @@ const seriesDetailData = {
         name: "กลิ่นกาสะลอง",
         country: "ไทย",
         season: "ฤดูฝน",
-        poster: "/images/series/series-04.jpg",
+        poster: "/images/series/adreamofsplendor.jpg",
         synopsis: "เรื่องราวความรัก ความแค้น และความผูกพันของตัวละครท่ามกลางบรรยากาศล้านนา โดยใช้วัดเก่าและสถาปัตยกรรมเชียงใหม่เป็นส่วนสำคัญของเรื่อง",
         placeIds: [
             "wat-ton-kwen",
@@ -94,13 +94,13 @@ const seriesDetailData = {
             {
                 name: "นิทานพันดาว",
                 country: "ไทย",
-                image: "/images/series/series-02.jpg",
+                image: "/images/series/smellofflower.jpg",
                 link: "/pages/series_detail.html?series=1000stars"
             },
             {
                 name: "บุพเพสันนิวาส",
                 country: "ไทย",
-                image: "/images/series/series-03.jpg",
+                image: "/images/series/lovedestiny.jpg",
                 link: "/pages/series_detail.html?series=love-destiny"
             }
         ]
@@ -110,7 +110,7 @@ const seriesDetailData = {
         name: "Hometown Cha-Cha-Cha",
         country: "เกาหลีใต้",
         season: "ฤดูร้อน",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/hometownchacha.jpg",
         synopsis: "เรื่องราวความสัมพันธ์ของหมอฟันฮเยจินและหัวหน้าฮงในหมู่บ้านริมทะเลกงจิน ทั้งคู่ค่อย ๆ เรียนรู้ชีวิต ผู้คน และความสัมพันธ์ผ่านชุมชนเล็ก ๆ แห่งนี้",
         placeIds: [
             "cheongha-market",
@@ -120,13 +120,13 @@ const seriesDetailData = {
             {
                 name: "When the Camellia Blooms",
                 country: "เกาหลีใต้",
-                image: "/images/series/series.jpg",
+                image: "/images/series/whenthecamelliablooms.jpg",
                 link: "/pages/series_detail.html?series=when-the-camellia-blooms"
             },
             {
                 name: "แปลรักฉันด้วยใจเธอ",
                 country: "ไทย",
-                image: "/images/series/series-01.jpg",
+                image: "/images/series/itoldsunsetaboutyou.jpg",
                 link: "/pages/series_detail.html?series=bpo"
             }
         ]
@@ -136,7 +136,7 @@ const seriesDetailData = {
         name: "Can This Love Be Translated?",
         country: "เกาหลีใต้",
         season: "ฤดูใบไม้ร่วง–ฤดูหนาว",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/whenthecamelliablooms.jpg",
         synopsis: "เรื่องราวความสัมพันธ์ระหว่างนักแปลและดาราสาวที่ต้องทำงานร่วมกัน การเดินทางไปยังสถานที่ต่าง ๆ ทำให้ความสัมพันธ์ของทั้งคู่ค่อย ๆ เปลี่ยนแปลง",
         placeIds: [
             "gamgodang-gil",
@@ -146,13 +146,13 @@ const seriesDetailData = {
             {
                 name: "Hometown Cha-Cha-Cha",
                 country: "เกาหลีใต้",
-                image: "/images/series/series.jpg",
+                image: "/images/series/canthislovebetranslated.jpg",
                 link: "/pages/series_detail.html?series=hometown-cha-cha-cha"
             },
             {
                 name: "First Love",
                 country: "ญี่ปุ่น",
-                image: "/images/series/series.jpg",
+                image: "/images/series/firstlove.jpg",
                 link: "/pages/series_detail.html?series=first-love"
             }
         ]
@@ -162,7 +162,7 @@ const seriesDetailData = {
         name: "The King: Eternal Monarch",
         country: "เกาหลีใต้",
         season: "ฤดูใบไม้ผลิ–ฤดูใบไม้ร่วง",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/theking_ eternalmonarch.jpg",
         synopsis: "เรื่องราวของโลกคู่ขนานและความสัมพันธ์ระหว่าง Lee Gon และ Jung Tae-eul เมื่อทั้งสองโลกเชื่อมโยงกันผ่านสถานที่และเหตุการณ์เหนือธรรมชาติ",
         placeIds: [
             "gwanghwamun-square",
@@ -172,13 +172,13 @@ const seriesDetailData = {
             {
                 name: "Can This Love Be Translated?",
                 country: "เกาหลีใต้",
-                image: "/images/series/series.jpg",
+                image: "/images/series/theking_ eternalmonarch.jpg",
                 link: "/pages/series_detail.html?series=can-this-love-be-translated"
             },
             {
                 name: "Eternal Love",
                 country: "จีน",
-                image: "/images/series/series.jpg",
+                image: "/images/series/eternallove.jpg",
                 link: "/pages/series_detail.html?series=eternal-love"
             }
         ]
@@ -188,7 +188,7 @@ const seriesDetailData = {
         name: "When the Camellia Blooms",
         country: "เกาหลีใต้",
         season: "ฤดูใบไม้ร่วง",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/whenthecamelliablooms.jpg",
         synopsis: "เรื่องราวชีวิตและความรักของ Dong-baek ในชุมชนริมทะเลที่เต็มไปด้วยความสัมพันธ์ของผู้คน เธอค่อย ๆ สร้างชีวิตใหม่และความสัมพันธ์กับ Yong-sik",
         placeIds: [
             "guryongpo-japanese-house-street",
@@ -198,13 +198,13 @@ const seriesDetailData = {
             {
                 name: "Hometown Cha-Cha-Cha",
                 country: "เกาหลีใต้",
-                image: "/images/series/series.jpg",
+                image: "/images/series/whenthecamelliablooms.jpg",
                 link: "/pages/series_detail.html?series=hometown-cha-cha-cha"
             },
             {
                 name: "Can This Love Be Translated?",
                 country: "เกาหลีใต้",
-                image: "/images/series/series.jpg",
+                image: "/images/series/canthislovebetranslated.jpg",
                 link: "/pages/series_detail.html?series=can-this-love-be-translated"
             }
         ]
@@ -214,7 +214,7 @@ const seriesDetailData = {
         name: "First Love",
         country: "ญี่ปุ่น",
         season: "ฤดูหนาว",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/firstlove.jpg",
         synopsis: "เรื่องราวความรักและความทรงจำของคนสองคนที่เคยพบกันในวัยเยาว์ ก่อนจะกลับมาพบกันอีกครั้งในช่วงเวลาที่ชีวิตของทั้งคู่เปลี่ยนไป",
         placeIds: [
             "otaru-canal",
@@ -224,13 +224,13 @@ const seriesDetailData = {
             {
                 name: "silent",
                 country: "ญี่ปุ่น",
-                image: "/images/series/series.jpg",
+                image: "/images/series/silent.jpg",
                 link: "/pages/series_detail.html?series=silent"
             },
             {
                 name: "Hometown Cha-Cha-Cha",
                 country: "เกาหลีใต้",
-                image: "/images/series/series.jpg",
+                image: "/images/series/hometownchacha.jpg",
                 link: "/pages/series_detail.html?series=hometown-cha-cha-cha"
             }
         ]
@@ -240,7 +240,7 @@ const seriesDetailData = {
         name: "silent",
         country: "ญี่ปุ่น",
         season: "ฤดูใบไม้ร่วง–ฤดูหนาว",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/silent.jpg",
         synopsis: "เรื่องราวของ Tsumugi และ Sou ที่กลับมาพบกันอีกครั้งหลังจากห่างหายไปหลายปี ความทรงจำในวัยเรียนและสถานที่ต่าง ๆ ค่อย ๆ เชื่อมโยงทั้งคู่กลับเข้าหากัน",
         placeIds: [
             "setagaya-daita-station",
@@ -250,13 +250,13 @@ const seriesDetailData = {
             {
                 name: "First Love",
                 country: "ญี่ปุ่น",
-                image: "/images/series/series.jpg",
+                image: "/images/series/silent.jpg",
                 link: "/pages/series_detail.html?series=first-love"
             },
             {
                 name: "Saigo Kara Nibanme no Koi",
                 country: "ญี่ปุ่น",
-                image: "/images/series/series.jpg",
+                image: "/images/series/saigokaranibanmenokoi.png",
                 link: "/pages/series_detail.html?series=saigo-kara-nibanme-no-koi"
             }
         ]
@@ -266,7 +266,7 @@ const seriesDetailData = {
         name: "Saigo Kara Nibanme no Koi",
         country: "ญี่ปุ่น",
         season: "ฤดูฝน / ต้นฤดูร้อน",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/saigokaranibanmenokoi.png",
         synopsis: "เรื่องราวชีวิต ความสัมพันธ์ และมิตรภาพของผู้คนในเมืองคามาคุระ โดยสถานีรถไฟ ชายหาด และพื้นที่ริมทะเลเป็นส่วนหนึ่งของชีวิตประจำวันของตัวละคร",
         placeIds: [
             "gokurakuji-station",
@@ -276,13 +276,13 @@ const seriesDetailData = {
             {
                 name: "silent",
                 country: "ญี่ปุ่น",
-                image: "/images/series/series.jpg",
+                image: "/images/series/saigokaranibanmenokoi.png",
                 link: "/pages/series_detail.html?series=silent"
             },
             {
                 name: "First Love",
                 country: "ญี่ปุ่น",
-                image: "/images/series/series.jpg",
+                image: "/images/series/firstlove.jpg",
                 link: "/pages/series_detail.html?series=first-love"
             }
         ]
@@ -292,7 +292,7 @@ const seriesDetailData = {
         name: "Brush Up Life",
         country: "ญี่ปุ่น",
         season: "ฤดูหนาว–ฤดูใบไม้ผลิ",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/brushuplife.jpg",
         synopsis: "เรื่องราวชีวิตของ Asami และการย้อนกลับไปใช้ชีวิตใหม่อีกครั้ง ผ่านเหตุการณ์ในชีวิตประจำวันและความสัมพันธ์กับผู้คนรอบตัว",
         placeIds: [
             "tsurumaki-bridge",
@@ -302,13 +302,13 @@ const seriesDetailData = {
             {
                 name: "silent",
                 country: "ญี่ปุ่น",
-                image: "/images/series/series.jpg",
+                image: "/images/series/brushuplife.jpg",
                 link: "/pages/series_detail.html?series=silent"
             },
             {
                 name: "Saigo Kara Nibanme no Koi",
                 country: "ญี่ปุ่น",
-                image: "/images/series/series.jpg",
+                image: "/images/series/saigokaranibanmenokoi.png",
                 link: "/pages/series_detail.html?series=saigo-kara-nibanme-no-koi"
             }
         ]
@@ -318,7 +318,7 @@ const seriesDetailData = {
         name: "Hidden Love",
         country: "จีน",
         season: "ฤดูร้อน / ฤดูฝน",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/hiddenlove.jpg",
         synopsis: "เรื่องราวความรักและความสัมพันธ์ที่ค่อย ๆ เติบโตระหว่าง Sang Zhi และ Duan Jiaxu โดยมีพื้นที่ริมทะเลและสถานที่ท่องเที่ยวในเซียะเหมินเป็นส่วนหนึ่งของเรื่อง",
         placeIds: [
             "shapowei",
@@ -328,13 +328,13 @@ const seriesDetailData = {
             {
                 name: "Meet Yourself",
                 country: "จีน",
-                image: "/images/series/series.jpg",
+                image: "/images/series/meetyourself.jpg",
                 link: "/pages/series_detail.html?series=meet-yourself"
             },
             {
                 name: "First Love",
                 country: "ญี่ปุ่น",
-                image: "/images/series/series.jpg",
+                image: "/images/series/firstlove.jpg",
                 link: "/pages/series_detail.html?series=first-love"
             }
         ]
@@ -344,7 +344,7 @@ const seriesDetailData = {
         name: "Meet Yourself",
         country: "จีน",
         season: "ฤดูใบไม้ผลิ / ฤดูฝน",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/meetyourself.jpg",
         synopsis: "เรื่องราวของ Xu Hongdou ที่เดินทางไปใช้ชีวิตในหมู่บ้านท่ามกลางธรรมชาติของยูนนาน ก่อนค่อย ๆ ฟื้นฟูจิตใจและสร้างความสัมพันธ์ใหม่กับผู้คนในชุมชน",
         placeIds: [
             "fengyangyi-village",
@@ -354,13 +354,13 @@ const seriesDetailData = {
             {
                 name: "นิทานพันดาว",
                 country: "ไทย",
-                image: "/images/series/series-02.jpg",
+                image: "/images/series/meetyourself.jpg",
                 link: "/pages/series_detail.html?series=1000stars"
             },
             {
                 name: "Hidden Love",
                 country: "จีน",
-                image: "/images/series/series.jpg",
+                image: "/images/series/hiddenlove.jpg",
                 link: "/pages/series_detail.html?series=hidden-love"
             }
         ]
@@ -370,7 +370,7 @@ const seriesDetailData = {
         name: "Eternal Love",
         country: "จีน",
         season: "ฤดูใบไม้ผลิ / ฤดูร้อน",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/eternallove.jpg",
         synopsis: "เรื่องราวความรักในโลกแฟนตาซีของ Qingqiu และ Heavenly Palace โดยภูมิทัศน์ธรรมชาติและเมืองภาพยนตร์ถูกใช้สร้างโลกต่าง ๆ ของเรื่อง",
         placeIds: [
             "caihuaqing-qingqiu",
@@ -380,13 +380,13 @@ const seriesDetailData = {
             {
                 name: "บุพเพสันนิวาส",
                 country: "ไทย",
-                image: "/images/series/series-03.jpg",
+                image: "/images/series/eternallove.jpg",
                 link: "/pages/series_detail.html?series=love-destiny"
             },
             {
                 name: "A Dream of Splendor",
                 country: "จีน",
-                image: "/images/series/series.jpg",
+                image: "/images/series/adreamofsplendor.jpg",
                 link: "/pages/series_detail.html?series=a-dream-of-splendor"
             }
         ]
@@ -396,7 +396,7 @@ const seriesDetailData = {
         name: "A Dream of Splendor",
         country: "จีน",
         season: "ฤดูใบไม้ผลิ–ฤดูร้อน",
-        poster: "/images/series/series.jpg",
+        poster: "/images/series/adreamofsplendor.jpg",
         synopsis: "เรื่องราวของ Zhao Pan'er และการเดินทางของเธอในเมืองโบราณแบบ Jiangnan โดยมีร้านชา เมืองน้ำ และพื้นที่ริมทะเลสาบเป็นองค์ประกอบสำคัญของเรื่อง",
         placeIds: [
             "songji-water-mill",
@@ -406,13 +406,13 @@ const seriesDetailData = {
             {
                 name: "Eternal Love",
                 country: "จีน",
-                image: "/images/series/series.jpg",
+                image: "/images/series/adreamofsplendor.jpg",
                 link: "/pages/series_detail.html?series=eternal-love"
             },
             {
                 name: "บุพเพสันนิวาส",
                 country: "ไทย",
-                image: "/images/series/series-03.jpg",
+                image: "/images/series/lovedestiny.jpg",
                 link: "/pages/series_detail.html?series=love-destiny"
             }
         ]

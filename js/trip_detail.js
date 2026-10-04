@@ -98,13 +98,13 @@ const trips = {
             {
                 name: "จุดชมวิว",
                 country: "ประเทศไทย",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/bantean.jpg",
                 desc: "สถานที่สำหรับชมวิวและถ่ายภาพ"
             },
             {
                 name: "ย่านเมืองเก่า",
                 country: "ประเทศไทย",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/phapundaw.jpg",
                 desc: "พื้นที่เดินเล่นและสัมผัสบรรยากาศท้องถิ่น"
             }
         ],
@@ -118,7 +118,7 @@ const trips = {
             {
                 name: "ร้านอาหารท้องถิ่น",
                 location: "เชียงราย",
-                image: "/images/place/place-01.jpg"
+                image: "/images/place/bantean.jpg"
             }
         ],
 
@@ -126,7 +126,7 @@ const trips = {
             {
                 name: "ที่พักแนะนำ",
                 location: "เชียงราย",
-                image: "/images/place/place-02.jpg"
+                image: "/images/place/phapundaw.jpg"
             },
             {
                 name: "โรงแรมใกล้เส้นทาง",

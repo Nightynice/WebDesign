@@ -8,7 +8,7 @@ const placeDetailData = {
         series: "แปลรักฉันด้วยใจเธอ",
         location: "เมืองเก่าภูเก็ต / ถนนถลาง – ซอยรมณีย์, ภูเก็ต",
         name: "เมืองเก่าภูเก็ต",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/place-oldtown.jpg",
         description: "ย่านสถาปัตยกรรมชิโน-โปรตุกีสที่เป็นพื้นที่หลักของเรื่องและเป็นฉากชีวิตประจำวันของเต๋กับโอ้เอ๋ว",
         episode: "ปรากฏหลาย EP ตลอดเรื่อง",
         scene: "ฉากเดินทางด้วยรถพ่วงข้าง ฉากเดินเล่น พบปะ และฉากที่สะท้อนชีวิตวัยเรียนของตัวละคร",
@@ -19,14 +19,14 @@ const placeDetailData = {
         admission: "ไม่มีค่าเข้าชมสำหรับการเดินชมย่าน",
         transportation: "เดินทางด้วยรถยนต์ รถโดยสาร หรือรถรับจ้างภายในเมืองภูเก็ต",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/place-oldtown.jpg",
+            "/images/place/lampromtep.jpg"
         ],
         restaurants: [
             {
                 name: "Cafe Delight Phuket Old Town",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/restaurants/rayarestaurant.png",
                 description: "อยู่ในย่านเมืองเก่าภูเก็ต เหมาะสำหรับแวะพักระหว่างเดินตามรอยถนนถลางและซอยรมณีย์"
             }
         ],
@@ -34,7 +34,7 @@ const placeDetailData = {
             {
                 name: "Ratri Hotel Phuket Old Town",
                 type: "ที่พัก",
-                image: "/images/countries/thai.jpg",
+                image: "/images/hotels/thememoryatononhotel.png",
                 description: "ที่พักในย่านเมืองเก่าภูเก็ต เหมาะสำหรับใช้เป็นฐานพักเพื่อเดินเที่ยวโลเคชันในเมืองเก่า"
             }
         ]
@@ -46,7 +46,7 @@ const placeDetailData = {
         series: "แปลรักฉันด้วยใจเธอ",
         location: "แหลมพรหมเทพ, ภูเก็ต",
         name: "แหลมพรหมเทพ",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/lampromtep.jpg",
         description: "จุดชมพระอาทิตย์ตกชื่อดังทางตอนใต้ของภูเก็ต มองเห็นทะเลอันดามันและแนวเกาะ",
         episode: "ปรากฏในช่วงท้ายเรื่อง / ฉากสำคัญของความสัมพันธ์",
         scene: "ใช้เป็นพื้นที่สำหรับฉากที่ตัวละครเปิดเผยความรู้สึกและฉากเชิงอารมณ์ที่เกี่ยวกับความสัมพันธ์ของเต๋ากับโอ้เอ๋ว",
@@ -57,14 +57,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์ รถรับจ้าง หรือรถโดยสารในพื้นที่ราไวย์",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/lampromtep.jpg",
+            "/images/place/place-oldtown.jpg"
         ],
         restaurants: [
             {
                 name: "CY Cafe & Restaurant",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/restaurants/promthepcaperestaurant.jpg",
                 description: "อยู่บริเวณแหลมพรหมเทพ/ราไวย์ เหมาะสำหรับแวะรับประทานอาหารหรือเครื่องดื่มก่อนหรือหลังชมพระอาทิตย์ตก"
             }
         ],
@@ -72,7 +72,7 @@ const placeDetailData = {
             {
                 name: "The Nai Harn, Phuket",
                 type: "ที่พัก",
-                image: "/images/countries/thai.jpg",
+                image: "/images/hotels/thenaiharn.png",
                 description: "ที่พักบริเวณราไวย์ ใกล้โซนแหลมพรหมเทพ เหมาะสำหรับเที่ยวพื้นที่ตอนใต้ของภูเก็ต"
             }
         ]
@@ -84,7 +84,7 @@ const placeDetailData = {
         series: "นิทานพันดาว",
         location: "พื้นที่หมู่บ้าน / บ้านเทียน – หมู่บ้านผาปันดาว, เชียงราย",
         name: "บ้านเทียน – หมู่บ้านผาปันดาว",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/bantean.jpg",
         description: "พื้นที่หมู่บ้านที่ใช้สร้างโลกของผาปันดาว โดยทีมงานสร้างบ้านเทียน บ้านชาวบ้าน และโรงเรียนผาปันดาวขึ้นในพื้นที่เชียงราย",
         episode: "ปรากฏตลอดเรื่อง โดยเฉพาะตั้งแต่ EP.1–2 เป็นต้นไป",
         scene: "เทียนเดินทางขึ้นดอยเพื่อเป็นครูอาสา พบหัวหน้าภูผา ปรับตัวกับชีวิตที่ไม่มีสิ่งอำนวยความสะดวก และเริ่มผูกพันกับชุมชน",
@@ -95,14 +95,14 @@ const placeDetailData = {
         admission: "ขึ้นอยู่กับสถานที่จริง",
         transportation: "เดินทางด้วยรถยนต์จากตัวเมืองเชียงรายไปยังพื้นที่ภูเขา",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/bantean.jpg",
+            "/images/place/phapundaw.jpg"
         ],
         restaurants: [
             {
                 name: "Chivit Thamma Da Coffee House, Bistro & Bar",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/bantean.jpg",
                 description: "ร้านอาหารและคาเฟ่ในเชียงราย เหมาะสำหรับใช้เป็นจุดรับประทานอาหารระหว่างจัดเส้นทางตามรอยซีรีส์"
             }
         ],
@@ -122,7 +122,7 @@ const placeDetailData = {
         series: "นิทานพันดาว",
         location: "ผาปันดาว / จุดชมวิวในพื้นที่เรื่อง, เชียงราย",
         name: "ผาปันดาว จุดชมวิว",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/phapundaw.jpg",
         description: "พื้นที่ภูเขาที่ใช้แทนภูมิประเทศของผาปันดาวและฉากธรรมชาติในเรื่อง",
         episode: "EP.2 และ EP.9 มีเหตุการณ์เกี่ยวกับ Pha Pan Dao Cliff",
         scene: "ตัวละครเดินทางไปยังพื้นที่หน้าผา/จุดชมวิวเพื่อทำภารกิจและเชื่อมโยงกับเรื่องราวของทอร์ฟุนและภูผา",
@@ -133,14 +133,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์ไปยังพื้นที่ดอยผาตั้ง",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/phapundaw.jpg",
+            "/images/place/bantean.jpg"
         ],
         restaurants: [
             {
                 name: "บ้านกาแฟผาตั้ง",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/phapundaw.jpg",
                 description: "ร้านบริเวณดอยผาตั้ง เหมาะสำหรับแวะพักระหว่างตามรอยโลเคชัน"
             }
         ],
@@ -160,7 +160,7 @@ const placeDetailData = {
         series: "บุพเพสันนิวาส",
         location: "พระนครศรีอยุธยา",
         name: "วัดไชยวัฒนาราม",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/watchaiwanaram.jpg",
         description: "โบราณสถานสำคัญริมแม่น้ำเจ้าพระยา สร้างในสมัยพระเจ้าปราสาททอง และเป็นหนึ่งในภาพจำหลักของเรื่อง",
         episode: "EP.1 และมีการกลับมาใช้อ้างอิง/ปรากฏอีกหลายตอน",
         scene: "ช่วงต้นเรื่อง เกศสุรางค์กับเรืองฤทธิ์เดินทางมาศึกษาโบราณคดีที่วัดในยุคปัจจุบัน ก่อนเกิดเหตุเหนือธรรมชาติและเกศสุรางค์พบวิญญาณการะเกด ต่อมาในโลกอดีตวัดปรากฏเป็นโบราณสถานที่ยังรุ่งเรือง",
@@ -171,14 +171,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลล่าสุดก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์ รถรับจ้าง หรือรถโดยสารภายในอยุธยา",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/watchaiwanaram.jpg",
+            "/images/place/watputthaisawan.png"
         ],
         restaurants: [
             {
                 name: "เรือนมยุรา Mayura's House",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/watchaiwanaram.jpg",
                 description: "ร้านบริเวณวัดไชยวัฒนาราม เหมาะสำหรับแวะพักหลังเที่ยวโบราณสถาน"
             }
         ],
@@ -198,7 +198,7 @@ const placeDetailData = {
         series: "บุพเพสันนิวาส",
         location: "พระนครศรีอยุธยา",
         name: "วัดพุทไธศวรรย์",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/watputthaisawan.png",
         description: "วัดโบราณริมแม่น้ำเจ้าพระยา มีพระปรางค์ประธานและสถาปัตยกรรมอยุธยาที่ใช้สร้างบรรยากาศย้อนยุค",
         episode: "ปรากฏเป็นหนึ่งในสถานที่ถ่ายทำของละคร แต่เลข EP ของฉากเฉพาะควรตรวจจากตัวตอนอีกครั้ง",
         scene: "ใช้เป็นฉากที่สะท้อนพื้นที่ศักดิ์สิทธิ์และบรรยากาศของกรุงศรีอยุธยาในเรื่อง",
@@ -209,14 +209,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลล่าสุดก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์ รถรับจ้าง หรือรถโดยสารภายในอยุธยา",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/watputthaisawan.png",
+            "/images/place/watchaiwanaram.jpg"
         ],
         restaurants: [
             {
                 name: "SYAMA AYUDHYA Cafe",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/watputthaisawan.png",
                 description: "คาเฟ่ในเขตเมืองเก่าอยุธยา เหมาะสำหรับแวะพักระหว่างเที่ยวตามรอยสถานที่ประวัติศาสตร์"
             }
         ],
@@ -236,7 +236,7 @@ const placeDetailData = {
         series: "กลิ่นกาสะลอง",
         location: "อำเภอหางดง, เชียงใหม่",
         name: "วัดต้นเกว๋น (วัดอินทราวาส)",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/wattonkwen.jpg",
         description: "วัดเก่าแก่ในอำเภอหางดง มีสถาปัตยกรรมล้านนาโดดเด่นและเป็นหนึ่งในโลเคชันหลักที่กองถ่ายใช้บ่อย",
         episode: "ใช้ในหลายฉาก แต่ยังไม่พบหลักฐานยืนยันเลข EP ของแต่ละฉากอย่างชัดเจน",
         scene: "ฉากที่เกี่ยวข้องกับกาสะลองและตัวละครในช่วงอดีต รวมถึงฉากบริเวณวัดและสถาปัตยกรรมล้านนา",
@@ -247,14 +247,14 @@ const placeDetailData = {
         admission: "ไม่มีข้อมูลค่าเข้าชมในเอกสาร",
         transportation: "เดินทางด้วยรถยนต์หรือรถรับจ้างจากตัวเมืองเชียงใหม่",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/wattonkwen.jpg",
+            "/images/place/watlokmolee.jpg"
         ],
         restaurants: [
             {
                 name: "Terroir Roasters",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/wattonkwen.jpg",
                 description: "ร้านกาแฟในตำบลหนองควาย อำเภอหางดง อยู่ในพื้นที่เดียวกับวัดต้นเกว๋นและประมาณ 400 เมตรจากวัด"
             }
         ],
@@ -274,7 +274,7 @@ const placeDetailData = {
         series: "กลิ่นกาสะลอง",
         location: "เมืองเชียงใหม่",
         name: "วัดโลกโมฬี",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/watlokmolee.jpg",
         description: "วัดเก่าแก่ในเขตเมืองเชียงใหม่ มีวิหาร เจดีย์ และซุ้มประตูแบบล้านนา และเป็นหนึ่งในสถานที่ถ่ายทำของเรื่อง",
         episode: "ยืนยันว่าเป็นสถานที่ถ่ายทำ แต่ยังไม่พบเลข EP ของฉากที่วัดโลกโมฬีโดยตรง",
         scene: "ฉากที่แสดงบรรยากาศเมืองเชียงใหม่และสถาปัตยกรรมล้านนา โดยมีซุ้มประตูและพื้นที่ภายในวัดปรากฏ",
@@ -285,14 +285,14 @@ const placeDetailData = {
         admission: "ไม่มีข้อมูลค่าเข้าชมในเอกสาร",
         transportation: "เดินทางด้วยรถยนต์ รถรับจ้าง หรือรถโดยสารในเมืองเชียงใหม่",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/watlokmolee.jpg",
+            "/images/place/wattonkwen.jpg"
         ],
         restaurants: [
             {
                 name: "Victoria Cafe",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/watlokmolee.jpg",
                 description: "ร้านอาหารและคาเฟ่ในบริเวณศรีภูมิ ใกล้เขตเมืองเก่าเชียงใหม่และวัดโลกโมฬี"
             }
         ],
@@ -312,7 +312,7 @@ const placeDetailData = {
         series: "Hometown Cha-Cha-Cha",
         location: "โพฮัง, เกาหลีใต้",
         name: "ตลาดชองฮา (Cheongha Market / Gongjin Market)",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/cheonghamarket.jpg",
         description: "ตลาดจริงที่ใช้แทนตลาดกงจินในเรื่อง เป็นพื้นที่รวมฉากของ Bora Supermarket, O-yoon Café และ Cheongho Hardware และเป็นศูนย์กลางชีวิตประจำวันของชาวกงจิน",
         episode: "ปรากฏหลายตอนตลอดเรื่อง",
         scene: "ฉากซื้อของ พบปะพูดคุย และฉากชีวิตประจำวันของฮเยจิน หัวหน้าฮง และชาวบ้าน รวมถึงพื้นที่ของร้านต่าง ๆ ในกงจิน",
@@ -323,14 +323,14 @@ const placeDetailData = {
         admission: "ไม่มีข้อมูลค่าเข้าชมในเอกสาร",
         transportation: "เดินทางด้วยรถยนต์หรือระบบขนส่งท้องถิ่นจาก Pohang",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/cheonghamarket.jpg",
+            "/images/place/wolpobeach.jpg"
         ],
         restaurants: [
             {
                 name: "Cafe One's Youth",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/restaurants/cheonghamarketfood.jpg",
                 description: "ร้านกาแฟภายในพื้นที่ตลาดชองฮา เหมาะสำหรับแวะพักระหว่างตามรอย"
             }
         ],
@@ -338,7 +338,7 @@ const placeDetailData = {
             {
                 name: "풀비치카라반 (Full Beach Caravan)",
                 type: "ที่พัก",
-                image: "/images/countries/korea.jpg",
+                image: "/images/hotels/pohanghotel.jpg",
                 description: "ที่พักแนววิลล่าในพื้นที่ Cheongha-myeon เหมาะสำหรับพักใกล้เส้นทางตามรอยกงจิน"
             }
         ]
@@ -350,7 +350,7 @@ const placeDetailData = {
         series: "Hometown Cha-Cha-Cha",
         location: "Wolpo Beach, Pohang",
         name: "Wolpo Beach",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/wolpobeach.jpg",
         description: "ชายหาดจริงที่ใช้เป็นฉากพบกันครั้งแรกของฮเยจินกับหัวหน้าฮง และเป็นพื้นที่ที่หัวหน้าฮงเล่นเซิร์ฟ",
         episode: "ช่วงต้นเรื่อง",
         scene: "ฮเยจินมาถึงชายหาด รองเท้าราคาแพงถูกคลื่นซัดหาย และหัวหน้าฮงช่วยเก็บรองเท้าคืนให้หนึ่งข้าง ขณะเดียวกันเขาเล่นกระดานโต้คลื่นอยู่บริเวณชายหาด",
@@ -361,14 +361,14 @@ const placeDetailData = {
         admission: "ไม่มีข้อมูลค่าเข้าชมในเอกสาร",
         transportation: "เดินทางด้วยรถยนต์หรือขนส่งท้องถิ่นในพื้นที่ Cheongha-myeon",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/wolpobeach.jpg",
+            "/images/place/cheonghamarket.jpg"
         ],
         restaurants: [
             {
                 name: "Solkape",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/restaurants/wolpobeachcafe.png",
                 description: "คาเฟ่ในพื้นที่ Cheongha-myeon เหมาะสำหรับพักระหว่างเที่ยวเส้นทางชายฝั่ง"
             }
         ],
@@ -376,7 +376,7 @@ const placeDetailData = {
             {
                 name: "Wolpo Donghae Pension",
                 type: "ที่พัก",
-                image: "/images/countries/korea.jpg",
+                image: "/images/hotels/wolpobeachstay.jpg",
                 description: "เกสต์เฮาส์/เพนชันในพื้นที่ใกล้ Wolpo Beach"
             }
         ]
@@ -388,7 +388,7 @@ const placeDetailData = {
         series: "Can This Love Be Translated?",
         location: "จงโน, โซล, เกาหลีใต้",
         name: "Gamgodang-gil",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/gamgodang-gil.png",
         description: "ถนนในเขตจงโนที่ใช้เป็นหนึ่งในสถานที่ถ่ายทำของเรื่อง เป็นพื้นที่เมืองเก่าที่มีบรรยากาศเดินเล่นและสถาปัตยกรรมเกาหลี",
         episode: "ปรากฏในเรื่อง แต่ยังไม่พบหลักฐานที่น่าเชื่อถือพอสำหรับเลข EP เฉพาะฉาก",
         scene: "จูโฮจินเดินเคียงข้างและแกะ/คลี่ผ้าพันคอในระหว่างเดินบนถนน",
@@ -399,14 +399,14 @@ const placeDetailData = {
         admission: "ไม่มีค่าเข้าชมสำหรับการเดินชมถนน",
         transportation: "เดินทางด้วยรถไฟใต้ดินหรือรถโดยสารในกรุงโซล",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/gamgodang-gil.png",
+            "/images/place/gwanghwamun.jpg"
         ],
         restaurants: [
             {
                 name: "gabae langsom insadong cafe",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/gamgodang-gil.png",
                 description: "คาเฟ่ในย่านอินซาดง เดินทางต่อจาก Gamgodang-gil ได้สะดวก"
             }
         ],
@@ -426,7 +426,7 @@ const placeDetailData = {
         series: "Can This Love Be Translated?",
         location: "ซกโช, เกาหลีใต้",
         name: "Pinodia Expo Tower",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/pinodiaexpotower.jpg",
         description: "หอคอยชมวิวในเมืองซกโชที่ถูกใช้แทนจุดชมวิวในต่างประเทศของเรื่อง",
         episode: "ปรากฏในเรื่อง แต่ยังไม่พบหลักฐานที่น่าเชื่อถือพอสำหรับเลข EP เฉพาะฉาก",
         scene: "ชินจีซอนเดินทางมาที่จุดชมวิว และจูโฮจินตามมาหลังทราบว่าเธออยู่ที่นั่น",
@@ -437,14 +437,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลล่าสุดก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์หรือรถโดยสารในเมืองซกโช",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/pinodiaexpotower.jpg",
+            "/images/place/gwanghwamun.jpg"
         ],
         restaurants: [
             {
                 name: "속초산도 (Sokcho Sando)",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/pinodiaexpotower.jpg",
                 description: "คาเฟ่ในเมืองซกโช เหมาะสำหรับแวะพักก่อนหรือหลังขึ้นชมจุดถ่ายทำ"
             }
         ],
@@ -464,7 +464,7 @@ const placeDetailData = {
         series: "The King: Eternal Monarch",
         location: "โซล, เกาหลีใต้",
         name: "Gwanghwamun Square",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/gwanghwamun.jpg",
         description: "จัตุรัสสำคัญใจกลางกรุงโซล ใช้เป็นสถานที่ถ่ายทำฉากแรก ๆ ที่ Lee Gon และ Jung Tae-eul พบกัน",
         episode: "EP.1",
         scene: "Lee Gon ปรากฏตัวในกรุงโซลและพบ Jung Tae-eul บริเวณ Gwanghwamun Square",
@@ -475,14 +475,14 @@ const placeDetailData = {
         admission: "ไม่มีค่าเข้าชมสำหรับพื้นที่จัตุรัส",
         transportation: "เดินทางด้วยรถไฟใต้ดินและรถโดยสารในกรุงโซล",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/gwanghwamun.jpg",
+            "/images/place/gamgodang-gil.png"
         ],
         restaurants: [
             {
                 name: "FourB, Gwanghwamun",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/gwanghwamun.jpg",
                 description: "คาเฟ่ใกล้จัตุรัส เหมาะสำหรับพักระหว่างตามรอย"
             }
         ],
@@ -502,7 +502,7 @@ const placeDetailData = {
         series: "The King: Eternal Monarch",
         location: "Busan, South Korea",
         name: "Ahopsan Bamboo Forest",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/ahopsanforest.jpg",
         description: "ป่าไผ่ขนาดใหญ่ใน Busan ที่ใช้เป็นสถานที่ของประตูเชื่อมระหว่างสองโลกในเรื่อง",
         episode: "ปรากฏหลายช่วงของเรื่อง แต่เลข EP ของทุกฉากควรตรวจจากตัวตอนอีกครั้ง",
         scene: "Lee Gon และตัวละครที่เกี่ยวข้องเดินทางผ่านป่าไผ่และบริเวณประตูที่เชื่อมระหว่างจักรวรรดิเกาหลีกับสาธารณรัฐเกาหลี",
@@ -513,14 +513,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลล่าสุดก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์หรือรถโดยสารไปยังพื้นที่ Gijang",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/ahopsanforest.jpg",
+            "/images/place/guryongpojapanesehousestreet.png"
         ],
         restaurants: [
             {
                 name: "Café Darak",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/ahopsanforest.jpg",
                 description: "คาเฟ่ในพื้นที่ Cheolma-myeon ใกล้เส้นทาง Ahopsan Forest"
             }
         ],
@@ -540,7 +540,7 @@ const placeDetailData = {
         series: "When the Camellia Blooms",
         location: "โพฮัง, เกาหลีใต้",
         name: "Guryongpo Japanese House Street",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/guryongpojapanesehousestreet.png",
         description: "ย่านบ้านไม้เก่าใน Guryongpo ที่ใช้แทน Ongsan Food Street และเป็นฉากหลักของชุมชนในเรื่อง",
         episode: "ปรากฏหลายตอน โดยเฉพาะช่วงต้นเรื่อง แต่เลข EP ของแต่ละมุมควรตรวจจากตัวตอนอีกครั้ง",
         scene: "ฉากตลาดและร้านค้าของชุมชนองซาน รวมถึงบริเวณ Camellia และพื้นที่หน้าบ้านของตัวละคร",
@@ -551,14 +551,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลของสถานที่ก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์หรือรถโดยสารจาก Pohang",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/guryongpojapanesehousestreet.png",
+            "/images/place/guryongpomodernhistorymuseum.png"
         ],
         restaurants: [
             {
                 name: "동백을지나서 (Dongbaek-eul Jinasoseo)",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/guryongpojapanesehousestreet.png",
                 description: "คาเฟ่ในย่าน Guryongpo ใกล้พื้นที่ตามรอยเรื่อง"
             }
         ],
@@ -578,7 +578,7 @@ const placeDetailData = {
         series: "When the Camellia Blooms",
         location: "Guryongpo, Pohang, South Korea",
         name: "Guryongpo Modern History Museum",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/guryongpomodernhistorymuseum.png",
         description: "อาคารบ้านไม้เก่าที่ตั้งอยู่บริเวณต้นถนน Guryongpo Japanese House Street และถูกใช้เป็นฉากภายนอกในเรื่อง",
         episode: "EP.3 มีการระบุฉากสำคัญจากแหล่งข้อมูลการตามรอย",
         scene: "บริเวณบ้านไม้สองชั้นด้านบนของถนนปรากฏเป็นฉากภายนอกของ Ongsan และมีข้อมูลการตามรอยระบุว่าฉากสารภาพความรู้สึกของ Yong-sik ต่อ Dong-baek อยู่บริเวณนี้",
@@ -589,14 +589,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลล่าสุดก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์หรือรถโดยสารจาก Pohang",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/guryongpomodernhistorymuseum.png",
+            "/images/place/guryongpojapanesehousestreet.png"
         ],
         restaurants: [
             {
                 name: "안녕구룡포 (Annyeong Guryongpo)",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/guryongpomodernhistorymuseum.png",
                 description: "คาเฟ่ใน Guryongpo ใกล้ย่านประวัติศาสตร์"
             }
         ],
@@ -616,7 +616,7 @@ const placeDetailData = {
         series: "First Love",
         location: "ฮอกไกโด, ญี่ปุ่น",
         name: "Otaru Canal",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/otarucanal.jpg",
         description: "คลองประวัติศาสตร์ใจกลางโอตารุ เป็นหนึ่งในสถานที่ที่ปรากฏในเรื่องและเชื่อมโยงกับความทรงจำของ Yae และ Harumichi",
         episode: "EP.6",
         scene: "Yae นัดพบกับพ่อของเธอที่บริเวณคลองโอตารุในฉากที่เกี่ยวข้องกับการกลับมาพบกันอีกครั้ง",
@@ -627,14 +627,14 @@ const placeDetailData = {
         admission: "ไม่มีข้อมูลค่าเข้าชมในเอกสาร",
         transportation: "เดินทางด้วยรถไฟและรถโดยสารในเมืองโอตารุ",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/otarucanal.jpg",
+            "/images/place/zenibakobeach.jpg"
         ],
         restaurants: [
             {
                 name: "Sonia Coffee",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/restaurants/otarucanalcafe.jpg",
                 description: "คาเฟ่ภายใน Hotel Sonia Otaru อยู่บริเวณคลองโอตารุ"
             }
         ],
@@ -642,7 +642,7 @@ const placeDetailData = {
             {
                 name: "Hotel Sonia Otaru",
                 type: "ที่พัก",
-                image: "/images/countries/japan.jpg",
+                image: "/images/hotels/otarucanalhotel.jpg",
                 description: "โรงแรมที่ตั้งอยู่ด้านหน้าคลองโอตารุ เหมาะสำหรับใช้เป็นฐานพักในย่านคลองและใจกลางเมือง"
             }
         ]
@@ -654,7 +654,7 @@ const placeDetailData = {
         series: "First Love",
         location: "ฮอกไกโด, ญี่ปุ่น",
         name: "Zenibako Beach",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/zenibakobeach.jpg",
         description: "ชายฝั่งริมอ่าวอิชิคาริในเขตโอตารุ เป็นพื้นที่ธรรมชาติที่ปรากฏในเรื่อง โดยมีกังหันลมเป็นองค์ประกอบเด่นของฉาก",
         episode: "EP.2",
         scene: "Yae และ Harumichi ในช่วงวัยเรียนใช้เวลาร่วมกันและออกเดตบริเวณชายฝั่ง",
@@ -665,14 +665,14 @@ const placeDetailData = {
         admission: "ไม่มีข้อมูลค่าเข้าชมในเอกสาร",
         transportation: "เดินทางด้วยรถไฟหรือรถยนต์จาก Otaru",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/zenibakobeach.jpg",
+            "/images/place/otarucanal.jpg"
         ],
         restaurants: [
             {
                 name: "Restaurant Shikisai",
                 type: "ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/zenibakobeach.jpg",
                 description: "ร้านอาหารญี่ปุ่นในย่าน Zenibako เหมาะสำหรับแวะรับประทานอาหารหลังตามรอยชายฝั่ง"
             }
         ],
@@ -692,7 +692,7 @@ const placeDetailData = {
         series: "silent",
         location: "โตเกียว, ญี่ปุ่น",
         name: "Setagaya-Daita Station",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/setagaya-daitastation.jpg",
         description: "สถานีรถไฟสายโอดะคิวที่ปรากฏบ่อยในเรื่องและเป็นหนึ่งในจุดสำคัญของเส้นทางชีวิตประจำวันของ Tsumugi",
         episode: "EP.1 และปรากฏในหลายตอน",
         scene: "Tsumugi เห็น Sou ที่สถานีหลังจากไม่ได้พบกันมานาน และติดตามเขาออกจากสถานี",
@@ -703,14 +703,14 @@ const placeDetailData = {
         admission: "ไม่มีค่าเข้าชมพื้นที่สถานีโดยทั่วไป",
         transportation: "เดินทางด้วยรถไฟสาย Odakyu",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/setagaya-daitastation.jpg",
+            "/images/place/formerashikagawesthighschool.png"
         ],
         restaurants: [
             {
                 name: "latte",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/setagaya-daitastation.jpg",
                 description: "คาเฟ่/ร้านอาหารสไตล์เรโทรโมเดิร์น อยู่ห่างจากสถานีประมาณ 2 นาที"
             }
         ],
@@ -730,7 +730,7 @@ const placeDetailData = {
         series: "silent",
         location: "Tochigi, Japan",
         name: "Former Ashikaga West High School",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/formerashikagawesthighschool.png",
         description: "อาคารโรงเรียนเก่าที่ใช้แทนโรงเรียน Takasaki Minami High School ในเรื่อง",
         episode: "ปรากฏในหลายตอนของช่วงย้อนอดีต แต่ไม่ควรระบุเลข EP เฉพาะฉากโดยไม่มีการตรวจจากตัวตอนอีกครั้ง",
         scene: "ฉากย้อนอดีตสมัยมัธยมของตัวละครหลัก ทั้งฉากในอาคารเรียนและบริเวณโรงเรียน",
@@ -741,14 +741,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์หรือรถไฟไปยัง Ashikaga",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/formerashikagawesthighschool.png",
+            "/images/place/setagaya-daitastation.jpg"
         ],
         restaurants: [
             {
                 name: "Cafe Aragin",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/formerashikagawesthighschool.png",
                 description: "คาเฟ่ในเมือง Ashikaga เหมาะสำหรับแวะพักระหว่างตามรอยโลเคชัน"
             }
         ],
@@ -768,7 +768,7 @@ const placeDetailData = {
         series: "Saigo Kara Nibanme no Koi",
         location: "คามาคุระ, คานางาวะ, ญี่ปุ่น",
         name: "Gokurakuji Station",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/gokurakujistation.jpg",
         description: "สถานี Enoden ขนาดเล็กในคามาคุระ ซึ่งเป็นหนึ่งในโลเคชันที่ปรากฏซ้ำและเป็นภาพจำสำคัญของเรื่อง",
         episode: "EP.1 และปรากฏในหลายตอน",
         scene: "Chiaki และตัวละครอื่น ๆ เดินทางเข้าออกสถานีและพูดคุยกันบริเวณชานชาลาและถนนข้างสถานี",
@@ -779,14 +779,14 @@ const placeDetailData = {
         admission: "ไม่มีค่าเข้าชมพื้นที่สถานีโดยทั่วไป",
         transportation: "เดินทางด้วยรถไฟ Enoden",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/gokurakujistation.jpg",
+            "/images/place/yuigahamabeach.png"
         ],
         restaurants: [
             {
                 name: "SOMETHING'S COFFEEHOUSE",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/gokurakujistation.jpg",
                 description: "ร้านกาแฟในย่าน Gokurakuji อยู่ใกล้สถานี"
             }
         ],
@@ -806,7 +806,7 @@ const placeDetailData = {
         series: "Saigo Kara Nibanme no Koi",
         location: "คามาคุระ, คานางาวะ, ญี่ปุ่น",
         name: "Yuigahama Beach",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/yuigahamabeach.png",
         description: "ชายหาดสำคัญของคามาคุระที่ใช้เป็นฉากริมทะเลหลายครั้งในเรื่อง",
         episode: "EP.4 และ EP.5",
         scene: "ตัวละครพูดคุยกันริมทะเลและใช้พื้นที่ชายหาดเป็นฉากสำหรับการสื่อสารความรู้สึกและความสัมพันธ์",
@@ -817,14 +817,14 @@ const placeDetailData = {
         admission: "ไม่มีข้อมูลค่าเข้าชมในเอกสาร",
         transportation: "เดินทางด้วยรถไฟ Enoden หรือรถโดยสารในคามาคุระ",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/yuigahamabeach.png",
+            "/images/place/gokurakujistation.jpg"
         ],
         restaurants: [
             {
                 name: "Bread, Espresso &",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/restaurants/yuigahamabeachcafe.jpg",
                 description: "คาเฟ่และร้านเบเกอรี่ในย่าน Yuigahama เหมาะสำหรับแวะอาหารเช้าหรือเครื่องดื่ม"
             }
         ],
@@ -832,7 +832,7 @@ const placeDetailData = {
             {
                 name: "KKR Kamakura Wakamiya",
                 type: "ที่พัก",
-                image: "/images/countries/japan.jpg",
+                image: "/images/hotels/kamakurabeachstay.jpg",
                 description: "โรงแรมในย่าน Yuigahama อยู่ใกล้ชายหาด"
             }
         ]
@@ -844,7 +844,7 @@ const placeDetailData = {
         series: "Brush Up Life",
         location: "Hadano, Kanagawa, Japan",
         name: "Tsurumaki Bridge",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/tsurumakibridge.png",
         description: "สะพานข้ามแม่น้ำ Murokawa ในเมือง Hadano เป็นหนึ่งในโลเคชันที่ปรากฏในเส้นเรื่องชีวิตของ Asami",
         episode: "EP.4",
         scene: "Asami, Natsuki และ Miho นั่งบนรถเข็น/台車 ขณะที่ Mita-sensei เป็นผู้เข็นข้ามสะพาน",
@@ -855,14 +855,14 @@ const placeDetailData = {
         admission: "ไม่มีค่าเข้าชม",
         transportation: "เดินทางด้วยรถยนต์หรือรถไฟไปยัง Hadano",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/tsurumakibridge.png",
+            "/images/place/nishihirabatakepark.jpg"
         ],
         restaurants: [
             {
                 name: "Coffee & Cake Andolian",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/tsurumakibridge.png",
                 description: "คาเฟ่ในย่าน Tsurumaki-Kita ของ Hadano เหมาะสำหรับแวะพัก"
             }
         ],
@@ -882,7 +882,7 @@ const placeDetailData = {
         series: "Brush Up Life",
         location: "Matsuda, Kanagawa, Japan",
         name: "Nishihirabatake Park / Matsuda Herb Garden",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/nishihirabatakepark.jpg",
         description: "สวนบนเนิน Matsudayama ในเมือง Matsuda มองเห็นภูเขาไฟฟูจิและอ่าว Sagami และใช้เป็นฉากสำคัญของเรื่อง",
         episode: "EP.4",
         scene: "Tanabe อยู่ในรถกับ Asami และสารภาพความรู้สึกกับเธอบริเวณจุดจอดรถบนพื้นที่สูงของสวน",
@@ -893,14 +893,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลล่าสุดก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์หรือรถไฟไปยัง Matsuda",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/nishihirabatakepark.jpg",
+            "/images/place/tsurumakibridge.png"
         ],
         restaurants: [
             {
                 name: "Uchisora",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/nishihirabatakepark.jpg",
                 description: "คาเฟ่ในย่าน Matsuda-soryo อยู่ในพื้นที่เดียวกับสวน"
             }
         ],
@@ -920,7 +920,7 @@ const placeDetailData = {
         series: "Hidden Love",
         location: "เซียะเหมิน, ฝูเจี้ยน, จีน",
         name: "Shapowei (沙坡尾)",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/shapowei.jpg",
         description: "ย่านท่าเรือเก่าและชุมชนริมทะเลที่ใช้เป็นพื้นที่บ้านพักของ Duan Jiaxu ในเรื่อง และปรากฏในฉากชีวิตประจำวันหลายช่วง",
         episode: "ปรากฏหลายตอน แต่ไม่ระบุเลข EP ของทุกฉากอย่างเฉพาะเจาะจง",
         scene: "ฉากที่เกี่ยวข้องกับบ้านและพื้นที่รอบที่พักของ Duan Jiaxu รวมถึงฉากเดินเล่นในย่านริมทะเล",
@@ -931,14 +931,14 @@ const placeDetailData = {
         admission: "ไม่มีข้อมูลค่าเข้าชมสำหรับย่าน",
         transportation: "เดินทางด้วยรถยนต์ รถโดยสาร หรือขนส่งสาธารณะใน Xiamen",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/shapowei.jpg",
+            "/images/place/xiangshanmovie.jpg"
         ],
         restaurants: [
             {
                 name: "32HOW Café",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/restaurants/shapoweicafe.jpg",
                 description: "คาเฟ่ในย่าน Shapowei บนถนน Daxue เหมาะสำหรับแวะพักระหว่างเดินตามรอย"
             }
         ],
@@ -946,7 +946,7 @@ const placeDetailData = {
             {
                 name: "Conrad Xiamen",
                 type: "ที่พัก",
-                image: "/images/countries/chainas.jpg",
+                image: "/images/hotels/xiamenshapoweistay.png",
                 description: "โรงแรมในเขต Siming ใกล้ Shapowei และ Xiamen University"
             }
         ]
@@ -958,7 +958,7 @@ const placeDetailData = {
         series: "Hidden Love",
         location: "Jimei, Xiamen, China",
         name: "Chengyi Science and Technology Exploration Center",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/chengyiscienceandtechnologyexplorationcenter.jpg",
         description: "ศูนย์วิทยาศาสตร์และเทคโนโลยีในเขต Jimei ซึ่งถูกใช้เป็นพิพิธภัณฑ์/สถานที่ท่องเที่ยวในเรื่อง",
         episode: "EP.5",
         scene: "Sang Zhi และ Duan Jiaxu มาเที่ยวพิพิธภัณฑ์วิทยาศาสตร์และเทคโนโลยีด้วยกัน",
@@ -969,14 +969,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลล่าสุดก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์หรือระบบขนส่งสาธารณะใน Xiamen",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/chengyiscienceandtechnologyexplorationcenter.jpg",
+            "/images/place/shapowei.jpg"
         ],
         restaurants: [
             {
                 name: "nowwa Nuowa Coffee",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/chengyiscienceandtechnologyexplorationcenter.jpg",
                 description: "ร้านกาแฟในย่าน Jimei/Software Park ซึ่งเป็นพื้นที่เดียวกับเส้นทางไปศูนย์วิทยาศาสตร์"
             }
         ],
@@ -996,7 +996,7 @@ const placeDetailData = {
         series: "Meet Yourself",
         location: "ต้าหลี่, ยูนนาน, จีน",
         name: "Fengyangyi Village (凤阳邑村)",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/fengyangyivillage.jpg",
         description: "หมู่บ้านไป๋บนเส้นทาง Ancient Tea-Horse Road ที่ใช้เป็นต้นแบบและสถานที่ถ่ายทำของ Yunmiao Village รวมถึง Youfeng Courtyard",
         episode: "ปรากฏตั้งแต่ช่วงต้นเรื่องและต่อเนื่องหลายตอน แต่ไม่ได้ให้เลข EP รายฉากครบทุกฉาก",
         scene: "Xu Hongdou ย้ายเข้ามาอยู่ที่ Youfeng Courtyard และเริ่มใช้ชีวิตร่วมกับคนในหมู่บ้าน",
@@ -1007,14 +1007,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์จาก Dali",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/fengyangyivillage.jpg",
+            "/images/place/erhailake.jpg"
         ],
         restaurants: [
             {
                 name: "Qiu Garden Coffee (楸园咖啡)",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/fengyangyivillage.jpg",
                 description: "คาเฟ่ภายใน Fengyangyi Village ซึ่งข้อมูลการตามรอยระบุว่าใช้เป็นโลเคชันของ Gesanghua Restaurant"
             }
         ],
@@ -1034,7 +1034,7 @@ const placeDetailData = {
         series: "Meet Yourself",
         location: "ต้าหลี่, ยูนนาน, จีน",
         name: "Erhai Lake (洱海)",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/erhailake.jpg",
         description: "ทะเลสาบขนาดใหญ่ทางตะวันออกของต้าหลี่ เป็นหนึ่งในภูมิทัศน์สำคัญของเรื่องและปรากฏในฉากเดินทาง ขี่จักรยาน และสนทนาระหว่างตัวละคร",
         episode: "EP.3",
         scene: "Xu Hongdou ออกไปตามหา Xie Xiaochun's Café และ Xie Zhiyao พาเธอเดินทางผ่านบริเวณ Erhai Lake",
@@ -1045,14 +1045,14 @@ const placeDetailData = {
         admission: "ขึ้นอยู่กับจุดท่องเที่ยวที่เข้าชม",
         transportation: "เดินทางด้วยรถยนต์ รถจักรยาน หรือขนส่งท้องถิ่นรอบต้าหลี่",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/erhailake.jpg",
+            "/images/place/fengyangyivillage.jpg"
         ],
         restaurants: [
             {
                 name: "Baxi Coffee",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/restaurants/erhailakecafe.jpg",
                 description: "ร้านกาแฟในเมืองต้าหลี่ เหมาะสำหรับใช้เป็นจุดพักก่อนหรือหลังเที่ยวเส้นทางรอบ Erhai"
             }
         ],
@@ -1060,7 +1060,7 @@ const placeDetailData = {
             {
                 name: "Dali Village",
                 type: "ที่พัก",
-                image: "/images/countries/chainas.jpg",
+                image: "/images/hotels/erhailakestay.jpg",
                 description: "ที่พักบริเวณฝั่งตะวันตกของ Erhai ในเมืองต้าหลี่ เหมาะสำหรับเป็นฐานพักเที่ยวทะเลสาบและหมู่บ้านโดยรอบ"
             }
         ]
@@ -1072,7 +1072,7 @@ const placeDetailData = {
         series: "Eternal Love",
         location: "Puzhehei Scenic Area, Yunnan, China",
         name: "Caihuaqing / Qingqiu",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/qingqiu,puzheheiscenicarea.png",
         description: "พื้นที่ธรรมชาติใน Puzhehei ที่ใช้เป็นภาพภายนอกของ Qingqiu และ Ten Miles of Peach Blossom โดยฉากบ้านและสวนบางส่วนเป็นฉากที่สร้างขึ้นเพื่อการถ่ายทำ",
         episode: "ปรากฏหลายช่วงของเรื่อง แต่ไม่ได้ระบุเลข EP รายฉากครบถ้วน",
         scene: "ฉากภายนอกของ Qingqiu และป่า Peach Blossom รวมถึงภูมิทัศน์ที่ใช้ประกอบเรื่องราวของ Bai Qian และ Ye Hua",
@@ -1083,14 +1083,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลล่าสุดก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์หรือรถท้องถิ่นใน Puzhehei",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/qingqiu,puzheheiscenicarea.png",
+            "/images/place/erhailake.jpg"
         ],
         restaurants: [
             {
                 name: "云·夕湖落日湖景咖啡餐吧",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/qingqiu,puzheheiscenicarea.png",
                 description: "คาเฟ่/ร้านอาหารริมทะเลสาบใน Puzhehei Village เหมาะสำหรับชมบรรยากาศก่อนหรือหลังตามรอย"
             }
         ],
@@ -1110,7 +1110,7 @@ const placeDetailData = {
         series: "Eternal Love",
         location: "หนิงโป, เจ้อเจียง, จีน",
         name: "Xiangshan Movie & Television Town",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/xiangshanmovie.jpg",
         description: "เมืองภาพยนตร์และโทรทัศน์ขนาดใหญ่ที่ใช้สร้างฉากส่วนใหญ่ของโลกแฟนตาซีใน Eternal Love",
         episode: "ปรากฏตลอดเรื่องในหลายฉาก เนื่องจากเป็นฐานถ่ายทำหลัก แต่ไม่ระบุเลข EP รายฉากเฉพาะที่ยังไม่มีหลักฐานตรง",
         scene: "ฉากในโลกแฟนตาซี เช่น พระราชวัง เมือง และพื้นที่ที่สร้างขึ้นสำหรับ Qingqiu, Heavenly Palace และโลกอื่น ๆ",
@@ -1121,14 +1121,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลล่าสุดก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์หรือรถโดยสารไปยัง Xiangshan",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/xiangshanmovie.jpg",
+            "/images/place/qingqiu,puzheheiscenicarea.png"
         ],
         restaurants: [
             {
                 name: "Xiangshan Restaurant",
                 type: "ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/xiangshanmovie.jpg",
                 description: "ร้านอาหารใกล้พื้นที่ Xiangshan Film and Television Town"
             }
         ],
@@ -1148,7 +1148,7 @@ const placeDetailData = {
         series: "A Dream of Splendor",
         location: "Wuxi, Jiangsu, China",
         name: "Songji Water Mill / 水浒城 (Water Margin City)",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/songjiwatermill.jpg",
         description: "宋记水磨坊 ภายใน Water Margin City เป็นสถานที่ถ่ายทำของ 赵氏茶铺 ซึ่งในเรื่องตั้งอยู่ที่钱塘 และเป็นฉากสำคัญของช่วงต้นเรื่อง",
         episode: "EP.1",
         scene: "เปิดเรื่องด้วย 赵盼儿 ใน 茶铺 ริมน้ำและพื้นที่บ้านเมืองแบบ Jiangnan ก่อนเรื่องราวการเดินทางเข้าสู่เส้นเรื่องหลัก",
@@ -1159,14 +1159,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลล่าสุดก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์หรือรถโดยสารใน Wuxi",
         gallery: [
-            "/images/place/place-01.jpg",
-            "/images/place/place-02.jpg"
+            "/images/place/songjiwatermill.jpg",
+            "/images/place/wanslangbridge.jpg"
         ],
         restaurants: [
             {
                 name: "XiErDun Yi Lin Hotel Café",
                 type: "คาเฟ่ / ร้านอาหาร",
-                image: "/images/place/place-01.jpg",
+                image: "/images/place/songjiwatermill.jpg",
                 description: "คาเฟ่ในพื้นที่รีสอร์ต Shanshui City ซึ่งอยู่ในโซนเดียวกับกลุ่มสถานที่ท่องเที่ยว Water Margin/Three Kingdoms Scenic"
             }
         ],
@@ -1186,7 +1186,7 @@ const placeDetailData = {
         series: "A Dream of Splendor",
         location: "Yuantouzhu, Wuxi, China",
         name: "Wanslang Bridge / 万浪桥",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/wanslangbridge.jpg",
         description: "สะพานและพื้นที่ริมทะเลสาบ Taihu ภายใน Yuantouzhu Scenic Area ใช้เป็นฉากริมทะเลสาบของเรื่อง",
         episode: "ปรากฏในฉากของเรื่อง แต่ยังไม่ระบุเลข EP อย่างชัดเจน",
         scene: "赵盼儿 และ 孙三娘 เดินเล่นและพูดคุยกันริมทะเลสาบ",
@@ -1197,14 +1197,14 @@ const placeDetailData = {
         admission: "ควรตรวจสอบข้อมูลล่าสุดก่อนเดินทาง",
         transportation: "เดินทางด้วยรถยนต์หรือรถโดยสารไปยัง Yuantouzhu",
         gallery: [
-            "/images/place/place-02.jpg",
-            "/images/place/place-01.jpg"
+            "/images/place/wanslangbridge.jpg",
+            "/images/place/songjiwatermill.jpg"
         ],
         restaurants: [
             {
                 name: "Guangfu Temple Vegetarian Noodle Restaurant",
                 type: "ร้านอาหาร",
-                image: "/images/place/place-02.jpg",
+                image: "/images/place/wanslangbridge.jpg",
                 description: "ร้านอาหารมังสวิรัติภายในพื้นที่ Yuantouzhu เหมาะสำหรับแวะรับประทานอาหารระหว่างเที่ยวสวนและทะเลสาบ"
             }
         ],

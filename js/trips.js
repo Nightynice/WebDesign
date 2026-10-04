@@ -9,7 +9,7 @@ const tripsData = [
         season: "ฤดูร้อน",
         series: "แปลรักฉันด้วยใจเธอ",
         type: "ทะเล / เมืองเก่า",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/place-oldtown.jpg",
         description: "เที่ยวเมืองเก่าภูเก็ตและแหลมพรหมเทพ ตามรอยบรรยากาศสำคัญจากซีรีย์",
         detail: "trip_detail.html?trip=phuket-series-trail"
     },
@@ -24,7 +24,7 @@ const tripsData = [
         season: "ฤดูหนาว",
         series: "นิทานพันดาว",
         type: "ธรรมชาติ / ภูเขา",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/bantean.jpg",
         description: "เดินทางขึ้นดอย สัมผัสบรรยากาศธรรมชาติและชุมชนบนพื้นที่สูง",
         detail: "trip_detail.html?trip=phapan-dao-trail"
     },
@@ -39,7 +39,7 @@ const tripsData = [
         season: "ฤดูหนาว",
         series: "บุพเพสันนิวาส",
         type: "ประวัติศาสตร์ / เมืองเก่า",
-        image: "/images/place/place-01.jpg",
+        image: "/images/place/watchaiwanaram.jpg",
         description: "เที่ยวโบราณสถานสำคัญในอยุธยา พร้อมสัมผัสบรรยากาศเมืองเก่าจากซีรีย์",
         detail: "trip_detail.html?trip=ayutthaya-trail"
     },
@@ -54,7 +54,7 @@ const tripsData = [
         season: "ฤดูฝน",
         series: "กลิ่นกาสะลอง",
         type: "วัฒนธรรม / เมืองเก่า",
-        image: "/images/place/place-02.jpg",
+        image: "/images/place/wattonkwen.jpg",
         description: "เที่ยววัดและสถานที่สำคัญท่ามกลางบรรยากาศล้านนา",
         detail: "trip_detail.html?trip=chiang-mai-trail"
     },
@@ -69,7 +69,7 @@ const tripsData = [
         season: "ฤดูร้อน",
         series: "Hometown Cha-Cha-Cha",
         type: "ทะเล / เมืองชายฝั่ง",
-        image: "/images/countries/korea.jpg",
+        image: "/images/place/wolpobeach.jpg",
         description: "เดินเที่ยวตลาดและชายหาดในพื้นที่โพฮัง พร้อมสัมผัสบรรยากาศหมู่บ้านริมทะเล",
         detail: "trip_detail.html?trip=gongjin-trail"
     },
@@ -84,7 +84,7 @@ const tripsData = [
         season: "ฤดูหนาว",
         series: "First Love",
         type: "เมืองเก่า / หิมะ",
-        image: "/images/countries/japan.jpg",
+        image: "/images/place/otarucanal.jpg",
         description: "เดินเล่นริมคลองและชายหาดในโอตารุ ท่ามกลางบรรยากาศแบบในซีรีย์",
         detail: "trip_detail.html?trip=otaru-first-love"
     },
@@ -99,7 +99,7 @@ const tripsData = [
         season: "ฤดูร้อน",
         series: "Saigo Kara Nibanme no Koi",
         type: "ทะเล / เมืองชายฝั่ง",
-        image: "/images/countries/japan.jpg",
+        image: "/images/place/yuigahamabeach.png",
         description: "เที่ยวสถานที่ริมทะเลและสัมผัสบรรยากาศเมืองคามาคุระแบบสบาย ๆ",
         detail: "trip_detail.html?trip=kamakura-trail"
     },
@@ -114,7 +114,7 @@ const tripsData = [
         season: "ฤดูใบไม้ผลิ",
         series: "Meet Yourself",
         type: "ธรรมชาติ / Slow Life",
-        image: "/images/countries/chainas.jpg",
+        image: "/images/place/erhailake.jpg",
         description: "พักผ่อนท่ามกลางธรรมชาติของต้าหลี่และทะเลสาบเอ๋อไห่ในบรรยากาศ slow life",
         detail: "trip_detail.html?trip=dali-hidden-life"
     }
