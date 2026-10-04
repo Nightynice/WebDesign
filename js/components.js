@@ -31,6 +31,70 @@ function initNavbar() {
             }
         });
     });
+
+    initCountryMegaMenu();
+
+    window.addEventListener("scroll", () => {
+        const header = document.querySelector(".site-header");
+
+        if (!header) return;
+
+        if (window.scrollY > 20) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+}
+
+function initCountryMegaMenu() {
+
+    const countryItems =
+        document.querySelectorAll(".country-item");
+
+    const countryTitle =
+        document.getElementById("countryTitle");
+
+    const countryLinks =
+        document.querySelectorAll("#countryLinks a");
+
+    if (!countryItems.length || !countryTitle) return;
+
+    countryItems.forEach(item => {
+
+        item.addEventListener("mouseenter", () => {
+
+            const country =
+                item.dataset.country;
+
+            countryTitle.textContent = country;
+
+            countryItems.forEach(countryItem => {
+                countryItem.classList.remove("active");
+            });
+
+            item.classList.add("active");
+
+            countryLinks.forEach(link => {
+
+                const url =
+                    new URL(
+                        link.href,
+                        window.location.origin
+                    );
+
+                url.searchParams.set(
+                    "country",
+                    country
+                );
+
+                link.href =
+                    url.pathname + url.search;
+            });
+
+        });
+
+    });
 }
 
 loadComponent("navbar", "/components/navbar.html");

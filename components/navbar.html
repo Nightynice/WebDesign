@@ -19,91 +19,85 @@
                 <a href="/pages/series.html">ซีรีย์ทั้งหมด</a>
             </li>
 
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle">ประเทศ</a>
-
-                <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                        <a href="#" class="dropdown-toggle">ไทย</a>
-                        <ul class="submenu">
-                            <li><a href="/pages/series.html?category=places&country=ไทย">สถานที่เที่ยว</a></li>
-                            <li><a href="/pages/series.html?category=series&country=ไทย">ซีรีย์</a></li>
-                            <li><a href="/pages/series.html?category=restaurants&country=ไทย">คาเฟ่/ร้านอาหาร</a></li>
-                            <li><a href="/pages/series.html?category=hotels&country=ไทย">ที่พัก</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown-submenu">
-                        <a href="#" class="dropdown-toggle">เกาหลีใต้</a>
-                        <ul class="submenu">
-                            <li><a href="/pages/series.html?category=places&country=เกาหลีใต้">สถานที่เที่ยว</a></li>
-                            <li><a href="/pages/series.html?category=series&country=เกาหลีใต้">ซีรีย์</a></li>
-                            <li><a href="/pages/series.html?category=restaurants&country=เกาหลีใต้">คาเฟ่/ร้านอาหาร</a>
+            <li class="dropdown country-dropdown">
+                <a href="#" class="dropdown-toggle">ประเทศ <i class="bi bi-chevron-down"></i></a>
+                <div class="country-mega-menu">
+                    <ul class="country-list">
+                        <li class="country-item active" data-country="ไทย">
+                            <a href="#">ไทย</a>
+                            <span>›</span>
+                        </li>
+                        <li class="country-item" data-country="เกาหลีใต้">
+                            <a href="#">เกาหลีใต้</a>
+                            <span>›</span>
+                        </li>
+                        <li class="country-item" data-country="ญี่ปุ่น">
+                            <a href="#">ญี่ปุ่น</a>
+                            <span>›</span>
+                        </li>
+                        <li class="country-item" data-country="จีน">
+                            <a href="#">จีน</a>
+                            <span>›</span>
+                        </li>
+                    </ul>
+                    <div class="country-content">
+                        <h4 id="countryTitle">ไทย</h4>
+                        <ul id="countryLinks">
+                            <li>
+                                <a href="/pages/series.html?category=series&country=ไทย">
+                                    ซีรีย์
+                                </a>
                             </li>
-                            <li><a href="/pages/series.html?category=hotels&country=เกาหลีใต้">ที่พัก</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown-submenu">
-                        <a href="#" class="dropdown-toggle">ญี่ปุ่น</a>
-                        <ul class="submenu">
-                            <li><a href="/pages/series.html?category=places&country=ญี่ปุ่น">สถานที่เที่ยว</a></li>
-                            <li><a href="/pages/series.html?category=series&country=ญี่ปุ่น">ซีรีย์</a></li>
-                            <li><a href="/pages/series.html?category=restaurants&country=ญี่ปุ่น">คาเฟ่/ร้านอาหาร</a>
+                            <li>
+                                <a href="/pages/series.html?category=places&country=ไทย">
+                                    สถานที่เที่ยว
+                                </a>
                             </li>
-                            <li><a href="/pages/series.html?category=hotels&country=ญี่ปุ่น">ที่พัก</a></li>
+                            <li>
+                                <a href="/pages/series.html?category=restaurants&country=ไทย">
+                                    คาเฟ่/ร้านอาหาร
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/series.html?category=hotels&country=ไทย">
+                                    ที่พัก
+                                </a>
+                            </li>
                         </ul>
-                    </li>
-
-                    <li class="dropdown-submenu">
-                        <a href="#" class="dropdown-toggle">จีน</a>
-                        <ul class="submenu">
-                            <li><a href="/pages/series.html?category=places&country=จีน">สถานที่เที่ยว</a></li>
-                            <li><a href="/pages/series.html?category=series&country=จีน">ซีรีย์</a></li>
-                            <li><a href="/pages/series.html?category=restaurants&country=จีน">คาเฟ่/ร้านอาหาร</a></li>
-                            <li><a href="/pages/series.html?category=hotels&country=จีน">ที่พัก</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </li>
-
             <li>
                 <a href="/pages/trips.html">ตัวอย่างทริป</a>
             </li>
-
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle">แนะนำตามฤดูกาล</a>
-
+                <a href="#" class="dropdown-toggle">แนะนำตามฤดูกาล<i class="bi bi-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="/pages/rainy.html">ฤดูฝน</a></li>
                     <li><a href="/pages/winter.html">ฤดูหนาว</a></li>
                     <li><a href="/pages/summer.html">ฤดูร้อน</a></li>
                 </ul>
             </li>
-
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle">เพิ่มเติม</a>
-
+                <a href="#" class="dropdown-toggle">เพิ่มเติม<i class="bi bi-chevron-down"></i></a>
                 <ul class="dropdown-menu">
+                    <li>
+                        <a href="/pages/map.html">แผนที่</a>
+                    </li>
                     <li>
                         <a href="/pages/festivals.html">ปฏิทินเทศกาล</a>
                     </li>
-
                     <li>
                         <a href="/pages/articles.html">บทความ</a>
                     </li>
-
                     <li>
                         <a href="/pages/gallery.html">แกลลอรี่</a>
                     </li>
-
                     <li>
                         <a href="/pages/about.html">เกี่ยวกับ</a>
                     </li>
-
                     <li class="dropdown-submenu">
-                        <a href="#" class="dropdown-toggle">ติดต่อ</a>
-
+                        <a href="#" class="dropdown-toggle">ติดต่อ<i class="bi bi-chevron-right"></i></a>
                         <ul class="submenu">
                             <li><a href="/pages/faq.html">คำถามที่พบบ่อย</a></li>
                             <li><a href="/pages/report.html">แจ้งปัญหา/ข้อเสนอแนะ</a></li>
@@ -112,14 +106,12 @@
                     </li>
                 </ul>
             </li>
-
             <li class="nav-favorite">
                 <a href="/pages/favorites.html" aria-label="รายการโปรด" title="รายการโปรด">
                     <span class="favorite-icon">♡</span>
                     <span class="favorite-text">รายการโปรด</span>
                 </a>
             </li>
-
             <li class="nav-planner">
                 <a href="/pages/planner.html" class="planner-button">
                     วางแผนทริป

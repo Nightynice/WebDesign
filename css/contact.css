@@ -1,0 +1,419 @@
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
+
+.contact-page {
+    background: var(--color-page);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.contact-hero {
+    padding: 145px 0 65px;
+    text-align: center;
+    background: var(--color-white);
+}
+
+.contact-hero .section-label {
+    display: block;
+    margin-bottom: 14px;
+
+    color: var(--color-primary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.contact-hero h1 {
+    margin: 0;
+
+    color: var(--color-heading);
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+.contact-hero p {
+    width: min(620px, 90%);
+    margin: 20px auto 0;
+
+    color: var(--color-secondary);
+    font-size: 0.98rem;
+}
+
+
+/* =========================================================
+   CONTACT SECTION
+   ========================================================= */
+
+.contact-section {
+    padding: 70px 0;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.contact-intro {
+    max-width: 480px;
+}
+
+.contact-intro .section-label {
+    display: block;
+    margin-bottom: 12px;
+
+    color: var(--color-primary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.contact-intro h2 {
+    margin: 0 0 22px;
+
+    color: var(--color-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+}
+
+.contact-intro p {
+    margin: 0 0 15px;
+
+    color: var(--color-secondary);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CONTACT NOTE
+   ========================================================= */
+
+.contact-note {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 28px;
+    padding: 15px 18px;
+
+    background: var(--color-surface-blue);
+
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+}
+
+.contact-note i {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: var(--color-white);
+    color: var(--color-primary);
+
+    font-size: 1.05rem;
+}
+
+.contact-note span {
+    color: var(--color-secondary);
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   CONTACT PEOPLE
+   ========================================================= */
+
+.contact-people {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 26px;
+
+    background: var(--color-white);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+
+    box-shadow: var(--shadow-card);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.contact-person:hover {
+    transform: translateY(-3px);
+
+    border-color: var(--color-border-accent);
+
+    box-shadow:
+        0 10px 28px rgba(40, 130, 170, 0.12);
+}
+
+
+/* =========================================================
+   PERSON ICON
+   ========================================================= */
+
+.contact-person-icon {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 62px;
+    height: 62px;
+
+    border-radius: 18px;
+
+    background: var(--color-surface-blue);
+    color: var(--color-primary);
+
+    font-size: 1.5rem;
+}
+
+
+/* =========================================================
+   PERSON INFO
+   ========================================================= */
+
+.contact-person-info {
+    min-width: 0;
+}
+
+.contact-role {
+    display: block;
+    margin-bottom: 4px;
+
+    color: var(--color-primary);
+
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.contact-person-info h3 {
+    margin: 0 0 8px;
+
+    color: var(--color-heading);
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact-person-info a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: var(--color-secondary);
+
+    font-size: 0.82rem;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.contact-person-info a:hover {
+    color: var(--color-primary-hover);
+}
+
+.contact-person-info a i {
+    color: var(--color-primary);
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.contact-cta {
+    padding: 65px 0;
+
+    background: var(--color-surface-blue);
+
+    border-top: 1px solid var(--color-border);
+}
+
+.contact-cta-content {
+    text-align: center;
+}
+
+.contact-cta .section-label {
+    display: block;
+    margin-bottom: 10px;
+
+    color: var(--color-primary);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.contact-cta h2 {
+    margin: 0;
+
+    color: var(--color-heading);
+
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+.contact-cta p {
+    margin: 12px auto 24px;
+
+    color: var(--color-secondary);
+
+    font-size: 0.88rem;
+}
+
+.contact-cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-height: 44px;
+    padding: 9px 20px;
+
+    border-radius: var(--radius-button);
+
+    background: var(--color-primary);
+    color: var(--color-white);
+
+    font-size: 0.82rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.contact-cta-button:hover {
+    background: var(--color-primary-hover);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 16px rgba(8, 120, 169, 0.18);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .contact-hero {
+        padding: 120px 0 50px;
+    }
+
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-intro {
+        max-width: 650px;
+    }
+
+    .contact-cta {
+        padding: 50px 0;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    .contact-hero {
+        padding: 105px 0 40px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2.1rem;
+    }
+
+    .contact-hero p {
+        font-size: 0.86rem;
+    }
+
+    .contact-section {
+        padding: 40px 0;
+    }
+
+    .contact-intro h2 {
+        font-size: 2rem;
+    }
+
+    .contact-person {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .contact-person-icon {
+        width: 52px;
+        height: 52px;
+
+        border-radius: 15px;
+
+        font-size: 1.25rem;
+    }
+
+    .contact-person-info h3 {
+        font-size: 0.9rem;
+    }
+
+    .contact-person-info a {
+        font-size: 0.75rem;
+        word-break: break-word;
+    }
+
+    .contact-note {
+        align-items: flex-start;
+    }
+
+    .contact-cta {
+        padding: 45px 0;
+    }
+}

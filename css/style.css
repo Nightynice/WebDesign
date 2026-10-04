@@ -98,7 +98,7 @@ button {
    ========================================================= */
 
 .site-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -107,16 +107,25 @@ button {
   background: transparent;
 }
 
+.site-header.scrolled {
+  background: transparent;
+}
+
+.site-header.scrolled .nav {
+  background: rgba(24, 100, 133, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-nav);
+}
+
 .nav {
   width: min(1180px, 88%);
   min-height: 60px;
   margin: 0 auto;
   padding: 0 18px 0 20px;
-
   display: flex;
   align-items: center;
   gap: 20px;
-
   background: rgba(24, 100, 133, 0.35);
   box-shadow: var(--shadow-nav);
   border-radius: var(--radius-nav);
@@ -178,7 +187,7 @@ button {
   list-style: none;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   position: relative;
   flex-shrink: 0;
 }
@@ -194,40 +203,68 @@ button {
     background 0.25s ease;
 }
 
-.nav-menu > li > a {
+.nav-menu>li>a {
   position: relative;
   padding: 9px 2px;
 }
 
-.nav-menu > li > a::after {
+.nav-menu>li>a::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 2px;
-  width: 0;
-  height: 2px;
-  background-color: var(--color-white);
-  border-radius: 2px;
-  transition: width 0.25s ease;
+  left: auto;
+  right: 0;
+  bottom: auto;
+
+  width: auto;
+  height: auto;
+
+  background: none;
+  border: 0;
 }
 
-.nav-menu > li.dropdown > a::after {
+.nav-menu>li:not(.dropdown)>a::after {
   display: none;
 }
 
-.nav-menu > li > a:hover {
+.nav-menu>li.dropdown>a::after {
+  display: none;
+}
+
+.dropdown-toggle {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+}
+
+.dropdown-toggle::after {
+  content: none !important;
+  display: none !important;
+}
+
+.dropdown-toggle .bi {
+  font-size: 0.7rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.dropdown:hover>.dropdown-toggle .bi-chevron-down {
+  transform: rotate(180deg);
+}
+
+.nav-menu>li>a:hover {
   color: var(--color-primary);
 }
 
-.nav-menu > li > a:hover::after {
+.nav-menu>li>a:hover::after {
   width: 100%;
 }
 
-.nav-menu > li > a.active {
+.nav-menu>li>a.active {
   color: var(--color-white);
 }
 
-.nav-menu > li > a.active::after {
+.nav-menu>li>a.active::after {
   width: 100%;
 }
 
@@ -240,7 +277,7 @@ button {
   margin-left: 2px;
 }
 
-.nav-favorite > a {
+.nav-favorite>a {
   display: inline-flex !important;
   align-items: center;
   gap: 6px;
@@ -263,11 +300,11 @@ button {
     transform 0.25s ease;
 }
 
-.nav-favorite > a:hover {
+.nav-favorite>a:hover {
   color: var(--color-white);
 }
 
-.nav-favorite > a:hover .favorite-icon {
+.nav-favorite>a:hover .favorite-icon {
   color: #ffedf2;
   transform: scale(1.1);
 }
@@ -285,21 +322,15 @@ button {
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
-
   min-height: 40px;
   padding: 8px 17px !important;
-
   color: var(--color-white) !important;
   background: var(--color-primary);
-
   border: 1px solid var(--color-primary);
   border-radius: var(--radius-button);
-
   font-size: 0.82rem !important;
   font-weight: 600 !important;
-
   white-space: nowrap;
-
   transition:
     background 0.25s ease,
     border-color 0.25s ease,
@@ -351,7 +382,7 @@ button {
     visibility 0.2s ease;
 }
 
-.dropdown:hover > .dropdown-menu {
+.dropdown:hover>.dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -377,34 +408,41 @@ button {
   position: relative;
 }
 
+.dropdown-submenu>.dropdown-toggle {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dropdown-submenu>.dropdown-toggle .bi-chevron-right {
+  font-size: 0.7rem;
+  flex-shrink: 0;
+}
+
 .submenu {
   position: absolute;
-  top: -7px;
-  left: 100%;
-
+  top: 0;
+  left: calc(100% + 8px);
   display: block;
   min-width: 205px;
-  margin-left: 4px;
+  margin: 0;
   padding: 7px 0;
-
   background: rgba(255, 255, 255, 0.97);
   border: 1px solid var(--color-border-light);
   border-radius: var(--radius-dropdown);
   box-shadow: var(--shadow-dropdown);
-
   list-style: none;
-
   opacity: 0;
   visibility: hidden;
   transform: translateX(6px);
-
   transition:
     opacity 0.2s ease,
     transform 0.2s ease,
     visibility 0.2s ease;
 }
 
-.dropdown-submenu:hover > .submenu {
+.dropdown-submenu:hover>.submenu {
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
@@ -421,110 +459,250 @@ button {
   background: var(--color-surface-hover);
 }
 
+/* =========================================================
+   COUNTRY MEGA MENU
+   ========================================================= */
+
+.country-dropdown {
+  position: relative;
+}
+
+.country-mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(6px);
+  display: grid;
+  grid-template-columns: 205px 205px;
+  gap: 10px;
+  width: 420px;
+  padding: 7px;
+  background: transparent;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.country-dropdown:hover .country-mega-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0) translateY(0);
+}
+
+
+/* LEFT — ประเทศ */
+
+.country-list {
+  margin: 0;
+  padding: 7px 0;
+
+  list-style: none;
+
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-dropdown);
+  box-shadow: var(--shadow-dropdown);
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 7px;
+  padding: 8px 10px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.country-item a {
+  flex: 1;
+
+  padding: 6px 7px;
+
+  color: var(--color-secondary);
+  font-size: 0.86rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.country-item span {
+  color: var(--color-primary);
+  font-size: 20px;
+  line-height: 1;
+}
+
+.country-item:hover,
+.country-item.active {
+  background: var(--color-surface-hover);
+}
+
+.country-item:hover a,
+.country-item.active a {
+  color: var(--color-primary);
+}
+
+
+/* RIGHT — รายการของประเทศ */
+
+.country-content {
+  min-height: 100%;
+  padding: 10px 10px;
+  background: rgba(255, 255, 255, 0.97);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-dropdown);
+  box-shadow: var(--shadow-dropdown);
+}
+
+.country-content h4 {
+  margin: 2px 10px 12px;
+  padding-bottom: 10px;
+  color: var(--color-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.country-content ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.country-content li {
+  margin: 0;
+}
+
+.country-content a {
+  display: block;
+
+  padding: 8px 10px;
+
+  color: var(--color-secondary);
+  font-size: 0.86rem;
+  font-weight: 400;
+  text-decoration: none;
+
+  border-radius: 8px;
+}
+
+.country-content a:hover {
+  color: var(--color-primary);
+  background: var(--color-surface-hover);
+}
+
 .footer {
-    margin-top: 80px;
-    background: #166B91;
-    color: #fff;
+  margin-top: 80px;
+  background: #166B91;
+  color: #fff;
 }
 
 .footer-main {
-    padding: 55px 0 45px;
+  padding: 55px 0 45px;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: 1.8fr 1fr 1fr 1fr;
-    gap: 50px;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1fr;
+  gap: 50px;
 }
 
 .footer-brand {
-    max-width: 340px;
+  max-width: 340px;
 }
 
 .footer-logo {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 18px;
 }
 
 .footer-logo img {
-    width: 125px;
-    height: auto;
+  width: 125px;
+  height: auto;
 }
 
 .footer-brand p {
-    margin: 0;
-    color: rgba(255, 255, 255, 0.82);
-    font-size: 0.9rem;
-    line-height: 1.8;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
 
 .footer-column h4 {
-    margin: 4px 0 18px;
-    color: #fff;
-    font-size: 0.95rem;
-    font-weight: 600;
+  margin: 4px 0 18px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .footer-column {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
 }
 
 .footer-column a {
-    width: fit-content;
-    color: rgba(255, 255, 255, 0.78);
-    font-size: 0.86rem;
-    text-decoration: none;
-    transition: color 0.2s ease, transform 0.2s ease;
+  width: fit-content;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.86rem;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer-column a:hover {
-    color: #fff;
-    transform: translateX(3px);
+  color: #fff;
+  transform: translateX(3px);
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .footer-bottom-inner {
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .footer-bottom p {
-    margin: 0;
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 0.75rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.75rem;
 }
 
 /* Tablet */
 @media (max-width: 768px) {
-    .footer-main {
-        padding: 45px 0 35px;
-    }
+  .footer-main {
+    padding: 45px 0 35px;
+  }
 
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 35px 30px;
-    }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 30px;
+  }
 
-    .footer-brand {
-        grid-column: 1 / -1;
-        max-width: 500px;
-    }
+  .footer-brand {
+    grid-column: 1 / -1;
+    max-width: 500px;
+  }
 
-    .footer-bottom-inner {
-        flex-direction: column;
-        justify-content: center;
-        padding: 15px 0;
-        text-align: center;
-    }
+  .footer-bottom-inner {
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0;
+    text-align: center;
+  }
 }
 
 /* =========================================================
@@ -581,18 +759,18 @@ button {
   }
 
   .nav-menu a,
-  .nav-menu > li > a {
+  .nav-menu>li>a {
     padding: 10px 12px;
     color: var(--color-secondary);
     font-size: 0.85rem;
   }
 
-  .nav-menu > li > a::after {
+  .nav-menu>li>a::after {
     display: none;
   }
 
-  .nav-menu > li > a:hover,
-  .nav-menu > li > a.active {
+  .nav-menu>li>a:hover,
+  .nav-menu>li>a.active {
     color: var(--color-primary);
     background: var(--color-surface-hover);
     border-radius: 8px;
@@ -620,8 +798,8 @@ button {
     visibility: visible;
   }
 
-  .dropdown.open > .dropdown-menu,
-  .dropdown-submenu.open > .submenu {
+  .dropdown.open>.dropdown-menu,
+  .dropdown-submenu.open>.submenu {
     display: block;
   }
 
@@ -637,7 +815,7 @@ button {
     margin-left: 0;
   }
 
-  .nav-favorite > a {
+  .nav-favorite>a {
     justify-content: flex-start;
     gap: 8px;
   }
@@ -666,25 +844,25 @@ button {
   /* Footer */
 
   .footer-main {
-        padding: 45px 0 35px;
-    }
+    padding: 45px 0 35px;
+  }
 
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 35px 30px;
-    }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 30px;
+  }
 
-    .footer-brand {
-        grid-column: 1 / -1;
-        max-width: 500px;
-    }
+  .footer-brand {
+    grid-column: 1 / -1;
+    max-width: 500px;
+  }
 
-    .footer-bottom-inner {
-        flex-direction: column;
-        justify-content: center;
-        padding: 15px 0;
-        text-align: center;
-    }
+  .footer-bottom-inner {
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 0;
+    text-align: center;
+  }
 }
 
 
@@ -724,7 +902,7 @@ button {
   }
 
   .nav-menu a,
-  .nav-menu > li > a {
+  .nav-menu>li>a {
     padding: 9px 10px;
     font-size: 0.8rem;
   }
@@ -745,41 +923,41 @@ button {
   }
 
   .footer {
-        margin-top: 55px;
-    }
+    margin-top: 55px;
+  }
 
-    .footer-main {
-        padding: 40px 0 30px;
-    }
+  .footer-main {
+    padding: 40px 0 30px;
+  }
 
-    .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px 20px;
-    }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+  }
 
-    .footer-brand {
-        grid-column: 1 / -1;
-    }
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
 
-    .footer-logo img {
-        width: 110px;
-    }
+  .footer-logo img {
+    width: 110px;
+  }
 
-    .footer-brand p {
-        font-size: 0.82rem;
-    }
+  .footer-brand p {
+    font-size: 0.82rem;
+  }
 
-    .footer-column h4 {
-        font-size: 0.88rem;
-    }
+  .footer-column h4 {
+    font-size: 0.88rem;
+  }
 
-    .footer-column a {
-        font-size: 0.78rem;
-    }
+  .footer-column a {
+    font-size: 0.78rem;
+  }
 
-    .footer-bottom p {
-        font-size: 0.7rem;
-    }
+  .footer-bottom p {
+    font-size: 0.7rem;
+  }
 }
 
 /* =========================================================
@@ -792,17 +970,285 @@ button {
     transform: none;
   }
 
-  .dropdown:hover > .dropdown-menu,
-  .dropdown-submenu:hover > .submenu {
+  .dropdown:hover>.dropdown-menu,
+  .dropdown-submenu:hover>.submenu {
     opacity: 0;
     visibility: hidden;
     transform: translateY(6px);
   }
 
-  .dropdown.open > .dropdown-menu,
-  .dropdown-submenu.open > .submenu {
+  .dropdown.open>.dropdown-menu,
+  .dropdown-submenu.open>.submenu {
     opacity: 1;
     visibility: visible;
     transform: none;
   }
+}
+
+/* =========================================================
+   SEASON NAVBAR THEME
+   ใช้เฉพาะหน้า Season เท่านั้น
+   ========================================================= */
+
+.season-page {
+  /* ค่าเริ่มต้น */
+  --season-nav-bg: rgba(24, 100, 133, 0.35);
+  --season-nav-bg-scrolled: rgba(24, 100, 133, 0.48);
+
+  --season-nav-text: #ffffff;
+  --season-nav-hover: #dff6ff;
+
+  --season-nav-button: #168fc4;
+  --season-nav-button-hover: #0878a9;
+
+  --season-nav-mobile-bg: rgba(255, 255, 255, 0.97);
+  --season-nav-mobile-text: #28506a;
+
+  --season-nav-border: rgba(255, 255, 255, 0.20);
+}
+
+
+/* =========================================================
+   RAINY — น้ำเงิน / ฟ้าหม่น
+   ========================================================= */
+
+.season-page.rainy-page {
+  --season-nav-bg: rgba(31, 91, 111, 0.48);
+  --season-nav-bg-scrolled: rgba(31, 91, 111, 0.68);
+
+  --season-nav-text: #f4fbfd;
+  --season-nav-hover: #bfe2ec;
+
+  --season-nav-button: #238aaa;
+  --season-nav-button-hover: #176f8c;
+
+  --season-nav-mobile-bg: rgba(240, 249, 252, 0.98);
+  --season-nav-mobile-text: #285b6c;
+
+  --season-nav-border: rgba(191, 226, 236, 0.28);
+}
+
+
+/* =========================================================
+   SUMMER — ส้ม / อบอุ่น
+   ========================================================= */
+
+.season-page.summer-page {
+  --season-nav-bg: rgba(135, 67, 27, 0.42);
+  --season-nav-bg-scrolled: rgba(135, 67, 27, 0.68);
+
+  --season-nav-text: #fffaf4;
+  --season-nav-hover: #ffd2a8;
+
+  --season-nav-button: #e98232;
+  --season-nav-button-hover: #d66c1f;
+
+  --season-nav-mobile-bg: rgba(255, 249, 243, 0.98);
+  --season-nav-mobile-text: #70411f;
+
+  --season-nav-border: rgba(255, 224, 194, 0.30);
+}
+
+
+/* =========================================================
+   WINTER — ฟ้าขาว / เย็น
+   ========================================================= */
+
+.season-page.winter-page {
+  --season-nav-bg: rgba(74, 119, 143, 0.32);
+  --season-nav-bg-scrolled: rgba(74, 119, 143, 0.58);
+
+  --season-nav-text: #ffffff;
+  --season-nav-hover: #d9f0fa;
+
+  --season-nav-button: #6faeca;
+  --season-nav-button-hover: #548fae;
+
+  --season-nav-mobile-bg: rgba(248, 252, 255, 0.98);
+  --season-nav-mobile-text: #416579;
+
+  --season-nav-border: rgba(255, 255, 255, 0.40);
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.season-page .nav {
+  background: var(--season-nav-bg);
+  /* border: 1px solid var(--season-nav-border); */
+}
+
+
+/* =========================================================
+   NAVBAR — SCROLLED
+   ========================================================= */
+
+.season-page .site-header.scrolled .nav {
+  background: var(--season-nav-bg-scrolled);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  box-shadow: var(--shadow-nav);
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.season-page .logo {
+  color: var(--season-nav-text);
+}
+
+
+/* =========================================================
+   MAIN NAV TEXT
+   ========================================================= */
+
+.season-page .nav-menu a {
+  color: var(--season-nav-text);
+}
+
+.season-page .nav-menu > li > a:hover {
+  color: var(--season-nav-hover);
+}
+
+.season-page .nav-menu > li > a.active {
+  color: var(--season-nav-text);
+}
+
+
+/* =========================================================
+   FAVORITE
+   ========================================================= */
+
+.season-page .favorite-icon {
+  color: var(--season-nav-text);
+}
+
+.season-page .nav-favorite > a:hover {
+  color: var(--season-nav-hover);
+}
+
+.season-page .nav-favorite > a:hover .favorite-icon {
+  color: var(--season-nav-hover);
+}
+
+
+/* =========================================================
+   TRIP PLANNER BUTTON
+   ========================================================= */
+
+.season-page .planner-button {
+  background: var(--season-nav-button);
+  border-color: var(--season-nav-button);
+}
+
+.season-page .planner-button:hover {
+  background: var(--season-nav-button-hover);
+  border-color: var(--season-nav-button-hover);
+}
+
+
+/* =========================================================
+   DROPDOWN
+   ========================================================= */
+
+.season-page .dropdown-menu,
+.season-page .submenu {
+  border-color: var(--season-nav-border);
+}
+
+.season-page .dropdown-menu a,
+.season-page .submenu a {
+  color: var(--season-nav-text);
+}
+
+
+/* Desktop dropdown เป็นพื้นขาว
+   ดังนั้นต้องใช้สีตัวหนังสือแบบเข้ม */
+
+@media (min-width: 769px) {
+
+  .season-page .dropdown-menu a,
+  .season-page .submenu a {
+    color: var(--color-secondary);
+  }
+
+  .season-page .dropdown-menu a:hover,
+  .season-page .submenu a:hover {
+    color: var(--season-nav-button);
+    background: var(--color-surface-hover);
+  }
+
+}
+
+
+/* =========================================================
+   COUNTRY MEGA MENU
+   ========================================================= */
+
+.season-page .country-list,
+.season-page .country-content {
+  border-color: var(--season-nav-border);
+}
+
+
+/* =========================================================
+   HAMBURGER
+   ========================================================= */
+
+.season-page .menu-toggle {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.season-page .menu-toggle span {
+  background-color: var(--season-nav-text);
+}
+
+
+/* =========================================================
+   MOBILE NAV
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .season-page .nav-menu {
+    background: var(--season-nav-mobile-bg);
+    border-color: var(--season-nav-border);
+  }
+
+  .season-page .nav-menu a,
+  .season-page .nav-menu > li > a {
+    color: var(--season-nav-mobile-text);
+  }
+
+  .season-page .nav-menu > li > a:hover,
+  .season-page .nav-menu > li > a.active {
+    color: var(--season-nav-button);
+    background: var(--color-surface-hover);
+  }
+
+  .season-page .dropdown-menu a,
+  .season-page .submenu a {
+    color: var(--season-nav-mobile-text);
+  }
+
+  .season-page .dropdown-menu a:hover,
+  .season-page .submenu a:hover {
+    color: var(--season-nav-button);
+    background: var(--color-surface-hover);
+  }
+
+  .season-page .nav-planner {
+    border-color: var(--season-nav-border);
+  }
+
+  .season-page .favorite-icon {
+    color: var(--season-nav-button);
+  }
+
 }

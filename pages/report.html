@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แจ้งปัญหา / ข้อเสนอแนะ | Series Trail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/report.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <main class="report-page">
+        <section class="report-hero">
+            <div class="container">
+                <span class="section-label">SEND FEEDBACK</span>
+                <h1>ทุกความคิดเห็น<br>พาเราไปได้ไกลขึ้น</h1>
+                <p>
+                    แจ้งปัญหา หรือแบ่งปันข้อเสนอแนะ
+                    เพื่อช่วยให้ Series Trail ดียิ่งขึ้น
+                </p>
+            </div>
+        </section>
+        <section class="report-section">
+            <div class="container">
+                <div class="report-card">
+                    <div class="report-tabs">
+                        <button type="button" class="report-tab active" data-type="problem">
+                            <i class="bi bi-tools"></i>
+                            แจ้งปัญหา
+                        </button>
+                        <button type="button" class="report-tab" data-type="suggestion">
+                            <i class="bi bi-lightbulb"></i>
+                            ข้อเสนอแนะ
+                        </button>
+                    </div>
+                    <form id="reportForm">
+                        <div class="report-form-content active" id="problemForm">
+                            <div class="form-group">
+                                <label for="problemPage">
+                                    หน้าที่พบปัญหา
+                                </label>
+                                <input type="text" id="problemPage" name="problemPage"
+                                    placeholder="เช่น หน้า Series Detail">
+                            </div>
+                            <div class="form-group">
+                                <label for="problemType">
+                                    ประเภทปัญหา
+                                </label>
+                                <select id="problemType" name="problemType">
+                                    <option value="">
+                                        เลือกประเภทปัญหา
+                                    </option>
+                                    <option value="display">
+                                        การแสดงผล
+                                    </option>
+                                    <option value="link">
+                                        ลิงก์หรือปุ่มใช้งานไม่ได้
+                                    </option>
+                                    <option value="content">
+                                        ข้อมูลไม่ถูกต้อง
+                                    </option>
+                                    <option value="other">
+                                        อื่น ๆ
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="problemDetail">
+                                    รายละเอียดปัญหา
+                                </label>
+                                <textarea id="problemDetail" name="problemDetail"
+                                    placeholder="อธิบายปัญหาที่พบเพิ่มเติม..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="report-form-content" id="suggestionForm">
+                            <div class="form-group">
+                                <label for="suggestionSubject">
+                                    เรื่องที่ต้องการเสนอแนะ
+                                </label>
+                                <input type="text" id="suggestionSubject" name="suggestionSubject"
+                                    placeholder="เช่น อยากให้เพิ่มข้อมูลสถานที่จากซีรีย์">
+                            </div>
+                            <div class="form-group">
+                                <label for="suggestionDetail">
+                                    รายละเอียดข้อเสนอแนะ
+                                </label>
+                                <textarea id="suggestionDetail" name="suggestionDetail"
+                                    placeholder="บอกเราเพิ่มเติมเกี่ยวกับข้อเสนอแนะของคุณ..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                อีเมลสำหรับติดต่อกลับ
+                                <span>(ไม่บังคับ)</span>
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="you@email.com">
+                        </div>
+                        <button type="submit" class="report-submit">
+                            ส่งความคิดเห็น
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/js/components.js"></script>
+    <script src="/js/report.js"></script>
+
+</body>
+
+</html>
