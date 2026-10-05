@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>แผนที่ | SeriesTrail</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav" aria-label="เมนูหลัก">
+    <a href="Map.html" class="logo"><img src="assets/logo.png" alt="Series Trail"></a>
+    <ul class="nav-menu">
+      <li><a href="Map.html">แผนที่</a></li>
+      <li><a href="Trip_plan.html">วางแผนทริป</a></li>
+      <li><a href="Festival_calendar.html">ปฏิทินเทศกาล</a></li>
+      <li><a href="Articles.html">บทความ</a></li>
+      <li><a href="Gallery.html">แกลเลอรี</a></li>
+      <li><a href="Favorites.html">รายการโปรด</a></li>
+    </ul>
+  </nav>
+</header>
+<header class="hero-line">
+  <div class="hero">
+    <span class="eyebrow">Explore the locations</span>
+    <h1>แผนที่ตามรอยซีรีส์</h1>
+    <p>รวมจุดหมาย คาเฟ่ และสถานที่จากเรื่องราวในไทย เกาหลีใต้ ญี่ปุ่น และจีน</p>
+  </div>
+</header>
+<main class="wrap">
+<div class="map-layout">
+  <aside class="map-side">
+    <span class="kicker">Explore by country</span>
+    <h2>จุดหมายตามรอย</h2>
+    <p class="map-intro">เลือกประเทศเพื่อดูสถานที่และบรรยากาศจากซีรีส์ที่คุณชอบ</p>
+    <div class="map-countries">
+      <a href="#place-thai">ไทย <span>4 จุด</span></a>
+      <a href="#place-korea">เกาหลีใต้ <span>4 จุด</span></a>
+      <a href="#place-japan">ญี่ปุ่น <span>5 จุด</span></a>
+      <a href="#place-china">จีน <span>3 จุด</span></a>
+    </div>
+    <div class="map-place-list">
+      <article id="place-thai"><span class="map-dot thai"></span><div><small>ไทย · ภูเก็ต</small><h3>ย่านเมืองเก่าภูเก็ต</h3><p>ตึกชิโน-โปรตุกีสหลากสี และหอนาฬิกาเมืองเก่า</p></div></article>
+      <article id="place-korea"><span class="map-dot korea"></span><div><small>เกาหลีใต้ · โซล</small><h3>ย่านซองซู</h3><p>โกดังเก่าที่กลายเป็นคาเฟ่และแกลเลอรี</p></div></article>
+      <article id="place-japan"><span class="map-dot japan"></span><div><small>ญี่ปุ่น · ฮอกไกโด</small><h3>คลองโอตารุ</h3><p>โกดังอิฐแดงและตะเกียงริมคลองยามค่ำ</p></div></article>
+      <article id="place-china"><span class="map-dot china"></span><div><small>จีน · ฉงชิ่ง</small><h3>อาคารขั้นบันไดริมแม่น้ำ</h3><p>แสงไฟเมืองภูเขาริมแม่น้ำในยามค่ำคืน</p></div></article>
+    </div>
+  </aside>
+  <section class="map-visual" aria-label="แผนที่จุดหมายในเอเชีย">
+    <div class="map-visual-head"><b>SeriesTrail map</b><span>เส้นทางตัวอย่างในเอเชีย</span></div>
+    <svg viewBox="0 0 1000 650" role="img" aria-label="แผนที่เอเชียพร้อมตำแหน่งประเทศไทย เกาหลีใต้ ญี่ปุ่น และจีน">
+      <defs><pattern id="waves" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M0 14 Q7 9 14 14 T28 14" fill="none" stroke="#d4ecf5" stroke-width="1"/></pattern></defs>
+      <rect width="1000" height="650" rx="24" fill="#eaf8ff"/><rect width="1000" height="650" rx="24" fill="url(#waves)"/>
+      <path d="M80 140 C170 75 305 80 390 115 C450 140 510 150 550 195 C575 230 545 270 515 300 C475 335 450 375 390 380 C330 395 290 370 250 350 C190 320 135 280 100 230Z" fill="#fff" stroke="#bfe2f1" stroke-width="3"/>
+      <path d="M355 360 C390 375 410 410 395 445 C385 475 405 510 385 560 C370 590 350 610 332 620 C325 580 305 550 315 510 C325 470 300 430 320 395Z" fill="#fff" stroke="#bfe2f1" stroke-width="3"/>
+      <path d="M625 220 C660 210 700 228 704 255 C709 280 695 300 675 318 C655 300 640 277 635 255Z" fill="#fff" stroke="#bfe2f1" stroke-width="3"/>
+      <path d="M830 140 C860 128 900 145 895 177 C885 198 858 205 838 190 C825 175 820 155 830 140Z M815 220 C840 230 846 258 836 288 C825 320 805 350 778 370 C755 380 735 370 744 352 C765 330 788 300 795 270 C801 248 804 230 815 220Z" fill="#fff" stroke="#bfe2f1" stroke-width="3"/>
+      <path d="M340 530 C450 440 520 350 664 264 S790 205 852 170" fill="none" stroke="#168fc4" stroke-width="4" stroke-dasharray="8 12" opacity=".6"/>
+      <g class="map-point" transform="translate(340 530)"><circle r="23"/><text y="6">ไทย</text></g>
+      <g class="map-point" transform="translate(668 270)"><circle r="23"/><text y="6">เกาหลี</text></g>
+      <g class="map-point" transform="translate(850 175)"><circle r="23"/><text y="6">ญี่ปุ่น</text></g>
+      <g class="map-point" transform="translate(340 225)"><circle r="23"/><text y="6">จีน</text></g>
+    </svg>
+    <div class="map-legend"><span><i class="thai"></i>ไทย</span><span><i class="korea"></i>เกาหลีใต้</span><span><i class="japan"></i>ญี่ปุ่น</span><span><i class="china"></i>จีน</span></div>
+  </section>
+</div>
+</main>
+<footer class="footer">
+  <div class="footer-main">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="Map.html" class="footer-logo"><img src="assets/logo.png" alt="Series Trail"></a>
+        <p>เที่ยวตามรอยซีรีย์ ค้นพบสถานที่จริง<br>และออกเดินทางไปสัมผัสเรื่องราวที่คุณชื่นชอบ</p>
+      </div>
+      <div class="footer-column">
+        <h4>สำรวจ</h4>
+        <a href="Map.html">แผนที่</a>
+        <a href="Trip_plan.html">วางแผนทริปของคุณ</a>
+        <a href="Festival_calendar.html">ปฏิทินเทศกาล</a>
+      </div>
+      <div class="footer-column">
+        <h4>แรงบันดาลใจ</h4>
+        <a href="Articles.html">หน้ารวมบทความ</a>
+        <a href="Gallery.html">แกลเลอรี</a>
+        <a href="Favorites.html">รายการโปรด</a>
+      </div>
+      <div class="footer-column">
+        <h4>SeriesTrail</h4>
+        <a href="Map.html">สำรวจจุดหมาย</a>
+        <a href="Trip_plan.html">ตัวอย่างแผนเดินทาง</a>
+        <a href="Articles.html">อ่านเรื่องราวการเดินทาง</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p>&copy; 2026 Series Trail. All rights reserved.</p>
+      <p>เที่ยวตามรอยซีรีย์ แล้วออกไปพบเรื่องราวด้วยตัวเอง</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
