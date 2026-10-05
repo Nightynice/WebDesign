@@ -1,80 +1,40 @@
-/* =========================================================
-   SERIES TRAIL — SEASON PAGES
-   Shared layout + Theme variables
-   Rainy / Summer / Winter
-========================================================= */
-
-/* =========================================================
-   01. BASE THEME SYSTEM
-========================================================= */
-
 .season-page {
-    /* -------------------------
-       BRAND / ACCENT
-    ------------------------- */
+
     --season-primary: #3d8da8;
     --season-primary-hover: #2b7189;
 
-    /* -------------------------
-       TEXT
-    ------------------------- */
     --season-heading: #234f63;
     --season-text: #365f70;
     --season-secondary: #607d89;
     --season-muted: #78909a;
 
-    /* -------------------------
-       SURFACES
-    ------------------------- */
     --season-page: #edf6f7;
     --season-surface: #e4f0f2;
     --season-surface-alt: #f8fbfb;
     --season-card: #ffffff;
 
-    /* -------------------------
-       BORDER
-    ------------------------- */
     --season-border: #d2e3e7;
     --season-border-accent: #9fc3cd;
 
-    /* -------------------------
-       HERO
-    ------------------------- */
     --season-hero: #dceef2;
     --season-label: #dff3f7;
 
-    /* -------------------------
-       DECORATION
-    ------------------------- */
     --season-decoration: rgba(255, 255, 255, 0.35);
 
-    /* -------------------------
-       SHADOW
-    ------------------------- */
     --season-shadow: rgba(35, 79, 99, 0.08);
 
     background: var(--season-page);
     color: var(--season-text);
 }
 
-
-/* Make images behave consistently */
 .season-page main img {
     display: block;
     width: 100%;
 }
 
-
-/* =========================================================
-   02. COMMON
-========================================================= */
-
 .section-padding {
     padding: 50px 0;
 }
-
-
-/* Section heading */
 
 .season-page .section-heading {
     max-width: 680px;
@@ -99,9 +59,6 @@
     line-height: 1.65;
 }
 
-
-/* Section labels */
-
 .season-label,
 .section-label {
     display: inline-block;
@@ -112,11 +69,6 @@
     font-weight: 700;
     letter-spacing: 0.16em;
 }
-
-
-/* =========================================================
-   03. HERO
-========================================================= */
 
 .season-hero {
     position: relative;
@@ -167,17 +119,11 @@
     padding-right: 20px;
 }
 
-
-/* Hero label */
-
 .season-hero .season-label {
     margin-bottom: 10px;
 
     color: var(--season-label);
 }
-
-
-/* Hero heading */
 
 .season-hero h1 {
     margin: 14px 0 18px;
@@ -191,9 +137,6 @@
     white-space: nowrap;
 }
 
-
-/* Hero paragraph */
-
 .season-hero-text > p {
     max-width: 500px;
 
@@ -204,9 +147,6 @@
     font-size: 0.95rem;
     line-height: 1.75;
 }
-
-
-/* Hero button */
 
 .season-hero-button {
     display: inline-flex;
@@ -243,11 +183,6 @@
     transform: translateY(-2px);
 }
 
-
-/* =========================================================
-   04. RAIN DECORATION
-========================================================= */
-
 .rain-decoration {
     position: absolute;
     z-index: 3;
@@ -281,11 +216,6 @@
     left: 48%;
 }
 
-
-/* =========================================================
-   05. SUMMER DECORATION
-========================================================= */
-
 .sun-decoration {
     position: absolute;
     z-index: 3;
@@ -310,11 +240,6 @@
     top: 260px;
     right: 7%;
 }
-
-
-/* =========================================================
-   06. WINTER DECORATION
-========================================================= */
 
 .snow-decoration {
     position: absolute;
@@ -350,11 +275,6 @@
     top: 340px;
     right: 20%;
 }
-
-
-/* =========================================================
-   07. INTRO
-========================================================= */
 
 .season-intro {
     background: var(--season-surface-alt);
@@ -401,9 +321,6 @@
 
     line-height: 1.7;
 }
-
-
-/* Intro facts */
 
 .season-facts {
     display: grid;
@@ -462,11 +379,6 @@
     line-height: 1.4;
 }
 
-
-/* =========================================================
-   08. DESTINATIONS
-========================================================= */
-
 .season-destinations {
     background: var(--season-surface);
 }
@@ -487,9 +399,6 @@
     margin-bottom: 0;
 }
 
-
-/* Reverse layout */
-
 .season-place-reverse .season-place-image {
     order: 2;
 }
@@ -497,9 +406,6 @@
 .season-place-reverse .season-place-content {
     order: 1;
 }
-
-
-/* Destination image */
 
 .season-place-image {
     height: 310px;
@@ -521,9 +427,6 @@
 .season-place:hover .season-place-image img {
     transform: scale(1.03);
 }
-
-
-/* Destination content */
 
 .place-number {
     display: block;
@@ -576,9 +479,6 @@
     line-height: 1.7;
 }
 
-
-/* Destination link */
-
 .season-place-link {
     display: inline-flex;
 
@@ -601,11 +501,6 @@
 .season-place-link:hover {
     color: var(--season-primary);
 }
-
-
-/* =========================================================
-   09. ACTIVITIES
-========================================================= */
 
 .season-activities {
     background: var(--season-surface-alt);
@@ -635,9 +530,6 @@
 
     object-fit: cover;
 }
-
-
-/* Activity list */
 
 .activity-list {
     display: flex;
@@ -689,11 +581,6 @@
     font-size: 0.83rem;
 }
 
-
-/* =========================================================
-   10. TRAVEL TIPS
-========================================================= */
-
 .season-tips {
     background: var(--season-page);
 }
@@ -730,9 +617,6 @@
         0 12px 30px var(--season-shadow);
 }
 
-
-/* Tip image */
-
 .season-tip-image {
     height: 92px;
 
@@ -756,9 +640,6 @@
     transform: scale(1.035);
 }
 
-
-/* Tip number */
-
 .season-tip > span {
     display: block;
 
@@ -769,9 +650,6 @@
     font-size: 1.7rem;
     font-weight: 700;
 }
-
-
-/* Tip title */
 
 .season-tip h3 {
     margin: 0 0 7px;
@@ -790,11 +668,6 @@
 
     font-size: 0.82rem;
 }
-
-
-/* =========================================================
-   11. CTA
-========================================================= */
 
 .season-cta {
     position: relative;
@@ -851,9 +724,6 @@
     line-height: 1.65;
 }
 
-
-/* CTA button */
-
 .season-cta-button {
     display: inline-flex;
 
@@ -888,47 +758,31 @@
     transform: translateY(-2px);
 }
 
-
-/* =========================================================
-   12. RAINY THEME
-   Blue / Mist / Muted
-========================================================= */
-
 .rainy-page {
 
-    /* Accent */
     --season-primary: #3d8da8;
     --season-primary-hover: #2b7189;
 
-    /* Text */
     --season-heading: #234f63;
     --season-text: #365f70;
     --season-secondary: #607d89;
     --season-muted: #78909a;
 
-    /* Surface */
     --season-page: #edf6f7;
     --season-surface: #e4f0f2;
     --season-surface-alt: #f8fbfb;
     --season-card: #ffffff;
 
-    /* Border */
     --season-border: #d2e3e7;
     --season-border-accent: #9fc3cd;
 
-    /* Hero */
     --season-hero: #dceef2;
     --season-label: #dff3f7;
 
-    /* Decoration */
     --season-decoration: rgba(220, 243, 247, 0.38);
 
-    /* Shadow */
     --season-shadow: rgba(35, 79, 99, 0.08);
 }
-
-
-/* Rainy hero */
 
 .rainy-page .season-hero-bg {
     background:
@@ -941,9 +795,6 @@
         url("/images/rainyhero.jpg") center / cover no-repeat;
 }
 
-
-/* Rainy CTA */
-
 .rainy-page .season-cta {
     background:
         linear-gradient(
@@ -954,47 +805,31 @@
         url("/images/rainy.jpg") center 42% / cover no-repeat;
 }
 
-
-/* =========================================================
-   13. SUMMER THEME
-   Orange / Warm / Cream
-========================================================= */
-
 .summer-page {
 
-    /* Accent */
     --season-primary: #e47b32;
     --season-primary-hover: #c95f20;
 
-    /* Text */
     --season-heading: #713b22;
     --season-text: #684735;
     --season-secondary: #8a6855;
     --season-muted: #a18470;
 
-    /* Surface */
     --season-page: #fff8f0;
     --season-surface: #fff1e4;
     --season-surface-alt: #fffaf5;
     --season-card: #ffffff;
 
-    /* Border */
     --season-border: #f1d8c4;
     --season-border-accent: #e9b995;
 
-    /* Hero */
     --season-hero: #f7dcc5;
     --season-label: #ffe8cc;
 
-    /* Decoration */
     --season-decoration: rgba(255, 225, 173, 0.46);
 
-    /* Shadow */
     --season-shadow: rgba(126, 70, 37, 0.10);
 }
-
-
-/* Summer hero */
 
 .summer-page .season-hero-bg {
     background:
@@ -1007,9 +842,6 @@
         url("/images/summerhero2.jpg") center / cover no-repeat;
 }
 
-
-/* Summer CTA */
-
 .summer-page .season-cta {
     background:
         linear-gradient(
@@ -1020,47 +852,31 @@
         url("/images/summer.jpg") center 48% / cover no-repeat;
 }
 
-
-/* =========================================================
-   14. WINTER THEME
-   Ice Blue / White / Cool Gray
-========================================================= */
-
 .winter-page {
 
-    /* Accent */
     --season-primary: #69a9c7;
     --season-primary-hover: #4b8eaf;
 
-    /* Text */
     --season-heading: #365b70;
     --season-text: #506d7c;
     --season-secondary: #718793;
     --season-muted: #91a4af;
 
-    /* Surface */
     --season-page: #f4faff;
     --season-surface: #eaf5fb;
     --season-surface-alt: #ffffff;
     --season-card: #ffffff;
 
-    /* Border */
     --season-border: #d7e8f1;
     --season-border-accent: #b2d2e2;
 
-    /* Hero */
     --season-hero: #e5f3fa;
     --season-label: #eefaff;
 
-    /* Decoration */
     --season-decoration: rgba(255, 255, 255, 0.76);
 
-    /* Shadow */
     --season-shadow: rgba(61, 101, 121, 0.08);
 }
-
-
-/* Winter hero */
 
 .winter-page .season-hero-bg {
     background:
@@ -1073,9 +889,6 @@
         url("/images/winterhero.jpg") center / cover no-repeat;
 }
 
-
-/* Winter CTA */
-
 .winter-page .season-cta {
     background:
         linear-gradient(
@@ -1086,297 +899,98 @@
         url("/images/winter.jpg") center 48% / cover no-repeat;
 }
 
-
-/* =========================================================
-   15. RESPONSIVE — TABLET
-========================================================= */
-
-@media (max-width: 1024px) {
-
-    .season-intro-grid,
-    .season-place,
-    .season-activities-layout {
-        gap: 30px;
-    }
-
-    .season-place {
-        margin-bottom: 42px;
-    }
-
-    .season-intro-image,
-    .activity-image {
-        height: 310px;
-    }
-
-    .season-place-image {
-        height: 290px;
-    }
+@media (max-width:1024px){
+.season-intro-grid,.season-place,.season-activities-layout{grid-template-columns:1fr 1fr;gap:24px}
+.season-facts,.season-tips-grid{grid-template-columns:repeat(2,1fr)}
 }
 
+@media (max-width:767px){
+.season-hero {
+    min-height: 540px;
+  }
+
+  .season-hero h1 {
+    font-size: 2.5rem;
+    white-space: normal;
+  }
+
+  .season-hero-text > p {
+    max-width: 100%;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .season-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .season-intro-image {
+    height: 260px;
+  }
+
+  .season-intro-content h2 {
+    font-size: 2rem;
+  }
+
+  .season-intro-content > p {
+    font-size: 13px;
+  }
+
+  .season-facts {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .season-place {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 35px;
+  }
+
+  .season-place-reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .season-place-image {
+    height: 250px;
+  }
+
+  .season-activities-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .activity-image {
+    height: 260px;
+  }
+
+  .activity-item {
+    grid-template-columns: 38px 1fr;
+    gap: 12px;
+    padding: 13px 0;
+  }
+
+  .season-tips-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .season-tip {
+    padding: 18px;
+  }
+
+  .season-tip-image {
+    height: 150px;
+    margin: -18px -18px 16px;
+  }
+
+  .season-cta-content {
+    padding: 35px 20px;
+  }
+
+  .season-cta p {
+    font-size: 13px;
+  }
 
-/* =========================================================
-   16. RESPONSIVE — MOBILE
-========================================================= */
-
-@media (max-width: 768px) {
-
-    .section-padding {
-        padding: 45px 0;
-    }
-
-
-    /* -------------------------
-       HERO
-    ------------------------- */
-
-    .season-hero {
-        min-height: 500px;
-    }
-
-    .season-hero-content {
-        min-height: 500px;
-
-        padding-top: 100px;
-        padding-bottom: 45px;
-    }
-
-    .season-hero-text {
-        max-width: 100%;
-
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .season-hero h1 {
-        white-space: normal;
-    }
-
-
-    /* -------------------------
-       MOBILE HERO IMAGES
-    ------------------------- */
-
-    .rainy-page .season-hero-bg {
-        background:
-            linear-gradient(
-                90deg,
-                rgba(28, 73, 88, 0.78),
-                rgba(28, 73, 88, 0.38)
-            ),
-            url("/images/rainyhero.jpg") center / cover no-repeat;
-    }
-
-    .summer-page .season-hero-bg {
-        background:
-            linear-gradient(
-                90deg,
-                rgba(119, 54, 22, 0.76),
-                rgba(228, 123, 50, 0.32)
-            ),
-            url("/images/summerhero2.jpg") center / cover no-repeat;
-    }
-
-    .winter-page .season-hero-bg {
-        background:
-            linear-gradient(
-                90deg,
-                rgba(66, 112, 137, 0.72),
-                rgba(105, 169, 199, 0.32)
-            ),
-            url("/images/winterhero.jpg") center / cover no-repeat;
-    }
-
-
-    /* -------------------------
-       GRID
-    ------------------------- */
-
-    .season-intro-grid,
-    .season-place,
-    .season-activities-layout {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* -------------------------
-       INTRO / ACTIVITY
-    ------------------------- */
-
-    .season-intro-image,
-    .activity-image {
-        height: 300px;
-    }
-
-
-    /* -------------------------
-       DESTINATION
-    ------------------------- */
-
-    .season-place-reverse .season-place-image {
-        order: 1;
-    }
-
-    .season-place-reverse .season-place-content {
-        order: 2;
-    }
-
-    .season-place-image {
-        height: 300px;
-    }
-
-
-    /* -------------------------
-       FACTS
-    ------------------------- */
-
-    .season-facts {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* -------------------------
-       TIPS
-    ------------------------- */
-
-    .season-tips-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* -------------------------
-       DECORATIONS
-    ------------------------- */
-
-    .sun-decoration {
-        right: 7%;
-        top: 120px;
-
-        width: 75px;
-        height: 75px;
-    }
-
-    .sun-decoration.sun-2 {
-        right: 5%;
-
-        width: 38px;
-        height: 38px;
-
-        top: 250px;
-    }
-
-    .snow-1 {
-        right: 10%;
-    }
-
-    .snow-2 {
-        right: 5%;
-    }
-
-    .snow-3 {
-        right: 14%;
-    }
-}
-
-
-/* =========================================================
-   17. RESPONSIVE — SMALL MOBILE
-========================================================= */
-
-@media (max-width: 576px) {
-
-    .section-padding {
-        padding: 40px 0;
-    }
-
-
-    /* -------------------------
-       HERO
-    ------------------------- */
-
-    .season-hero {
-        min-height: 470px;
-    }
-
-    .season-hero-content {
-        min-height: 470px;
-
-        padding-top: 90px;
-        padding-bottom: 40px;
-    }
-
-    .season-hero-text {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .season-hero h1 {
-        font-size: 2.45rem;
-    }
-
-    .season-hero-text > p {
-        font-size: 0.88rem;
-        line-height: 1.65;
-    }
-
-
-    /* -------------------------
-       IMAGES
-    ------------------------- */
-
-    .season-intro-image,
-    .season-place-image,
-    .activity-image {
-        height: 270px;
-
-        border-radius: 18px;
-    }
-
-
-    /* -------------------------
-       DESTINATION
-    ------------------------- */
-
-    .season-place-content h3 {
-        font-size: 1.55rem;
-    }
-
-
-    /* -------------------------
-       CTA
-    ------------------------- */
-
-    .season-cta {
-        padding: 50px 0;
-    }
-}
-
-
-/* =========================================================
-   18. RESPONSIVE — VERY SMALL
-========================================================= */
-
-@media (max-width: 400px) {
-
-    .season-hero {
-        min-height: 450px;
-    }
-
-    .season-hero-content {
-        min-height: 450px;
-
-        padding-top: 85px;
-    }
-
-    .season-hero-text {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .season-hero h1 {
-        font-size: 2.25rem;
-    }
-
-    .season-hero-text > p {
-        font-size: 0.85rem;
-    }
 }

@@ -1,6 +1,16 @@
+/* =========================================================
+   TRIP DETAIL
+   COMPACT VERSION
+   ========================================================= */
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
 .trip-hero {
     position: relative;
-    min-height: 480px;
+    min-height: 330px;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
@@ -31,63 +41,65 @@
 .trip-hero-content {
     position: relative;
     z-index: 2;
-    padding-top: 160px;
-    padding-bottom: 65px;
+    padding-top: 70px;
+    padding-bottom: 18px;
     color: #fff;
 }
 
 .trip-country {
     display: inline-block;
-    margin-bottom: 14px;
-    padding: 6px 14px;
+    margin-bottom: 4px;
+    padding: 3px 8px;
     border: 1px solid rgba(255, 255, 255, 0.65);
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(5px);
-    font-size: 0.78rem;
+    font-size: 0.7rem;
 }
 
 .trip-hero h1 {
     max-width: 850px;
-    margin: 0 0 12px;
-    font-size: clamp(2.3rem, 5vw, 4rem);
-    line-height: 1.15;
+    margin: 0 0 4px;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.1;
     color: #fff;
 }
 
 .trip-hero-content > p {
     max-width: 650px;
-    margin: 0 0 20px;
+    margin: 0 0 7px;
     color: rgba(255, 255, 255, 0.88);
-    font-size: 1rem;
-    line-height: 1.7;
+    font-size: 0.82rem;
+    line-height: 1.5;
 }
 
 .trip-meta {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 4px;
 }
 
 .trip-meta span {
-    padding: 7px 13px;
+    padding: 4px 9px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.15);
     color: #fff;
-    font-size: 0.78rem;
+    font-size: 0.68rem;
     backdrop-filter: blur(5px);
 }
 
 
-/* Intro */
+/* =========================================================
+   INTRO
+   ========================================================= */
 
 .trip-intro {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
-    gap: 40px;
-    padding-top: 75px;
-    padding-bottom: 65px;
+    gap: 15px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 }
 
 .trip-intro-content {
@@ -96,43 +108,48 @@
 
 .section-label {
     display: block;
-    margin-bottom: 9px;
+    margin-bottom: 4px;
     color: #168fc4;
-    font-size: 0.72rem;
+    font-size: 0.62rem;
     font-weight: 600;
     letter-spacing: 0.12em;
 }
 
 .trip-intro h2,
 .section-heading h2 {
-    margin: 0 0 14px;
+    margin: 0 0 4px;
     color: #164b68;
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-size: clamp(1.45rem, 3vw, 2rem);
+    line-height: 1.2;
 }
 
 .trip-intro p {
     margin: 0;
     color: #496d7e;
-    font-size: 0.95rem;
-    line-height: 1.8;
+    font-size: 0.78rem;
+    line-height: 1.5;
 }
 
 .trip-actions {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    min-width: 190px;
+    gap: 5px;
+    min-width: 160px;
 }
 
 .favorite-button,
 .planner-button-detail {
-    min-height: 44px;
-    padding: 10px 18px;
-    border-radius: 22px;
+    min-height: 36px;
+    padding: 7px 14px;
+    border-radius: 20px;
     font-family: inherit;
-    font-size: 0.82rem;
+    font-size: 0.72rem;
     cursor: pointer;
-    transition: all 0.25s ease;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 .favorite-button {
@@ -143,31 +160,35 @@
 
 .favorite-button:hover {
     background: #eaf8ff;
+    transform: translateY(-1px);
 }
 
 
-/* Sections */
+/* =========================================================
+   SECTIONS
+   ========================================================= */
 
 .itinerary-section,
 .trip-extra-section {
-    padding: 75px 0;
+    padding: 28px 0;
     background: #f1fbff;
 }
 
 .trip-places-section {
-    padding: 75px 0;
+    padding: 28px 0;
     background: #fff;
 }
 
 .section-heading {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .section-heading p {
     margin: 0;
     color: #496d7e;
-    font-size: 0.9rem;
+    font-size: 0.72rem;
+    line-height: 1.4;
 }
 
 .section-heading.left {
@@ -175,7 +196,9 @@
 }
 
 
-/* Itinerary */
+/* =========================================================
+   ITINERARY
+   ========================================================= */
 
 .itinerary-list {
     max-width: 900px;
@@ -184,229 +207,247 @@
 
 .itinerary-day {
     position: relative;
-    margin-bottom: 24px;
-    padding: 28px 30px;
+    margin-bottom: 9px;
+    padding: 13px 17px;
     background: #fff;
     border: 1px solid #dceff7;
-    border-radius: 18px;
-    box-shadow: 0 6px 22px rgba(40, 150, 200, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(40, 150, 200, 0.06);
 }
 
 .day-header {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 22px;
+    gap: 9px;
+    margin-bottom: 8px;
 }
 
 .day-number {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     flex-shrink: 0;
     border-radius: 50%;
     background: #eaf8ff;
     color: #168fc4;
-    font-size: 0.82rem;
+    font-size: 0.65rem;
     font-weight: 600;
 }
 
 .day-header h3 {
     margin: 0;
     color: #164b68;
-    font-size: 1.15rem;
+    font-size: 0.82rem;
 }
 
 .day-header p {
-    margin: 3px 0 0;
+    margin: 1px 0 0;
     color: #6b8492;
-    font-size: 0.78rem;
+    font-size: 0.62rem;
 }
 
 .day-stops {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 0;
 }
 
 .day-stop {
     display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 20px;
-    padding: 16px 0;
+    grid-template-columns: 55px 1fr;
+    gap: 10px;
+    padding: 7px 0;
     border-top: 1px solid #eef7fb;
 }
 
 .stop-time {
     color: #168fc4;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     font-weight: 600;
 }
 
 .stop-content h4 {
-    margin: 0 0 5px;
+    margin: 0 0 2px;
     color: #28506a;
-    font-size: 0.95rem;
+    font-size: 0.74rem;
 }
 
 .stop-content p {
     margin: 0;
     color: #6b8492;
-    font-size: 0.82rem;
-    line-height: 1.7;
+    font-size: 0.63rem;
+    line-height: 1.45;
 }
 
 .stop-series {
     display: inline-block;
-    margin-top: 8px;
+    margin-top: 2px;
     color: #0878a9;
-    font-size: 0.72rem;
+    font-size: 0.58rem;
 }
 
 
-/* Cards */
+/* =========================================================
+   PLACE CARDS
+   ========================================================= */
 
 .trip-card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: 10px;
 }
 
 .trip-place-card {
     overflow: hidden;
     background: #fff;
     border: 1px solid #dceff7;
-    border-radius: 18px;
-    box-shadow: 0 6px 22px rgba(40, 150, 200, 0.08);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(40, 150, 200, 0.06);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .trip-place-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 28px rgba(40, 150, 200, 0.13);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(40, 150, 200, 0.11);
 }
 
 .trip-place-card img {
     width: 100%;
-    height: 210px;
+    height: 140px;
     display: block;
     object-fit: cover;
 }
 
 .trip-place-content {
-    padding: 20px;
+    padding: 10px 11px;
 }
 
 .trip-place-content span {
     color: #168fc4;
-    font-size: 0.72rem;
+    font-size: 0.58rem;
 }
 
 .trip-place-content h3 {
-    margin: 7px 0 7px;
+    margin: 3px 0 4px;
     color: #164b68;
-    font-size: 1.05rem;
+    font-size: 0.78rem;
 }
 
 .trip-place-content p {
     margin: 0;
     color: #6b8492;
-    font-size: 0.8rem;
-    line-height: 1.65;
+    font-size: 0.62rem;
+    line-height: 1.45;
 }
 
 
-/* Restaurant / Hotel */
+/* =========================================================
+   RESTAURANT / HOTEL
+   ========================================================= */
 
 .trip-extra-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 55px;
+    gap: 20px;
 }
 
 .extra-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 5px;
 }
 
 .extra-item {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 15px;
+    gap: 9px;
+    padding: 8px;
     background: #fff;
     border: 1px solid #dceff7;
-    border-radius: 14px;
+    border-radius: 10px;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.extra-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 150, 200, 0.09);
 }
 
 .extra-item img {
-    width: 75px;
-    height: 65px;
+    width: 52px;
+    height: 45px;
     flex-shrink: 0;
-    border-radius: 10px;
+    border-radius: 7px;
     object-fit: cover;
 }
 
 .extra-item h3 {
-    margin: 0 0 4px;
+    margin: 0 0 2px;
     color: #28506a;
-    font-size: 0.9rem;
+    font-size: 0.72rem;
 }
 
 .extra-item p {
     margin: 0;
     color: #6b8492;
-    font-size: 0.75rem;
+    font-size: 0.62rem;
 }
 
 
-/* CTA */
+/* =========================================================
+   CTA
+   ========================================================= */
 
 .trip-bottom-cta {
-    padding: 70px 0;
+    padding: 25px 0;
 }
 
 .cta-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
-    padding: 40px 45px;
+    gap: 18px;
+    padding: 20px 24px;
     background: #eaf8ff;
     border: 1px solid #d9eef7;
-    border-radius: 18px;
+    border-radius: 13px;
 }
 
 .cta-box h2 {
-    margin: 0 0 8px;
+    margin: 0 0 3px;
     color: #164b68;
-    font-size: 1.6rem;
+    font-size: 1.15rem;
 }
 
 .cta-box p {
     margin: 0;
     color: #496d7e;
-    font-size: 0.85rem;
+    font-size: 0.68rem;
 }
 
 .cta-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 145px;
-    min-height: 44px;
-    padding: 10px 20px;
-    border-radius: 22px;
+    min-width: 120px;
+    min-height: 36px;
+    padding: 7px 15px;
+    border-radius: 20px;
     color: #fff;
     background: #168fc4;
-    font-size: 0.82rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-decoration: none;
     white-space: nowrap;
-    transition: all 0.25s ease;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
 }
 
 .cta-button:hover {
@@ -414,99 +455,102 @@
     transform: translateY(-2px);
 }
 
+/* =========================================================
+   RESPONSIVE - MAX WIDTH 760px
+   ========================================================= */
 
-/* Tablet */
+@media (max-width: 760px) {
 
-@media (max-width: 768px) {
+  .trip-hero {
+    min-height: 430px;
+  }
 
-    .trip-hero {
-        min-height: 430px;
-    }
+  .trip-hero-content {
+    padding: 30px 20px;
+  }
 
-    .trip-hero-content {
-        padding-top: 130px;
-        padding-bottom: 45px;
-    }
+  .trip-hero h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
 
-    .trip-intro {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-top: 55px;
-        padding-bottom: 55px;
-    }
-
-    .trip-actions {
-        width: 100%;
-        flex-direction: row;
-    }
-
-    .trip-actions button {
-        flex: 1;
-    }
-
-    .trip-card-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .trip-extra-grid {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .cta-box {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
+  .trip-hero-content > p {
+    font-size: 12px;
+  }
 
 
-/* Mobile */
+  .trip-meta {
+    gap: 5px;
+  }
 
-@media (max-width: 480px) {
+  .trip-meta span {
+    font-size: 10px;
+  }
 
-    .trip-hero {
-        min-height: 400px;
-    }
 
-    .trip-hero-content {
-        padding-bottom: 35px;
-    }
+  .trip-intro {
+    padding: 30px 0;
+  }
 
-    .trip-hero h1 {
-        font-size: 2.2rem;
-    }
+  .trip-intro h2,
+  .section-heading h2 {
+    font-size: 1.6rem;
+  }
 
-    .trip-meta {
-        gap: 6px;
-    }
 
-    .trip-meta span {
-        font-size: 0.7rem;
-        padding: 6px 10px;
-    }
+  .trip-actions {
+    width: 100%;
+    min-width: 0;
+  }
 
-    .trip-actions {
-        flex-direction: column;
-    }
+  .favorite-button,
+  .planner-button-detail {
+    width: 100%;
+  }
 
-    .itinerary-day {
-        padding: 22px 18px;
-    }
 
-    .day-stop {
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
+  .itinerary-section,
+  .trip-extra-section,
+  .trip-places-section {
+    padding: 25px 0;
+  }
 
-    .trip-card-grid {
-        grid-template-columns: 1fr;
-    }
 
-    .trip-place-card img {
-        height: 190px;
-    }
+  .itinerary-day {
+    padding: 12px;
+  }
 
-    .cta-box {
-        padding: 30px 24px;
-    }
+
+  .day-stop {
+    grid-template-columns: 48px 1fr;
+    gap: 8px;
+  }
+
+
+  .trip-card-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .trip-place-card img {
+    height: 120px;
+  }
+
+
+  .trip-extra-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+
+  .cta-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+
 }

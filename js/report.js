@@ -27,7 +27,6 @@ reportTabs.forEach(tab => {
 
 });
 
-
 const reportForm =
     document.getElementById("reportForm");
 

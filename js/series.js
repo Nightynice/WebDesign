@@ -184,10 +184,21 @@ const contentGrid = document.getElementById("contentGrid");
 const resultCount = document.getElementById("resultCount");
 const pagination = document.getElementById("pagination");
 
+const categoryButtons = document.querySelectorAll(".category-btn");
+const searchInput = document.getElementById("searchInput");
+
+const customSelect = document.querySelector(".custom-select");
+const selectButton = document.querySelector(".custom-select-button");
+const selectText = selectButton.querySelector("span");
+const selectOptions = customSelect.querySelectorAll(
+    ".custom-select-menu button"
+);
+
 let currentPage = 1;
 const itemsPerPage = 6;
 
 function getPagedData(data) {
+
     const start = (currentPage - 1) * itemsPerPage;
     const end = start + itemsPerPage;
 
@@ -195,6 +206,7 @@ function getPagedData(data) {
 }
 
 function renderPagination(totalItems) {
+
     pagination.innerHTML = "";
 
     const totalPages = Math.ceil(totalItems / itemsPerPage);
@@ -204,6 +216,7 @@ function renderPagination(totalItems) {
     }
 
     for (let page = 1; page <= totalPages; page++) {
+
         const button = document.createElement("button");
 
         button.textContent = page;
@@ -213,13 +226,16 @@ function renderPagination(totalItems) {
         }
 
         button.addEventListener("click", function () {
+
             currentPage = page;
+
             filterContent();
 
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"
             });
+
         });
 
         pagination.appendChild(button);
@@ -227,36 +243,57 @@ function renderPagination(totalItems) {
 }
 
 function renderSeriesCards(data) {
+
     contentGrid.innerHTML = "";
+
     resultCount.textContent = `พบ ${data.length} รายการ`;
 
     if (data.length === 0) {
+
         contentGrid.innerHTML = `
             <div class="no-result">
                 <h3>ไม่พบข้อมูล</h3>
                 <p>ลองเปลี่ยนคำค้นหาหรือเลือกตัวกรองอื่น</p>
             </div>
         `;
+
+        pagination.innerHTML = "";
+
         return;
     }
 
     const pagedData = getPagedData(data);
 
     pagedData.forEach(item => {
+
         contentGrid.innerHTML += `
             <article class="content-card">
-                <img src="${item.image}" alt="${item.name}">
+
+                <img
+                    src="${item.image}"
+                    alt="${item.name}"
+                >
 
                 <div class="content-card-body">
+
                     <span class="content-country">
                         ${item.country}
                     </span>
 
-                    <h3>${item.name}</h3>
+                    <h3>
+                        ${item.name}
+                    </h3>
 
                     <div class="content-meta">
-                        <span>${item.places} สถานที่</span>
-                        <span>${item.season}</span>
+
+                        <span>
+                            ${item.places} สถานที่
+                        </span>
+
+                        <span>
+                            ${item.season}
+                        </span>
+
                     </div>
 
                     <p class="content-description">
@@ -269,95 +306,148 @@ function renderSeriesCards(data) {
                     >
                         ดูรายละเอียด >
                     </a>
+
                 </div>
+
             </article>
         `;
+
     });
+
     renderPagination(data.length);
 }
 
 function renderPlaceCards(data) {
+
     contentGrid.innerHTML = "";
 
     resultCount.textContent = `พบ ${data.length} รายการ`;
 
     if (data.length === 0) {
+
         contentGrid.innerHTML = `
             <div class="no-result">
                 <h3>ไม่พบข้อมูล</h3>
                 <p>ลองเปลี่ยนคำค้นหาหรือเลือกประเทศอื่น</p>
             </div>
         `;
+
+        pagination.innerHTML = "";
+
         return;
     }
 
     const pagedData = getPagedData(data);
 
     pagedData.forEach(item => {
+
         contentGrid.innerHTML += `
             <article class="content-card">
-                <img src="${item.image}" alt="${item.name}">
+
+                <img
+                    src="${item.image}"
+                    alt="${item.name}"
+                >
+
                 <div class="content-card-body">
+
                     <span class="content-country">
                         ${item.country}
                     </span>
 
-                    <h3>${item.name}</h3>
+                    <h3>
+                        ${item.name}
+                    </h3>
 
                     <div class="content-meta">
-                        <span><i class="bi bi-geo-alt"> </i>${item.location}</span>
+
+                        <span>
+                            <i class="bi bi-geo-alt"></i>
+                            ${item.location}
+                        </span>
+
                     </div>
 
                     <p class="content-location">
-                        <i class="bi bi-cast"> </i>${item.series}
+                        <i class="bi bi-cast"></i>
+                        ${item.series}
                     </p>
 
                     <p class="content-description">
                         ${item.description}
                     </p>
 
-                    <a href="${item.detail}" class="content-detail">
+                    <a
+                        href="${item.detail}"
+                        class="content-detail"
+                    >
                         ดูรายละเอียด >
                     </a>
+
                 </div>
+
             </article>
         `;
+
     });
+
     renderPagination(data.length);
 }
 
 function renderRestaurantCards(data) {
+
     contentGrid.innerHTML = "";
 
     resultCount.textContent = `พบ ${data.length} รายการ`;
 
     if (data.length === 0) {
+
         contentGrid.innerHTML = `
             <div class="no-result">
                 <h3>ไม่พบข้อมูล</h3>
                 <p>ลองเปลี่ยนคำค้นหาหรือเลือกประเทศอื่น</p>
             </div>
         `;
+
+        pagination.innerHTML = "";
+
         return;
     }
 
     const pagedData = getPagedData(data);
 
     pagedData.forEach(item => {
+
         contentGrid.innerHTML += `
             <article class="content-card">
-                <img src="${item.image}" alt="${item.name}">
+
+                <img
+                    src="${item.image}"
+                    alt="${item.name}"
+                >
 
                 <div class="content-card-body">
+
                     <span class="content-country">
                         ${item.country}
                     </span>
 
-                    <h3>${item.name}</h3>
+                    <h3>
+                        ${item.name}
+                    </h3>
 
                     <div class="content-meta">
-                        <span><i class="bi bi-cup-hot"> </i>${item.type}</span>
-                        <span><i class="bi bi-geo-alt"> </i>${item.location}</span>
+
+                        <span>
+                            <i class="bi bi-cup-hot"></i>
+                            ${item.type}
+                        </span>
+
+                        <span>
+                            <i class="bi bi-geo-alt"></i>
+                            ${item.location}
+                        </span>
+
                     </div>
 
                     <p class="content-description">
@@ -368,48 +458,77 @@ function renderRestaurantCards(data) {
                         ${item.description}
                     </p>
 
-                    <a href="${item.detail}" class="content-detail">
+                    <a
+                        href="${item.detail}"
+                        class="content-detail"
+                    >
                         ดูรายละเอียด >
                     </a>
+
                 </div>
+
             </article>
         `;
+
     });
+
     renderPagination(data.length);
 }
 
 function renderHotelCards(data) {
+
     contentGrid.innerHTML = "";
 
     resultCount.textContent = `พบ ${data.length} รายการ`;
 
     if (data.length === 0) {
+
         contentGrid.innerHTML = `
             <div class="no-result">
                 <h3>ไม่พบข้อมูล</h3>
                 <p>ลองเปลี่ยนคำค้นหาหรือเลือกประเทศอื่น</p>
             </div>
         `;
+
+        pagination.innerHTML = "";
+
         return;
     }
 
     const pagedData = getPagedData(data);
 
     pagedData.forEach(item => {
+
         contentGrid.innerHTML += `
             <article class="content-card">
-                <img src="${item.image}" alt="${item.name}">
+
+                <img
+                    src="${item.image}"
+                    alt="${item.name}"
+                >
 
                 <div class="content-card-body">
+
                     <span class="content-country">
                         ${item.country}
                     </span>
 
-                    <h3>${item.name}</h3>
+                    <h3>
+                        ${item.name}
+                    </h3>
 
                     <div class="content-meta">
-                        <span><i class="bi bi-building-fill"> </i>${item.type}</span>
-                        <span><i class="bi bi-geo-alt"> </i>${item.location}</span>
+
+                        <span>
+                            <i class="bi bi-building-fill"></i>
+                            ${item.type}
+                        </span>
+
+                        <span>
+                            <i class="bi bi-geo-alt"></i>
+                            ${item.location}
+                        </span>
+
                     </div>
 
                     <p class="content-description">
@@ -420,172 +539,443 @@ function renderHotelCards(data) {
                         ${item.description}
                     </p>
 
-                    <a href="${item.detail}" class="content-detail">
+                    <a
+                        href="${item.detail}"
+                        class="content-detail"
+                    >
                         ดูรายละเอียด >
                     </a>
+
                 </div>
+
             </article>
         `;
+
     });
+
     renderPagination(data.length);
 }
 
-const categoryButtons = document.querySelectorAll(".category-btn");
-const countryFilter = document.getElementById("countryFilter");
-const searchInput = document.getElementById("searchInput");
+let selectedCountry = "all";
 
-const urlParams = new URLSearchParams(window.location.search);
+const urlParams = new URLSearchParams(
+    window.location.search
+);
 
-let currentCategory = urlParams.get("category") || "series";
-const urlCountry = urlParams.get("country");
+let currentCategory =
+    urlParams.get("category") || "series";
+
+const urlCountry =
+    urlParams.get("country");
 
 if (urlCountry) {
-    countryFilter.value = urlCountry;
+
+    selectedCountry = urlCountry;
+
+    const selectedOption = [...selectOptions].find(
+        option => option.dataset.value === urlCountry
+    );
+
+    if (selectedOption) {
+
+        selectText.textContent =
+            selectedOption.textContent;
+
+        selectOptions.forEach(option => {
+            option.classList.remove("active");
+        });
+
+        selectedOption.classList.add("active");
+
+    }
+
 }
 
 categoryButtons.forEach(button => {
+
     button.classList.remove("active");
 
-    if (button.dataset.category === currentCategory) {
+    if (
+        button.dataset.category ===
+        currentCategory
+    ) {
+
         button.classList.add("active");
+
     }
+
 });
 
 function filterContent() {
-    const selectedCountry = countryFilter.value;
-    const keyword = searchInput.value.toLowerCase().trim();
+
+    const keyword =
+        searchInput.value
+            .toLowerCase()
+            .trim();
 
     if (currentCategory === "series") {
+
         let filteredData = seriesData;
 
         if (selectedCountry !== "all") {
-            filteredData = filteredData.filter(item => {
-                return item.country === selectedCountry;
-            });
+
+            filteredData =
+                filteredData.filter(item => {
+
+                    return (
+                        item.country ===
+                        selectedCountry
+                    );
+
+                });
+
         }
 
         if (keyword !== "") {
-            filteredData = filteredData.filter(item => {
-                return (
-                    item.name.toLowerCase().includes(keyword) ||
-                    item.country.toLowerCase().includes(keyword) ||
-                    item.description.toLowerCase().includes(keyword)
-                );
-            });
+
+            filteredData =
+                filteredData.filter(item => {
+
+                    return (
+
+                        item.name
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.country
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.description
+                            .toLowerCase()
+                            .includes(keyword)
+
+                    );
+
+                });
+
         }
 
         renderSeriesCards(filteredData);
+
         return;
     }
 
     if (currentCategory === "places") {
+
         let filteredData = placesData;
 
         if (selectedCountry !== "all") {
-            filteredData = filteredData.filter(item => {
-                return item.country === selectedCountry;
-            });
+
+            filteredData =
+                filteredData.filter(item => {
+
+                    return (
+                        item.country ===
+                        selectedCountry
+                    );
+
+                });
+
         }
 
         if (keyword !== "") {
-            filteredData = filteredData.filter(item => {
-                return (
-                    item.name.toLowerCase().includes(keyword) ||
-                    item.country.toLowerCase().includes(keyword) ||
-                    item.series.toLowerCase().includes(keyword) ||
-                    item.location.toLowerCase().includes(keyword) ||
-                    item.description.toLowerCase().includes(keyword)
-                );
-            });
+
+            filteredData =
+                filteredData.filter(item => {
+
+                    return (
+
+                        item.name
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.country
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.series
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.location
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.description
+                            .toLowerCase()
+                            .includes(keyword)
+
+                    );
+
+                });
+
         }
 
         renderPlaceCards(filteredData);
+
         return;
     }
 
     if (currentCategory === "restaurants") {
+
         let filteredData = restaurantsData;
 
         if (selectedCountry !== "all") {
-            filteredData = filteredData.filter(item => {
-                return item.country === selectedCountry;
-            });
+
+            filteredData =
+                filteredData.filter(item => {
+
+                    return (
+                        item.country ===
+                        selectedCountry
+                    );
+
+                });
+
         }
 
         if (keyword !== "") {
-            filteredData = filteredData.filter(item => {
-                return (
-                    item.name.toLowerCase().includes(keyword) ||
-                    item.country.toLowerCase().includes(keyword) ||
-                    item.location.toLowerCase().includes(keyword) ||
-                    item.place.toLowerCase().includes(keyword) ||
-                    item.description.toLowerCase().includes(keyword)
-                );
-            });
+
+            filteredData =
+                filteredData.filter(item => {
+
+                    return (
+
+                        item.name
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.country
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.location
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.place
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.description
+                            .toLowerCase()
+                            .includes(keyword)
+
+                    );
+
+                });
+
         }
 
         renderRestaurantCards(filteredData);
+
         return;
     }
 
     if (currentCategory === "hotels") {
+
         let filteredData = hotelsData;
 
         if (selectedCountry !== "all") {
-            filteredData = filteredData.filter(item => {
-                return item.country === selectedCountry;
-            });
+
+            filteredData =
+                filteredData.filter(item => {
+
+                    return (
+                        item.country ===
+                        selectedCountry
+                    );
+
+                });
+
         }
 
         if (keyword !== "") {
-            filteredData = filteredData.filter(item => {
-                return (
-                    item.name.toLowerCase().includes(keyword) ||
-                    item.country.toLowerCase().includes(keyword) ||
-                    item.location.toLowerCase().includes(keyword) ||
-                    item.place.toLowerCase().includes(keyword) ||
-                    item.description.toLowerCase().includes(keyword)
-                );
-            });
+
+            filteredData =
+                filteredData.filter(item => {
+
+                    return (
+
+                        item.name
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.country
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.location
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.place
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.description
+                            .toLowerCase()
+                            .includes(keyword)
+
+                    );
+
+                });
+
         }
 
         renderHotelCards(filteredData);
+
         return;
     }
 
     contentGrid.innerHTML = `
         <div class="no-result">
-            <h3>ยังไม่มีข้อมูล</h3>
-            <p>กำลังเตรียมข้อมูลในหมวดนี้</p>
+
+            <h3>
+                ยังไม่มีข้อมูล
+            </h3>
+
+            <p>
+                กำลังเตรียมข้อมูลในหมวดนี้
+            </p>
+
         </div>
     `;
 
-    resultCount.textContent = "พบ 0 รายการ";
+    resultCount.textContent =
+        "พบ 0 รายการ";
+
+    pagination.innerHTML = "";
+
 }
 
 categoryButtons.forEach(button => {
-    button.addEventListener("click", function () {
-        categoryButtons.forEach(btn => {
-            btn.classList.remove("active");
-        });
 
-        this.classList.add("active");
+    button.addEventListener(
+        "click",
+        function () {
 
-        currentCategory = this.dataset.category;
+            categoryButtons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            this.classList.add("active");
+
+            currentCategory =
+                this.dataset.category;
+
+            currentPage = 1;
+
+            filterContent();
+
+        }
+    );
+
+});
+
+searchInput.addEventListener(
+    "input",
+    function () {
+
         currentPage = 1;
 
         filterContent();
-    });
+
+    }
+);
+
+selectButton.addEventListener(
+    "click",
+    function (event) {
+
+        event.stopPropagation();
+
+        customSelect.classList.toggle("open");
+
+    }
+);
+
+selectOptions.forEach(option => {
+
+    option.addEventListener(
+        "click",
+        function () {
+
+            selectedCountry =
+                this.dataset.value;
+
+            selectText.textContent =
+                this.textContent;
+
+            selectOptions.forEach(item => {
+
+                item.classList.remove(
+                    "active"
+                );
+
+            });
+
+            this.classList.add("active");
+
+            customSelect.classList.remove(
+                "open"
+            );
+
+            currentPage = 1;
+
+            filterContent();
+
+        }
+    );
+
 });
 
-countryFilter.addEventListener("change", function () {
-    currentPage = 1;
-    filterContent();
-});
+document.addEventListener(
+    "click",
+    function (event) {
 
-searchInput.addEventListener("input", function () {
-    currentPage = 1;
-    filterContent();
-});
+        if (
+            !customSelect.contains(
+                event.target
+            )
+        ) {
+
+            customSelect.classList.remove(
+                "open"
+            );
+
+        }
+
+    }
+);
 
 filterContent();

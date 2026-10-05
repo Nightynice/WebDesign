@@ -1,13 +1,7 @@
-/* =========================================================
-   ABOUT PAGE
-   ========================================================= */
 .about-page {
     background: var(--color-page);
 }
 
-/* =========================================================
-   HERO
-   ========================================================= */
 .about-hero {
     min-height: 620px;
     padding: 130px 0 70px;
@@ -74,10 +68,6 @@
     object-fit: cover;
 }
 
-/* =========================================================
-   INTRO
-   ========================================================= */
-
 .about-intro {
     padding: 80px 0;
     background: #fff;
@@ -133,9 +123,6 @@
     margin-bottom: 28px;
 }
 
-/* =========================================================
-   CONCEPT
-   ========================================================= */
 .about-concept {
     padding: 90px 0;
     background: var(--color-surface-blue);
@@ -172,9 +159,6 @@
     object-fit: cover;
 }
 
-/* =========================================================
-   PROCESS
-   ========================================================= */
 .about-process {
     padding: 80px 0;
     background: #fff;
@@ -239,9 +223,6 @@
     line-height: 1.7;
 }
 
-/* =========================================================
-   VALUES
-   ========================================================= */
 .about-values {
     padding: 90px 0;
     background: var(--color-surface);
@@ -285,9 +266,6 @@
     line-height: 1.8;
 }
 
-/* =========================================================
-   CTA
-   ========================================================= */
 .about-cta {
     padding: 90px 0;
     background:
@@ -335,135 +313,104 @@
     transform: translateY(-2px);
 }
 
-/* =========================================================
-   TABLET
-   ========================================================= */
-@media (max-width: 768px) {
-
-    .about-hero {
-        min-height: auto;
-        padding: 120px 0 55px;
-    }
-
-    .about-hero-inner,
-    .about-intro-content,
-    .values-layout {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .about-hero-image {
-        height: 330px;
-    }
-
-    .about-intro,
-    .about-process,
-    .about-values {
-        padding: 60px 0;
-    }
-
-    .about-concept {
-        padding: 65px 0;
-    }
-
-    .about-intro-heading {
-        margin-bottom: 35px;
-    }
-
-    .about-intro-image {
-        height: 320px;
-    }
-
-    .values-layout {
-        gap: 50px;
-    }
-
-    .process-item {
-        grid-template-columns: 55px 1fr;
-        gap: 15px;
-    }
-
-    .process-content {
-        grid-template-columns: 42px 1fr;
-        gap: 15px;
-    }
-
-    .process-content p {
-        grid-column: 2;
-    }
-
-    .about-cta {
-        padding: 65px 0;
-    }
+@media (max-width:1024px){
+.about-hero-inner,.about-intro-content,.values-layout{grid-template-columns:1fr 1fr;gap:30px}
+.process-item{grid-template-columns:80px 1fr}
+.about-hero{padding:115px 0 55px}
 }
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
+@media (max-width:767px){
+.about-hero {
+    padding: 110px 0 50px;
+  }
 
-@media (max-width: 480px) {
+  .about-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
-    .about-hero {
-        padding: 105px 0 45px;
-    }
+  .about-hero h1 {
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
+  }
 
-    .about-hero h1 {
-        font-size: 2.5rem;
-    }
+  .about-hero-content > p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
 
-    .about-hero-image {
-        height: 270px;
-        border-radius: 18px;
-    }
+  .about-hero-image {
+    height: 280px;
+  }
 
-    .about-intro-image {
-        height: 270px;
-    }
+  .about-intro-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
-    .about-concept {
-        padding: 55px 0;
-    }
+  .about-intro-image {
+    height: 280px;
+  }
 
-    .concept-image {
-        height: 230px;
-        border-radius: 18px;
-    }
+  .about-intro-text p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
 
-    .process-item {
-        grid-template-columns: 40px 1fr;
-        gap: 10px;
-        padding: 24px 0;
-    }
+  .about-concept-header h2 {
+    font-size: clamp(2.2rem, 9vw, 3.2rem);
+  }
 
-    .process-content {
-        grid-template-columns: 38px 1fr;
-        gap: 12px;
-    }
+  .about-concept-header p {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
 
-    .process-content > i {
-        width: 38px;
-        height: 38px;
-        font-size: 1rem;
-    }
+  .concept-image {
+    height: 250px;
+  }
 
-    .process-content h3 {
-        font-size: 0.95rem;
-    }
+  .process-item {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 25px 0;
+  }
 
-    .process-content p {
-        font-size: 0.82rem;
-    }
+  .process-content {
+    grid-template-columns: 42px 1fr;
+    gap: 15px;
+  }
 
-    .value-item {
-        grid-template-columns: 35px 1fr;
-        gap: 12px;
-    }
+  .process-content p {
+    grid-column: 1 / -1;
+    font-size: 13px;
+  }
 
-    .about-cta {
-        padding: 55px 0;
-    }
+  .values-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
 
-    .about-cta h2 {
-        font-size: 2.5rem;
-    }
+  .values-heading h2 {
+    font-size: 2.5rem;
+  }
+
+  .value-item {
+    grid-template-columns: 42px 1fr;
+    gap: 15px;
+    padding: 22px 0;
+  }
+
+  .value-item p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .about-cta h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-cta p {
+    font-size: 14px;
+  }
+
 }

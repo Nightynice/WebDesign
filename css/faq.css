@@ -397,110 +397,71 @@
     text-decoration: none;
 }
 
+/* =========================================================
+   RESPONSIVE - MAX WIDTH 760px
+   ========================================================= */
 
-/* =========================
-   TABLET
-========================= */
+@media (max-width: 760px) {
 
-@media (max-width: 900px) {
+  .faq-main {
+    padding-top: 100px;
+  }
 
-    .faq-layout {
-        grid-template-columns: 220px minmax(0, 1fr);
-        gap: 40px;
-    }
+  .faq-breadcrumb {
+    margin-bottom: 15px;
+  }
 
-    .faq-sidebar-heading h1 {
-        font-size: 1.7rem;
-    }
-
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-    .faq-main {
-        padding: 95px 0 60px;
-    }
-
-    .faq-layout {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .faq-sidebar {
-        position: static;
-    }
-
-    .faq-sidebar-heading h1 {
-        font-size: 1.8rem;
-    }
-
-    .faq-categories {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5px;
-    }
-
-    .faq-category-link {
-        min-height: 38px;
-        padding: 0 7px;
-        font-size: 0.7rem;
-    }
-
-    .faq-contact-box {
-        margin-top: 12px;
-    }
-
-    .faq-group {
-        margin-bottom: 35px;
-    }
-
-}
+  .faq-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
 
-/* =========================
-   SMALL MOBILE
-========================= */
+  .faq-sidebar {
+    width: 100%;
+  }
 
-@media (max-width: 576px) {
+  .faq-sidebar-heading h1 {
+    font-size: 1.8rem;
+  }
 
-    .faq-main {
-        padding-top: 85px;
-    }
 
-    .faq-breadcrumb {
-        font-size: 0.65rem;
-    }
+  .faq-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
 
-    .faq-layout {
-        gap: 30px;
-    }
+  .faq-category-link {
+    min-height: 40px;
+    font-size: 0.72rem;
+  }
 
-    .faq-categories {
-        grid-template-columns: 1fr;
-    }
 
-    .faq-category-link {
-        justify-content: flex-start;
-        gap: 8px;
-    }
+  .faq-contact-box {
+    margin-top: 20px;
+  }
 
-    .faq-category-link small {
-        margin-left: auto;
-    }
 
-    .faq-question {
-        min-height: 54px;
-        font-size: 0.75rem;
-    }
+  .faq-content {
+    width: 100%;
+  }
 
-    .faq-answer p {
-        padding-right: 10px;
-        font-size: 0.7rem;
-    }
+  .faq-group-heading {
+    font-size: 1.3rem;
+  }
+
+  .faq-question {
+    min-height: 55px;
+    padding: 0;
+    font-size: 0.75rem;
+    text-align: left;
+  }
+
+  .faq-answer p {
+    padding: 0 30px 0 0;
+    font-size: 0.7rem;
+    line-height: 1.7;
+  }
 
 }

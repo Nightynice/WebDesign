@@ -1,5 +1,5 @@
 :root {
-  /* Brand & Text */
+
   --color-primary: #168fc4;
   --color-primary-hover: #0878a9;
   --color-heading: #164b68;
@@ -7,7 +7,6 @@
   --color-secondary: #496d7e;
   --color-muted: #6b8492;
 
-  /* Surfaces */
   --color-white: #ffffff;
   --color-page: #f1fbff;
   --color-surface: #f7fcff;
@@ -15,24 +14,20 @@
   --color-surface-hover: #eefaff;
   --color-hero-light: #dff6ff;
 
-  /* Borders & Footer */
   --color-border: #dceff7;
   --color-border-light: #d9eef7;
   --color-border-accent: #8fcde5;
   --color-footer: #166b91;
 
-  /* Status */
   --color-error: #c2410c;
   --color-success: #15803d;
 
-  /* Radius */
   --radius-card: 18px;
   --radius-button: 22px;
   --radius-nav: 18px;
   --radius-dropdown: 12px;
   --radius-pill: 20px;
 
-  /* Spacing */
   --space-sm: 14px;
   --space-md: 24px;
   --space-lg: 40px;
@@ -40,14 +35,9 @@
   --space-2xl: 80px;
   --space-3xl: 90px;
 
-  /* Shadow & Font */
   --shadow-card: 0 6px 22px rgba(40, 150, 200, 0.08);
   --font-sans: Arial, Helvetica, sans-serif;
 }
-
-/* =========================
-   GLOBAL / BASE
-   ========================= */
 
 *,
 *::before,
@@ -86,1037 +76,1002 @@ button {
 }
 
 .hero {
-    position: relative;
-    height: 33vh;
-    min-height: 390px;
-    display: flex;
-    align-items: center;
-    background: url("../images/hero.jpg") center/cover no-repeat;
+  position: relative;
+  height: 33vh;
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  background: url("../images/hero.jpg") center/cover no-repeat;
 }
 
 .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(8, 83, 120, .75), rgba(15, 135, 180, .35), rgba(255, 255, 255, .05));
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(8, 83, 120, .75), rgba(15, 135, 180, .35), rgba(255, 255, 255, .05));
 }
 
 .hero-content {
-    position: relative;
-    z-index: 1;
-    width: min(1180px, 90%);
-    margin: 0 auto;
-    padding-top: 60px;
+  position: relative;
+  z-index: 1;
+  width: min(1180px, 90%);
+  margin: 0 auto;
+  padding-top: 60px;
 }
 
 .hero-label {
-    margin-bottom: 10px;
-    color: var(--color-hero-light);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: .2em;
+  margin-bottom: 10px;
+  color: var(--color-hero-light);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: .2em;
 }
 
 .hero h1 {
-    max-width: 800px;
-    margin: 0 0 12px;
-    color: var(--color-white);
-    font-size: clamp(3rem, 4vw, 4rem);
-    line-height: 1.05;
-    letter-spacing: -.04em;
+  max-width: 800px;
+  margin: 0 0 12px;
+  color: var(--color-white);
+  font-size: clamp(3rem, 4vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -.04em;
 }
 
 .hero h1 span {
-    color: var(--color-hero-light);
+  color: var(--color-hero-light);
 }
 
 .hero-text {
-    max-width: 620px;
-    margin-bottom: 20px;
-    color: rgba(255, 255, 255, .9);
-    font-size: 0.9rem;
-    line-height: 1.7;
+  max-width: 620px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, .9);
+  font-size: 0.9rem;
+  line-height: 1.7;
 }
 
-/* =========================
-   HOME BUTTON SYSTEM
-   ========================= */
-
 .hero-buttons {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 26px;
 }
 
 .hero-buttons .btn,
 .guide-content .btn,
 .locations-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 42px;
-    padding: 10px 20px;
-    border-radius: 22px;
-    font-size: .82rem;
-    font-weight: 600;
-    line-height: 1;
-    text-decoration: none;
-    transition:
-        background-color .25s ease,
-        color .25s ease,
-        border-color .25s ease,
-        transform .25s ease,
-        box-shadow .25s ease;
-    cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 20px;
+  border-radius: 22px;
+  font-size: .82rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    background-color .25s ease,
+    color .25s ease,
+    border-color .25s ease,
+    transform .25s ease,
+    box-shadow .25s ease;
+  cursor: pointer;
 }
 
-/* =========================
-   PRIMARY BUTTON
-   ========================= */
-
 .hero-buttons .btn-primary {
-    color: var(--color-white);
-    background: var(--color-primary);
-    border: 1px solid var(--color-primary);
-    box-shadow: 0 5px 16px rgba(22, 143, 196, .18);
+  color: var(--color-white);
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 5px 16px rgba(22, 143, 196, .18);
 }
 
 .hero-buttons .btn-primary:hover {
-    color: var(--color-white);
-    background: var(--color-primary-hover);
-    border-color: var(--color-primary-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(22, 143, 196, .24);
+  color: var(--color-white);
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(22, 143, 196, .24);
 }
 
-/* =========================
-   OUTLINE BUTTON
-   ========================= */
-
 .hero-buttons .btn-outline {
-    color: var(--color-white);
-    background: rgba(255, 255, 255, .12);
-    border: 1px solid rgba(255, 255, 255, .7);
-    backdrop-filter: blur(5px);
+  color: var(--color-white);
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .7);
+  backdrop-filter: blur(5px);
 }
 
 .hero-buttons .btn-outline:hover {
-    color: var(--color-heading);
-    background: var(--color-white);
-    border-color: var(--color-white);
-    transform: translateY(-2px);
-    box-shadow: 0 7px 18px rgba(0, 0, 0, .12);
+  color: var(--color-heading);
+  background: var(--color-white);
+  border-color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, .12);
 }
-
-/* =========================
-   LIGHT / CONTENT BUTTON
-   ========================= */
 
 .guide-content .btn,
 .locations-button {
-    color: var(--color-primary);
-    background: var(--color-white);
-    border: 1px solid var(--color-border-accent);
-    box-shadow: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 13px;
+  color: var(--color-white);
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  box-shadow: none;
+  transition: .3s;
+  border-radius: 18px;
 }
 
 .guide-content .btn:hover,
 .locations-button:hover {
-    color: var(--color-white);
-    background: var(--color-primary);
-    border-color: var(--color-primary);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(22, 143, 196, .16);
+  color: var(--color-white);
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(22, 143, 196, .24);
 }
 
-/* =========================
-   CARD LINK
-   ========================= */
+.travel-guide .guide-content .btn {
+  align-self: flex-start;
+  min-width: 125px;
+}
 
 .card-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    color: var(--color-primary);
-    font-size: .78rem;
-    font-weight: 600;
-    line-height: 1;
-    text-decoration: none;
-    transition: color .25s ease, transform .25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-primary);
+  font-size: .78rem;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition: color .25s ease, transform .25s ease;
 }
 
 .card-link:hover {
-    color: var(--color-primary-hover);
-    transform: translateX(2px);
+  color: var(--color-primary-hover);
+  transform: translateX(2px);
 }
 
 .section {
-    padding: 90px 0;
+  padding: 90px 0;
 }
 
 .section-label {
-    margin-bottom: 8px;
-    color: var(--color-primary);
-    font-size: .72rem;
-    font-weight: 700;
-    letter-spacing: .18em;
+  margin-bottom: 8px;
+  color: var(--color-primary);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .18em;
 }
 
 .section-title {
-    margin: 0 0 18px;
-    color: var(--color-heading);
-    font-size: clamp(2rem, 4vw, 3rem);
-    line-height: 1.2;
+  margin: 0 0 18px;
+  color: var(--color-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
 }
 
 .section-text {
-    max-width: 700px;
-    color: var(--color-muted);
-    line-height: 1.9;
+  max-width: 700px;
+  color: var(--color-muted);
+  line-height: 1.9;
 }
 
 .intro {
-    padding: 50px 0;
-    background: var(--color-surface-blue);
+  padding: 50px 0;
+  background: var(--color-surface-blue);
 }
 
 .intro .container {
-    max-width: 800px;
-    text-align: center;
+  max-width: 800px;
+  text-align: center;
 }
 
 .intro .section-label {
-    margin-bottom: 6px;
-    font-size: .68rem;
+  margin-bottom: 6px;
+  font-size: .68rem;
 }
 
 .intro .section-title {
-    margin: 0 0 12px;
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
-    line-height: 1.2;
+  margin: 0 0 12px;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.2;
 }
 
 .intro .section-text {
-    max-width: 700px;
-    margin: 0 auto;
-    font-size: .9rem;
-    line-height: 1.2;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: .9rem;
+  line-height: 1.2;
 }
 
 .section-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 30px;
-    margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 40px;
 }
 
 .section-heading a {
-    color: var(--color-primary);
-    font-weight: 600;
-    text-decoration: none;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .section-heading a:hover {
-    color: var(--color-primary-hover);
+  color: var(--color-primary-hover);
 }
 
-
-/* =========================
-   FEATURED SERIES
-   แก้ไข Layout ใหม่
-   ========================= */
-
 .featured-series {
-    padding: 24px 0 30px;
+    padding: 45px 0 50px;
     background: var(--color-surface);
 }
 
 .featured-series .container {
-    width: min(1400, 96%);
+    width: min(1180px, 92%);
     margin: 0 auto;
 }
 
-.featured-series .series-grid {
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+.featured-heading {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 38px;
 }
 
-.featured-series .series-card:first-child {
-    grid-column: 1 / -1;
-    grid-row: 1;
+.featured-heading .section-label {
+    margin: 0 0 8px;
+    color: var(--color-primary);
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .22em;
+}
+
+.featured-heading .section-title {
+    margin: 0;
+    color: var(--color-heading);
+    font-size: clamp(2rem, 3.2vw, 2.6rem);
+    line-height: 1.2;
+}
+
+.featured-description {
+    max-width: 500px;
+    margin: 20px 0 0;
+    color: var(--color-text);
+    font-size: .9rem;
+    line-height: 1.8;
+}
+
+.featured-layout {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-    width: 100%;
-    height: 255px;
+    grid-template-columns: 42% 58%;
+    gap: 28px;
+    align-items: stretch;
+}
+
+.featured-main-card {
+    position: relative;
+    min-height: 560px;
     overflow: hidden;
+
+    border-radius: 24px;
     background: var(--color-white);
-    border: 1px solid var(--color-border);
-    border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(40, 150, 200, .12);
+
+    box-shadow: var(--shadow-card);
 }
 
-.featured-series .series-card:first-child .series-image {
+.featured-main-card img {
     width: 100%;
-    height: 255px;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .6s ease;
+}
+
+.featured-main-card:hover img {
+    transform: scale(1.04);
+}
+
+.featured-main-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(5, 45, 65, .92) 0%,
+            rgba(5, 45, 65, .48) 42%,
+            rgba(5, 45, 65, .05) 75%
+        );
+}
+
+.featured-main-content {
+    position: absolute;
+    left: 34px;
+    right: 34px;
+    bottom: 34px;
+
+    z-index: 2;
+}
+
+.featured-badge {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 7px 15px;
+
+    color: #fff;
+    background: rgba(255, 255, 255, .18);
+
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-radius: 30px;
+
+    backdrop-filter: blur(6px);
+
+    font-size: .72rem;
+    font-weight: 600;
+}
+
+.featured-main-content h3 {
+    margin: 18px 0 14px;
+
+    color: #fff;
+
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    line-height: 1.15;
+}
+
+.featured-main-content p {
+    max-width: 450px;
+
+    margin: 0 0 24px;
+
+    color: rgba(255, 255, 255, .9);
+
+    font-size: .88rem;
+    line-height: 1.8;
+}
+
+.featured-main-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 48px;
+    padding: 8px 12px 8px 20px;
+    color: var(--color-white);
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 28px;
+    backdrop-filter: blur(5px);
+    font-size: .82rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background-color .25s ease;
+}
+
+.hero-buttons .btn-outline:hover {
+  color: var(--color-heading);
+  background: var(--color-white);
+  border-color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, .12);
+}
+
+.featured-main-button span {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.featured-main-button:hover {
+  color: var(--color-heading);
+  background: var(--color-white);
+  border-color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, .12);
+}
+
+.featured-popular {
     min-width: 0;
 }
 
-.featured-series .series-card:first-child .series-content {
+.popular-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 18px;
+}
+
+.popular-heading h3 {
+    margin: 0;
+
+    color: var(--color-heading);
+
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+
+.popular-arrows {
+    display: flex;
+    gap: 10px;
+}
+
+.popular-arrow {
+    width: 50px;
+    height: 50px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+
+    color: var(--color-primary);
+    background: var(--color-white);
+
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background-color .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+}
+
+.popular-arrow:hover {
+    color: #fff;
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+
+    transform: translateY(-2px);
+}
+
+.popular-carousel {
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 2px 0 15px;
+
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+}
+
+.popular-carousel::-webkit-scrollbar {
     display: none;
 }
 
-.featured-series .series-card:first-child .section-heading {
-    position: static;
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0;
-    margin: 0;
-    padding: 24px 24px 24px 20px;
-    background: var(--color-white);
-    z-index: 2;
-}
+.popular-card {
+    flex: 0 0 300px;
 
-.featured-series .series-card:first-child .section-heading .section-label {
-    margin: 0 0 8px;
-    color: var(--color-primary);
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: .16em;
-}
-
-.featured-series .series-card:first-child .section-heading .section-title {
-    margin: 0 0 10px;
-    color: var(--color-heading);
-    font-size: 2rem;
-    line-height: 1.25;
-}
-
-.featured-series .series-card:first-child .section-heading p span {
-    display: inline-block;
-    margin-bottom: 5px;
-    color: var(--color-primary);
-    font-size: 1rem;
-    font-weight: 700;
-}
-
-.featured-series .series-card:first-child .section-heading p:not(.section-label) {
-    margin: 0 0 16px;
-    color: var(--color-muted);
-    font-size: 0.82rem;
-    line-height: 1.6;
-}
-
-.featured-series .series-card:first-child .section-heading>a {
-    display: inline-block;
-    color: var(--color-primary);
-    font-size: 0.82rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.featured-series .series-card:first-child .section-heading>a:hover {
-    color: var(--color-primary-hover);
-}
-
-.featured-series .series-card:nth-child(2) {
-    grid-column: 1 / span 2;
-    grid-row: 2;
-}
-
-.featured-series .series-card:nth-child(3) {
-    grid-column: 3 / span 2;
-    grid-row: 2;
-}
-
-.featured-series .series-card:nth-child(4) {
-    grid-column: 5 / span 2;
-    grid-row: 2;
-}
-
-.featured-series .series-image {
-    position: relative;
-    width: 100%;
-    height: 125px;
     overflow: hidden;
-}
 
-.featured-series .series-card:first-child .series-image {
-    height: 255px;
-}
-
-.featured-series .series-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform .5s ease;
-}
-
-.featured-series .series-card:hover .series-image img {
-    transform: scale(1.05);
-}
-
-.featured-series .country-tag {
-    position: absolute;
-    top: 9px;
-    left: 9px;
-    padding: 4px 9px;
-    color: var(--color-white);
-    background: var(--color-primary);
-    border-radius: 15px;
-    font-size: .58rem;
-    font-weight: 600;
-    z-index: 2;
-}
-
-.featured-series .series-card:not(:first-child) {
-    overflow: hidden;
     background: var(--color-white);
-    border: 1px solid var(--color-border);
-    border-radius: 14px;
-    box-shadow: 0 6px 20px rgba(40, 150, 200, .1);
-    transition: transform .25s ease, box-shadow .25s ease;
-}
 
-.featured-series .series-card:not(:first-child):hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 28px rgba(40, 150, 200, .16);
-}
-
-.featured-series .series-card:not(:first-child) .series-content {
-    display: block;
-    padding: 10px 12px 12px;
-    background: var(--color-white);
-}
-
-.featured-series .series-card:not(:first-child) .series-content h3 {
-    margin: 0 0 4px;
-    color: var(--color-text);
-    font-size: .78rem;
-    line-height: 1.35;
-}
-
-.featured-series .series-card:not(:first-child) .series-content p {
-    margin: 0 0 8px;
-    color: var(--color-muted);
-    font-size: .62rem;
-    line-height: 1.45;
-}
-
-.featured-series .card-link {
-    color: var(--color-primary);
-    font-size: .62rem;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.featured-series .card-link:hover {
-    color: var(--color-primary-hover);
-}
-
-/* =========================
-   SERIES GRID
-   ========================= */
-
-.series-grid {
-    width: min(1180px, 90%);
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-
-.series-card {
-    overflow: hidden;
-    background: var(--color-white);
     border: 1px solid var(--color-border);
     border-radius: 18px;
-    box-shadow: 0 6px 22px rgba(40, 150, 200, .08);
-    transition: transform .25s ease, box-shadow .25s ease;
+
+    box-shadow: var(--shadow-card);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
 }
 
-.series-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(40, 150, 200, .15);
+.popular-card:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--color-border-accent);
+
+    box-shadow: 0 12px 30px rgba(40, 130, 170, .14);
 }
 
-.series-image {
+.popular-card-image {
     position: relative;
-    height: 300px;
+
+    height: 290px;
+
     overflow: hidden;
 }
 
-.series-image img {
+.popular-card-image img {
     width: 100%;
     height: 100%;
+
+    display: block;
+
     object-fit: cover;
+
     transition: transform .5s ease;
 }
 
-.series-card:hover .series-image img {
+.popular-card:hover .popular-card-image img {
     transform: scale(1.05);
 }
 
-.country-tag {
+.popular-card .country-tag {
     position: absolute;
     top: 14px;
     left: 14px;
-    padding: 5px 11px;
-    color: var(--color-white);
+
+    padding: 6px 13px;
+
+    color: #fff;
     background: var(--color-primary);
+
     border-radius: 20px;
-    font-size: .7rem;
-}
 
-.series-content {
-    padding: 22px;
-}
-
-.series-content h3 {
-    margin: 0 0 8px;
-    color: var(--color-heading);
-    font-size: 1.25rem;
-}
-
-.series-content p {
-    margin: 0 0 15px;
-    color: var(--color-muted);
-    font-size: .9rem;
-}
-
-.card-link {
-    color: var(--color-primary);
-    font-size: .9rem;
+    font-size: .68rem;
     font-weight: 600;
-    text-decoration: none;
 }
 
-.card-link:hover {
+.popular-card-content {
+    min-height: 270px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 22px 22px;
+}
+
+.series-meta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-bottom: 12px;
+
+    color: var(--color-primary);
+
+    font-size: .68rem;
+    white-space: nowrap;
+}
+
+.popular-card-content h4 {
+    margin: 0 0 10px;
+
+    color: var(--color-heading);
+
+    font-size: 1.05rem;
+    line-height: 1.35;
+}
+
+.popular-card-content p {
+    margin: 0 0 18px;
+
+    color: var(--color-muted);
+
+    font-size: .78rem;
+    line-height: 1.7;
+}
+
+.popular-card .card-link {
+    margin-top: auto;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    color: var(--color-primary);
+
+    font-size: .78rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        color .25s ease,
+        transform .25s ease;
+}
+
+.popular-card .card-link:hover {
     color: var(--color-primary-hover);
+    transform: translateX(3px);
 }
 
 .locations {
-    width: 100%;
-    margin: 0;
-    padding: 35px 0;
+  width: 100%;
+  margin: 0;
+  padding: 35px 0;
 }
 
 .locations-featured {
-    width: 100%;
-    height: 400px;
-    display: grid;
-    grid-template-columns: 45% 55%;
-    overflow: hidden;
+  width: 100%;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  overflow: hidden;
 }
 
 .locations-content {
-    padding: 20px 30px 20px 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  padding: 20px 30px 20px 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .locations-content .section-label {
-    margin: 0 0 4px;
-    color: var(--color-primary);
-    font-size: .8rem;
-    font-weight: 700;
-    letter-spacing: .2em;
+  margin: 0 0 4px;
+  color: var(--color-primary);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .2em;
 }
 
 .locations-content .section-title {
-    margin: 0 0 6px;
-    color: var(--color-heading);
-    font-size: 2.5rem;
-    line-height: 1.5;
+  margin: 0 0 6px;
+  color: var(--color-heading);
+  font-size: 2.5rem;
+  line-height: 1.5;
 }
 
 .locations-description {
-    max-width: 430px;
-    margin: 0 0 18px;
-    color: var(--color-muted);
-    font-size: .9rem;
-    line-height: 1.45;
-}
-
-.locations-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 5px 14px;
-    border: 1px solid var(--color-border-accent);
-    border-radius: 20px;
-    color: var(--color-primary);
-    background: var(--color-white);
-    font-size: .8rem;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.locations-button:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
+  max-width: 430px;
+  margin: 0 0 18px;
+  color: var(--color-muted);
+  font-size: .9rem;
+  line-height: 1.45;
 }
 
 .locations-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .locations-image img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    transition: transform .4s ease;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .4s ease;
 }
-
-.locations-image:hover img {
-    transform: scale(1.03);
-}
-
-/* =========================
-   COUNTRIES
-   ========================= */
 
 .countries {
-    background: var(--color-surface);
-    padding: 55px 0 60px;
+  background: var(--color-surface);
+  padding: 55px 0 60px;
 }
 
 .center-heading {
-    max-width: 700px;
-    margin: 0 auto 45px;
-    text-align: center;
-    margin-bottom: 35px;
+  max-width: 700px;
+  margin: 0 auto 45px;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .countries .section-label {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .center-heading .section-text {
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .countries .section-title {
-    margin: 0 0 14px;
-    font-size: 2.7rem;
+  margin: 0 0 14px;
+  font-size: 2.7rem;
 }
 
 .country-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 18px;
-    margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 0;
 }
 
 .country-card {
-    position: relative;
-    height: 280px;
-    overflow: hidden;
-    color: var(--color-white);
-    border-radius: 18px;
-    text-decoration: none;
-    box-shadow: 0 6px 20px rgba(40, 150, 200, .1);
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  color: var(--color-white);
+  border-radius: 18px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(40, 150, 200, .1);
 }
 
 .country-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform .5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s ease;
 }
 
 .country-card:hover img {
-    transform: scale(1.06);
+  transform: scale(1.06);
 }
 
 .country-overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    padding: 22px;
-    background: linear-gradient(to top, rgba(8, 60, 90, .85), transparent 70%);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 22px;
+  background: linear-gradient(to top, rgba(8, 60, 90, .85), transparent 70%);
 }
 
 .country-overlay span {
-    font-size: .62rem;
-    letter-spacing: .18em;
+  font-size: .62rem;
+  letter-spacing: .18em;
 }
 
 .country-overlay h3 {
-    margin: 5px 0;
-    font-size: 1.6rem;
+  margin: 5px 0;
+  font-size: 1.6rem;
 }
 
 .country-overlay p {
-    margin: 0;
-    opacity: .85;
+  margin: 0;
+  opacity: .85;
 }
 
-
-/* =========================
-   TRAVEL GUIDE
-   ========================= */
-
 .travel-guide {
-    background: var(--color-surface-blue);
-    padding: 25px 0;
+  background: var(--color-surface-blue);
+  padding: 25px 0 ;
 }
 
 .guide-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .guide-card {
-    width: 100%;
-    height: 350px;
-    display: grid;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(40, 150, 200, .1);
+  width: 100%;
+  height: 350px;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(40, 150, 200, .1);
 }
 
 .guide-card.trip {
-    display: block;
+  display: block;
 }
 
 .guide-card.trip .guide-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to top, rgba(8, 60, 90, .88), rgba(8, 60, 90, .05)), url("../images/trip-01.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(8, 60, 90, .88), rgba(8, 60, 90, .05)), url("../images/trip-01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .guide-card.trip .guide-content {
-    position: relative;
-    z-index: 2;
-    width: 45%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px 30px 20px 200px;
-    box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 30px 20px 200px;
+  box-sizing: border-box;
 }
 
 .guide-card.trip .section-label {
-    margin: 0 0 3px;
-    color: var(--color-white);
-    font-size: .75rem;
-    font-weight: 700;
-    letter-spacing: .18em;
+  margin: 0 0 3px;
+  color: var(--color-white);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .18em;
 }
 
 .guide-card.trip h2 {
-    margin: 0 0 7px;
-    color: var(--color-white);
-    font-size: 2rem;
-    line-height: 1.5;
+  margin: 0 0 7px;
+  color: var(--color-white);
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .guide-card.trip p:not(.section-label) {
-    max-width: 450px;
-    margin: 0 0 8px;
-    color: rgba(255, 255, 255, .9);
-    font-size: .85rem;
-    line-height: 2;
+  max-width: 450px;
+  margin: 0 0 8px;
+  color: rgba(255, 255, 255, .9);
+  font-size: .85rem;
+  line-height: 2;
 }
 
 .guide-card.season {
-    display: grid;
-    grid-template-columns: 45% 55%;
-    background: transparent;
-    overflow: visible;
-    box-shadow: none;
-    border-radius: 0;
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  background: transparent;
+  overflow: visible;
+  box-shadow: none;
+  border-radius: 0;
+  margin-top: 30px;
 }
 
 .guide-card.season .guide-image {
-    width: calc(100% - 12px);
-    height: calc(100% - 20px);
-    margin: 10px 12px 10px 100px;
-    border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(8, 60, 90, .50), rgba(8, 60, 90, .05)), url("../images/rainy.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0 5px 18px rgba(40, 150, 200, .08);
+  width: calc(100% - 12px);
+  height: calc(100% - 20px);
+  margin: 10px 12px 10px 100px;
+  border-radius: 10px;
+  background-image: linear-gradient(to right, rgba(8, 60, 90, .50), rgba(8, 60, 90, .05)), url("../images/rainy.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 18px rgba(40, 150, 200, .08);
 }
 
 .guide-card.season .guide-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px 30px 20px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 30px 20px 150px;
 }
 
 .guide-card.season .section-label {
-    margin: 0 0 3px;
-    color: var(--color-primary);
-    font-size: .75rem;
-    font-weight: 700;
-    letter-spacing: .18em;
+  margin: 0 0 3px;
+  color: var(--color-primary);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .18em;
 }
 
 .guide-card.season h2 {
-    margin: 0 0 5px;
-    color: var(--color-heading);
-    font-size: 2rem;
-    line-height: 1.5;
+  margin: 0 0 5px;
+  color: var(--color-heading);
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 .guide-card.season p:not(.section-label) {
-    max-width: 430px;
-    margin: 0 0 8px;
-    color: var(--color-muted);
-    font-size: .85rem;
-    line-height: 2;
+  max-width: 430px;
+  margin: 0 0 8px;
+  color: var(--color-muted);
+  font-size: .85rem;
+  line-height: 2;
 }
 
-.guide-content .btn {
-    display: inline-flex;
-    align-items: center;
-    padding: 5px 13px;
-    border: 1px solid var(--color-border-accent);
-    border-radius: 18px;
-    color: var(--color-primary);
-    background: var(--color-white);
-    font-size: .68rem;
-    text-decoration: none;
-    transition: .3s;
+@media (max-width:1024px){
+.hero{min-height:680px}
+.featured-layout{grid-template-columns:1fr 1fr;gap:20px}
+.locations-featured{grid-template-columns:1fr 1fr}
+.country-grid{grid-template-columns:repeat(2,1fr)}
+.guide-card{min-height:380px}
 }
 
-.guide-content .btn:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
-}
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-/* ---------------------------------------------------------
-   TABLET — 768px and below
-   --------------------------------------------------------- */
-@media (max-width: 768px) {
-
-  /* General spacing */
-  .container {
-    width: min(92%, 680px);
-  }
-
-  .section {
-    padding: var(--space-xl) 0;
-  }
-
-  .section-heading {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 28px;
-  }
-
-  .section-title {
-    font-size: clamp(1.85rem, 5.5vw, 2.5rem);
-  }
-
-  /* -------------------------------------------------------
-     NAV / HAMBURGER
-     ------------------------------------------------------- */
-
-  /* Use these rules when the header markup uses
-     .hamburger / .nav-menu / .nav-links. */
-  .hamburger {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    width: 42px;
-    height: 42px;
-    padding: 0;
-    border: 0;
-    border-radius: var(--radius-nav);
-    color: var(--color-heading);
-    background: var(--color-white);
-    cursor: pointer;
-  }
-
-  .hamburger span {
-    display: block;
-    width: 21px;
-    height: 2px;
-    border-radius: 2px;
-    background: currentColor;
-    transition: transform .25s ease, opacity .25s ease;
-  }
-
-  .nav-menu,
-  .nav-links {
-    display: none;
-  }
-
-  .nav-menu.is-open,
-  .nav-links.is-open {
-    display: flex;
-  }
-
-  /* -------------------------------------------------------
-     HERO
-     ------------------------------------------------------- */
-  .hero {
-    height: 45vh;
-    min-height: 330px;
+@media (max-width:767px){
+.hero {
+    min-height: 620px;
+    height: auto;
+    padding: 120px 20px 70px;
   }
 
   .hero-content {
-    width: min(92%, 680px);
-    padding-top: 30px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .hero h1 {
-    max-width: 650px;
-    font-size: clamp(2.5rem, 7vw, 3.4rem);
+    font-size: clamp(2.2rem, 10vw, 3.2rem);
+    line-height: 1.15;
   }
 
   .hero-text {
-    max-width: 580px;
-    font-size: .88rem;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.8;
   }
 
-  /* -------------------------------------------------------
-     INTRO
-     ------------------------------------------------------- */
-  .intro {
-    padding: var(--space-lg) 0;
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
   }
 
-  .intro .section-text {
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 55px 0;
+  }
+
+  .section-title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .section-text {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .intro .container {
+    width: 90%;
+  }
+
+  .featured-heading {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+
+  .featured-description {
+    max-width: 100%;
+    font-size: 13px;
     line-height: 1.7;
   }
 
-  /* -------------------------------------------------------
-     FEATURED
-     Tablet: vertical layout
-     ------------------------------------------------------- */
-  .featured-series {
-    padding: var(--space-md) 0 var(--space-lg);
-  }
-
-  .featured-series .container {
-    width: min(92%, 680px);
-  }
-
-  .featured-series .series-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .featured-series .series-card:first-child {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .featured-series .series-card:first-child .series-image {
-    width: 100%;
-    height: 260px;
-  }
-
-  .featured-series .series-card:first-child .series-content {
-    display: block;
-  }
-
-  .featured-series .series-card:first-child .section-heading {
-    position: static;
-    width: 100%;
-    height: auto;
-    padding: 22px;
-    order: 2;
-  }
-
-  .featured-series .series-card:first-child .section-heading .section-title {
-    font-size: 1.7rem;
-  }
-
-  .featured-series .series-card:nth-child(2),
-  .featured-series .series-card:nth-child(3),
-  .featured-series .series-card:nth-child(4) {
-    width: 100%;
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-  .featured-series .series-card:not(:first-child) {
-    display: grid;
-    grid-template-columns: 38% 62%;
-    min-height: 145px;
-  }
-
-  .featured-series .series-card:not(:first-child) .series-image {
-    height: 100%;
-    min-height: 145px;
-  }
-
-  .featured-series .series-card:not(:first-child) .series-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 14px 16px;
-  }
-
-  /* -------------------------------------------------------
-     SERIES
-     Tablet: 1 column
-     ------------------------------------------------------- */
-  .series-grid {
-    width: min(92%, 680px);
+  .featured-layout {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 30px;
   }
 
-  .series-image {
-    height: 330px;
+  .featured-main-card {
+    min-height: 430px;
   }
 
-  .series-content {
-    padding: 20px;
+  .featured-main-content {
+    left: 22px;
+    right: 22px;
+    bottom: 22px;
   }
 
-  /* -------------------------------------------------------
-     LOCATIONS
-     ------------------------------------------------------- */
-  .locations {
-    padding: var(--space-lg) 0;
+  .featured-main-content h3 {
+    font-size: 30px;
+  }
+
+  .featured-main-content p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .popular-heading {
+    margin-bottom: 14px;
+  }
+
+  .popular-carousel {
+    gap: 14px;
+    padding-bottom: 10px;
+  }
+
+  .popular-card {
+    flex: 0 0 82%;
+    min-width: 0;
+  }
+
+  .popular-card-content {
+    min-height: 240px;
+    padding: 18px;
+  }
+
+  .popular-card-content h4 {
+    font-size: 17px;
   }
 
   .locations-featured {
@@ -1125,400 +1080,58 @@ button {
   }
 
   .locations-content {
-    padding: 35px 5%;
-    order: 1;
+    padding: 45px 25px;
+  }
+
+  .locations-description {
+    font-size: 13px;
+    line-height: 1.8;
   }
 
   .locations-image {
-    height: 300px;
-    order: 2;
-    border-radius: 0;
-  }
-
-  .locations-content .section-title {
-    font-size: 2.15rem;
-  }
-
-  /* -------------------------------------------------------
-     COUNTRIES
-     Tablet: 2 columns
-     ------------------------------------------------------- */
-  .countries {
-    padding: var(--space-xl) 0;
-  }
-
-  .center-heading {
-    margin-bottom: 28px;
-  }
-
-  .countries .section-title {
-    font-size: 2.25rem;
+    height: 260px;
   }
 
   .country-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
 
   .country-card {
-    height: 250px;
+    min-height: 190px;
   }
 
   .country-overlay {
-    padding: 18px;
+    padding: 15px;
   }
 
   .country-overlay h3 {
-    font-size: 1.4rem;
-  }
-
-  /* -------------------------------------------------------
-     TRAVEL GUIDE
-     ------------------------------------------------------- */
-  .travel-guide {
-    padding: var(--space-lg) 0;
-  }
-
-  .guide-container {
-    width: min(92%, 680px);
+    font-size: 20px;
   }
 
   .guide-card {
     height: auto;
-  }
-
-  .guide-card.trip {
-    min-height: 330px;
+    min-height: 430px;
   }
 
   .guide-card.trip .guide-content {
-    width: 70%;
-    padding: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 30px 25px;
+    justify-content: flex-end;
   }
 
   .guide-card.season {
     grid-template-columns: 1fr;
-    margin-top: 22px;
+    min-height: auto;
   }
 
   .guide-card.season .guide-image {
-    width: 100%;
-    height: 260px;
-    margin: 0;
+    min-height: 240px;
   }
 
   .guide-card.season .guide-content {
-    padding: 28px 5%;
-  }
-}
-
-
-/* ---------------------------------------------------------
-   MOBILE — 400px and below
-   --------------------------------------------------------- */
-@media (max-width: 400px) {
-
-  .container,
-  .featured-series .container,
-  .series-grid,
-  .guide-container {
-    width: calc(100% - 28px);
+    padding: 30px 25px;
   }
 
-  /* Section padding ≈ 55px */
-  .section {
-    padding: var(--space-xl) 0;
-  }
-
-  .section-heading {
-    margin-bottom: 24px;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-    line-height: 1.2;
-  }
-
-  .section-text {
-    font-size: .88rem;
-    line-height: 1.7;
-  }
-
-  /* -------------------------------------------------------
-     HERO
-     H1 ≈ 2.35rem
-     ------------------------------------------------------- */
-  .hero {
-    height: 45vh;
-    min-height: 300px;
-  }
-
-  .hero-content {
-    width: calc(100% - 28px);
-    padding-top: 20px;
-  }
-
-  .hero-label {
-    margin-bottom: 8px;
-    font-size: .68rem;
-    letter-spacing: .15em;
-  }
-
-  .hero h1 {
-    font-size: 2.35rem;
-    line-height: 1.08;
-    letter-spacing: -.035em;
-  }
-
-  .hero-text {
-    margin-bottom: 16px;
-    font-size: .8rem;
-    line-height: 1.6;
-  }
-
-  .hero-buttons {
-    gap: 8px;
-  }
-
-  /* -------------------------------------------------------
-     INTRO
-     ------------------------------------------------------- */
-  .intro {
-    padding: 55px 0;
-  }
-
-  .intro .section-title {
-    font-size: 1.65rem;
-  }
-
-  .intro .section-text {
-    font-size: .82rem;
-    line-height: 1.7;
-  }
-
-  /* -------------------------------------------------------
-     FEATURED
-     ------------------------------------------------------- */
-  .featured-series {
-    padding: 18px 0 28px;
-  }
-
-  .featured-series .series-grid {
-    gap: 14px;
-  }
-
-  .featured-series .series-card:first-child .series-image {
-    height: 190px;
-  }
-
-  .featured-series .series-card:first-child .section-heading {
-    padding: 18px;
-  }
-
-  .featured-series .series-card:first-child .section-heading .section-label {
-    font-size: .66rem;
-  }
-
-  .featured-series .series-card:first-child .section-heading .section-title {
-    margin-bottom: 8px;
-    font-size: 1.45rem;
-  }
-
-  .featured-series .series-card:first-child .section-heading p:not(.section-label) {
-    margin-bottom: 12px;
-    font-size: .76rem;
-  }
-
-  .featured-series .series-card:not(:first-child) {
-    grid-template-columns: 34% 66%;
-    min-height: 115px;
-  }
-
-  .featured-series .series-card:not(:first-child) .series-image {
-    min-height: 115px;
-  }
-
-  .featured-series .series-card:not(:first-child) .series-content {
-    padding: 10px 12px;
-  }
-
-  .featured-series .series-card:not(:first-child) .series-content h3 {
-    font-size: .74rem;
-  }
-
-  .featured-series .series-card:not(:first-child) .series-content p {
-    margin-bottom: 5px;
-    font-size: .58rem;
-  }
-
-  .featured-series .card-link {
-    font-size: .58rem;
-  }
-
-  /* -------------------------------------------------------
-     SERIES
-     ------------------------------------------------------- */
-  .series-grid {
-    gap: 16px;
-  }
-
-  .series-image {
-    height: 230px;
-  }
-
-  .series-content {
-    padding: 16px;
-  }
-
-  .series-content h3 {
-    margin-bottom: 6px;
-    font-size: 1.05rem;
-  }
-
-  .series-content p {
-    margin-bottom: 12px;
-    font-size: .82rem;
-    line-height: 1.6;
-  }
-
-  .country-tag {
-    top: 10px;
-    left: 10px;
-    padding: 4px 9px;
-    font-size: .62rem;
-  }
-
-  .card-link {
-    font-size: .8rem;
-  }
-
-  /* -------------------------------------------------------
-     LOCATIONS
-     ------------------------------------------------------- */
-  .locations {
-    padding: 28px 0;
-  }
-
-  .locations-content {
-    padding: 30px 14px;
-  }
-
-  .locations-content .section-title {
-    font-size: 1.9rem;
-    line-height: 1.25;
-  }
-
-  .locations-description {
-    margin-bottom: 14px;
-    font-size: .82rem;
-    line-height: 1.6;
-  }
-
-  .locations-image {
-    height: 220px;
-  }
-
-  /* -------------------------------------------------------
-     COUNTRIES
-     Keep 2 columns, reduce card/image size
-     ------------------------------------------------------- */
-  .countries {
-    padding: 55px 0;
-  }
-
-  .countries .section-title {
-    font-size: 1.9rem;
-  }
-
-  .center-heading {
-    margin-bottom: 24px;
-  }
-
-  .country-grid {
-    gap: 10px;
-  }
-
-  .country-card {
-    height: 190px;
-    border-radius: 14px;
-  }
-
-  .country-overlay {
-    padding: 12px;
-  }
-
-  .country-overlay span {
-    font-size: .52rem;
-  }
-
-  .country-overlay h3 {
-    margin: 3px 0;
-    font-size: 1.05rem;
-  }
-
-  .country-overlay p {
-    font-size: .72rem;
-  }
-
-  /* -------------------------------------------------------
-     TRAVEL GUIDE
-     ------------------------------------------------------- */
-  .travel-guide {
-    padding: 28px 0 40px;
-  }
-
-  .guide-card.trip {
-    min-height: 300px;
-  }
-
-  .guide-card.trip .guide-content {
-    width: 100%;
-    padding: 24px;
-    justify-content: flex-end;
-    background: linear-gradient(to top, rgba(8, 60, 90, .45), transparent);
-  }
-
-  .guide-card.trip h2,
-  .guide-card.season h2 {
-    font-size: 1.55rem;
-    line-height: 1.3;
-  }
-
-  .guide-card.trip p:not(.section-label),
-  .guide-card.season p:not(.section-label) {
-    font-size: .78rem;
-    line-height: 1.7;
-  }
-
-  .guide-card.season .guide-image {
-    height: 200px;
-  }
-
-  .guide-card.season .guide-content {
-    padding: 24px 14px;
-  }
-
-  .guide-content .btn {
-    padding: 5px 12px;
-    font-size: .64rem;
-  }
-}
-
-
-/* ---------------------------------------------------------
-   TOUCH DEVICES
-   Avoid hover transforms causing accidental movement.
-   --------------------------------------------------------- */
-@media (hover: none) and (pointer: coarse) {
-  .series-card:hover,
-  .featured-series .series-card:not(:first-child):hover {
-    transform: none;
-  }
-
-  .series-card:hover .series-image img,
-  .featured-series .series-card:hover .series-image img,
-  .country-card:hover img,
-  .locations-image:hover img {
-    transform: none;
-  }
 }

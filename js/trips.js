@@ -120,7 +120,6 @@ const tripsData = [
     }
 ];
 
-
 const tripGrid = document.getElementById("tripGrid");
 const tripSearch = document.getElementById("tripSearch");
 const tripResultCount = document.getElementById("tripResultCount");
@@ -129,7 +128,6 @@ const tripEmpty = document.getElementById("tripEmpty");
 const filterButtons = document.querySelectorAll(".trip-filter");
 
 let currentCountry = "all";
-
 
 function renderTrips(data) {
     tripGrid.innerHTML = "";
@@ -192,13 +190,11 @@ function filterTrips() {
         .toLowerCase()
         .trim();
 
-
     let filteredTrips = tripsData.filter(trip => {
 
         const matchCountry =
             currentCountry === "all" ||
             trip.country === currentCountry;
-
 
         const searchText = `
             ${trip.title}
@@ -209,20 +205,16 @@ function filterTrips() {
             ${trip.description}
         `.toLowerCase();
 
-
         const matchSearch =
             keyword === "" ||
             searchText.includes(keyword);
-
 
         return matchCountry && matchSearch;
 
     });
 
-
     renderTrips(filteredTrips);
 }
-
 
 filterButtons.forEach(button => {
 
@@ -242,11 +234,9 @@ filterButtons.forEach(button => {
 
 });
 
-
 tripSearch.addEventListener(
     "input",
     filterTrips
 );
-
 
 renderTrips(tripsData);

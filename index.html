@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,18 @@
 </head>
 
 <body>
-    <!-- NAV -->
+
     <div id="navbar"></div>
-    
+
     <main>
-        <!-- HERO -->
+
         <section class="hero">
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <p class="hero-label">SERIES TRAIL</p>
                 <h1>เที่ยวตามรอย<br><span>ซีรีย์ที่คุณชื่นชอบ</span></h1>
-                <p class="hero-text">ค้นพบสถานที่จริงจากฉากในซีรีย์ พร้อมสำรวจสถานที่ท่องเที่ยว คาเฟ่ ร้านอาหาร และที่พัก</p>
+                <p class="hero-text">ค้นพบสถานที่จริงจากฉากในซีรีย์ พร้อมสำรวจสถานที่ท่องเที่ยว คาเฟ่ ร้านอาหาร
+                    และที่พัก</p>
                 <div class="hero-buttons">
                     <a href="/pages/series.html" class="btn btn-primary">ดูซีรีย์ทั้งหมด</a>
                     <a href="/pages/place_list.html" class="btn btn-outline">สำรวจสถานที่</a>
@@ -33,89 +35,161 @@
             <div class="container">
                 <p class="section-label">DISCOVER THE STORY</p>
                 <h2 class="section-title">จากหน้าจอ สู่สถานที่จริง</h2>
-                <p class="section-text">เที่ยวตามรอยซีรีย์ เป็นเว็บไซต์ที่รวบรวมสถานที่จริงที่ปรากฏในซีรีย์จากประเทศต่าง ๆ เพื่อให้ผู้ชมสามารถค้นพบสถานที่ที่อยู่เบื้องหลังเรื่องราวที่พวกเขาชื่นชอบ</p>
+                <p class="section-text">เที่ยวตามรอยซีรีย์ เป็นเว็บไซต์ที่รวบรวมสถานที่จริงที่ปรากฏในซีรีย์จากประเทศต่าง
+                    ๆ เพื่อให้ผู้ชมสามารถค้นพบสถานที่ที่อยู่เบื้องหลังเรื่องราวที่พวกเขาชื่นชอบ</p>
             </div>
         </section>
 
         <section class="featured-series section">
             <div class="container">
-                <div class="series-grid">
-                    <article class="series-card">
-                        <div class="series-image">
-                            <img src="images/series/series.jpg" alt="ซีรีย์แนะนำ">
+                <div class="featured-heading">
+                    <div>
+                        <p class="section-label">FEATURED SERIES</p>
+                        <h2 class="section-title">ซีรีย์แนะนำ</h2>
+                    </div>
+                    <p class="featured-description">
+                        ค้นหาซีรีย์ในดวงใจ พร้อมพาไปค้นพบสถานที่จริงที่ปรากฏ
+                        <br>
+                        ในเรื่องราว และบรรยากาศที่คุณสามารถตามรอยได้
+                    </p>
+                </div>
+                <div class="featured-layout">
+                    <article class="featured-main-card">
+                        <img src="images/series/series.jpg" alt="ซีรีย์แนะนำ">
+                        <div class="featured-main-overlay"></div>
+                        <div class="featured-main-content">
+                            <span class="featured-badge">
+                                Featured · ซีรีย์แนะนำ
+                            </span>
+                            <h3>
+                                ค้นหาซีรีย์
+                                <br>
+                                ในดวงใจ
+                            </h3>
+                            <p>
+                                พร้อมพาไปค้นพบสถานที่จริงที่ปรากฏในเรื่องราว
+                                และบรรยากาศที่คุณสามารถตามรอยได้
+                            </p>
+                            <a href="/pages/series.html" class="featured-main-button">
+                                ดูซีรีย์ทั้งหมด
+                                <span><i class="bi bi-chevron-right"></i></span>
+                            </a>
                         </div>
-                        <div class="section-heading">
-                            <div>
-                                <p class="section-label">FEATURED SERIES</p>
-                                <h2 class="section-title">ซีรีย์แนะนำ</h2>
-                                <p>
-                                    <span>ค้นหาซีรี่ย์ในดวงใจ</span><br> 
-                                    พร้อมพาไปค้นพบ สถานที่จริงที่ปรากฏในเรื่องราว และบรรยากาศที่คุณสามารถตามรอยได้
-                                </p>
+                    </article>
+                    <div class="featured-popular">
+                        <div class="popular-heading">
+                            <h3>ซีรีย์ยอดนิยม</h3>
+                            <div class="popular-arrows">
+                                <button type="button" class="popular-arrow popular-prev" aria-label="ซีรีย์ก่อนหน้า">
+                                    ‹
+                                </button>
+                                <button type="button" class="popular-arrow popular-next" aria-label="ซีรีย์ถัดไป">
+                                    ›
+                                </button>
                             </div>
-                            <a href="/pages/series.html">ดูซีรีย์ทั้งหมด ></a>
                         </div>
-                    </article>
-                    <article class="series-card">
-                        <div class="series-image">
-                            <img src="images/series/canthislovebetranslated.jpg" alt="Can This Love Be Translated?">
-                            <span class="country-tag">เกาหลีใต้</span>
+                        <div class="popular-carousel">
+                            <article class="popular-card">
+                                <div class="popular-card-image">
+                                    <img src="images/series/canthislovebetranslated.jpg"
+                                        alt="Can This Love Be Translated?">
+                                    <span class="country-tag">
+                                        เกาหลีใต้
+                                    </span>
+                                </div>
+                                <div class="popular-card-content">
+                                    <div class="series-meta">
+                                        <span>⌖ 2 สถานที่</span>
+                                        <span>▣ ดูฤดูใบไม้ร่วง</span>
+                                    </div>
+                                    <h4>
+                                        Can This Love Be Translated?
+                                    </h4>
+                                    <p>
+                                        เรื่องราวความสัมพันธ์ระหว่างนักแปล
+                                        และดาราสาวที่เดินทางไปยังสถานที่ต่าง ๆ
+                                    </p>
+                                    <a href="/pages/series-detail.html" class="card-link">
+                                        ดูรายละเอียด <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="popular-card">
+                                <div class="popular-card-image">
+                                    <img src="images/series/hiddenlove.jpg" alt="Hidden Love">
+                                    <span class="country-tag">
+                                        จีน
+                                    </span>
+                                </div>
+                                <div class="popular-card-content">
+                                    <div class="series-meta">
+                                        <span>⌖ 2 สถานที่</span>
+                                        <span>▣ ดูฤดูร้อน</span>
+                                    </div>
+                                    <h4>
+                                        Hidden Love
+                                    </h4>
+                                    <p>
+                                        เรื่องราวความรักและความสัมพันธ์ที่
+                                        ค่อย ๆ เติมเต็มระหว่าง Sang Zhi และ
+                                        Duan Jiaxu
+                                    </p>
+                                    <a href="/pages/series-detail.html" class="card-link">
+                                        ดูรายละเอียด <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="popular-card">
+                                <div class="popular-card-image">
+                                    <img src="images/series/firstlove.jpg" alt="First Love">
+                                    <span class="country-tag">
+                                        ญี่ปุ่น
+                                    </span>
+                                </div>
+                                <div class="popular-card-content">
+                                    <div class="series-meta">
+                                        <span>⌖ 2 สถานที่</span>
+                                        <span>▣ ดูฤดูหนาว</span>
+                                    </div>
+                                    <h4>
+                                        First Love
+                                    </h4>
+                                    <p>
+                                        เรื่องราวความรักของคนสองคน
+                                        ที่กลับมาพบกันอีกครั้งหลังจากเวลาผ่านไป
+                                    </p>
+                                    <a href="/pages/series-detail.html" class="card-link">
+                                        ดูรายละเอียด <i class="bi bi-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </article>
                         </div>
-                        <div class="series-content">
-                            <h3>Can This Love Be Translated?</h3>
-                            <p>สำรวจสถานที่สำคัญที่ปรากฏในเรื่อง</p>
-                            <a href="/pages/series-detail.html" class="card-link">ดูรายละเอียด ></a>
-                        </div>
-                    </article>
-                    <article class="series-card">
-                        <div class="series-image">
-                            <img src="images/series/hiddenlove.jpg" alt="Hidden Love">
-                            <span class="country-tag">จีน</span>
-                        </div>
-                        <div class="series-content">
-                            <h3>Hidden Love</h3>
-                            <p>ค้นพบสถานที่และบรรยากาศ จากเรื่องราวในซีรีย์</p>
-                            <a href="/pages/series-detail.html" class="card-link">ดูรายละเอียด ></a>
-                        </div>
-                    </article>
-                    <article class="series-card">
-                        <div class="series-image">
-                            <img src="images/series/firstlove.jpg" alt="First Love">
-                            <span class="country-tag">ญี่ปุ่น</span>
-                        </div>
-                        <div class="series-content">
-                            <h3>First Love</h3>
-                            <p>ค้นพบสถานที่สถานที่สำคัญ จากเรื่องราวในซีรีย์</p>
-                            <a href="/pages/series-detail.html" class="card-link">ดูรายละเอียด ></a>
-                        </div>
-                    </article>
+                    </div>
                 </div>
             </div>
         </section>
-
         <section class="locations section">
-                <div class="locations-featured">
-                    <div class="locations-content">
-                        <p class="section-label">
-                            DESTINATIONS FROM SERIES
-                        </p>
-                        <h2 class="section-title">
-                            สถานที่จากในซีรีย์
-                        </h2>
-                        <p class="locations-description">
-                            สถานที่ถ่ายทำจากซีรีย์ที่น่าสนใจ
-                            พาคุณไปค้นพบสถานที่จริงที่ปรากฏในเรื่องราว
-                            พร้อมบรรยากาศและเรื่องราวที่น่าสนใจ
-                        </p>
-                        <a href="/pages/place_list.html" class="locations-button">
-                            ดูสถานที่ทั้งหมด >
-                        </a>
-                    </div>
-                    <a href="/pages/place-detail.html" class="locations-image">
-                        <img src="images/place/place-oldtown.jpg"
-                            alt="สถานที่ถ่ายทำจากซีรีย์">
+            <div class="locations-featured">
+                <div class="locations-content">
+                    <p class="section-label">
+                        DESTINATIONS FROM SERIES
+                    </p>
+                    <h2 class="section-title">
+                        สถานที่จากในซีรีย์
+                    </h2>
+                    <p class="locations-description">
+                        สถานที่ถ่ายทำจากซีรีย์ที่น่าสนใจ
+                        พาคุณไปค้นพบสถานที่จริงที่ปรากฏในเรื่องราว
+                        พร้อมบรรยากาศและเรื่องราวที่น่าสนใจ
+                    </p>
+                    <a href="/pages/place_list.html" class="locations-button">
+                        ดูสถานที่ทั้งหมด <i class="bi bi-chevron-right"></i>
                     </a>
                 </div>
+                <a href="/pages/place-detail.html" class="locations-image">
+                    <img src="images/place/place-oldtown.jpg" alt="สถานที่ถ่ายทำจากซีรีย์">
+                </a>
+            </div>
         </section>
 
         <section class="countries section">
@@ -123,7 +197,8 @@
                 <div class="center-heading">
                     <p class="section-label">EXPLORE BY COUNTRY</p>
                     <h2 class="section-title">เลือกสำรวจตามประเทศ</h2>
-                    <p class="section-text">เลือกประเทศที่สนใจ เพื่อค้นหาซีรีย์ สถานที่ท่องเที่ยว คาเฟ่ ร้านอาหาร และที่พัก</p>
+                    <p class="section-text">เลือกประเทศที่สนใจ เพื่อค้นหาซีรีย์ สถานที่ท่องเที่ยว คาเฟ่ ร้านอาหาร
+                        และที่พัก</p>
                 </div>
                 <div class="country-grid">
                     <a href="/pages/thai-places.html" class="country-card">
@@ -163,135 +238,37 @@
         </section>
 
         <section class="travel-guide section">
-            <!-- <div class="container"> -->
-                <!-- <div class="guide-grid"> -->
-                    <article class="guide-card trip">
-                        <div class="guide-content">
-                            <p class="section-label">TRAVEL GUIDE</p>
-                            <h2>ตัวอย่างทริป</h2>
-                            <p>สำรวจตัวอย่างเส้นทาง และสถานที่ที่น่าสนใจ สำหรับการตามรอยซีรีย์</p>
-                            <a href="/pages/trips.html" class="btn btn-light">
-                                ดูตัวอย่างทริป >
-                            </a>
-                        </div>
-                        <div class="guide-image"></div>
-                    </article>
-                    <article class="guide-card season">
-                        <div class="guide-image"></div>
-                        <div class="guide-content">
-                            <p class="section-label">SEASON GUIDE</p>
-                            <h2>แนะนำตามฤดูกาล</h2>
-                            <p>ค้นหาสถานที่ที่น่าสนใจ ตามช่วงฤดูกาลต่าง ๆ</p>
-                            <a href="/pages/rainy.html" class="btn btn-light">
-                                ดูคำแนะนำ >
-                            </a>
-                        </div>
-                    </article>
-                <!-- </div> -->
-            <!-- </div> -->
+
+            <article class="guide-card trip">
+                <div class="guide-content">
+                    <p class="section-label">TRAVEL GUIDE</p>
+                    <h2>ตัวอย่างทริป</h2>
+                    <p>สำรวจตัวอย่างเส้นทาง และสถานที่ที่น่าสนใจ สำหรับการตามรอยซีรีย์</p>
+                    <a href="/pages/trips.html" class="btn btn-light">
+                        ดูตัวอย่างทริป <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="guide-image"></div>
+            </article>
+            <article class="guide-card season">
+                <div class="guide-image"></div>
+                <div class="guide-content">
+                    <p class="section-label">SEASON GUIDE</p>
+                    <h2>แนะนำตามฤดูกาล</h2>
+                    <p>ค้นหาสถานที่ที่น่าสนใจ ตามช่วงฤดูกาลต่าง ๆ</p>
+                    <a href="/pages/rainy.html" class="btn btn-light">
+                        ดูคำแนะนำ <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </article>
+
         </section>
     </main>
 
     <div id="footer"></div>
 
-    
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-     <script>
-        document.addEventListener('click', function (e) {
-            /* Hamburger */
-            const menuToggle = e.target.closest('.menu-toggle');
-            if (menuToggle) {
-                const header = menuToggle.closest('.site-header') || document;
-                const navMenu = header.querySelector('.nav-menu');
-                if (!navMenu) return;
-                const isOpen = navMenu.classList.toggle('open');
-                menuToggle.setAttribute('aria-expanded', String(isOpen));
-                menuToggle.setAttribute(
-                    'aria-label',
-                    isOpen ? 'ปิดเมนู' : 'เปิดเมนู'
-                );
-                return;
-            }
-            /* Dropdown level 1 */
-            const dropdownLink = e.target.closest(
-                '.nav-menu > .dropdown > a'
-            );
-            if (dropdownLink && window.innerWidth <= 768) {
-                e.preventDefault();
-                e.stopPropagation();
-                const dropdown = dropdownLink.parentElement;
-                const parentMenu = dropdown.parentElement;
-                parentMenu.querySelectorAll(':scope > .dropdown.open')
-                    .forEach(function (item) {
-                        if (item !== dropdown) {
-                            item.classList.remove('open');
-                        }
-                    });
-                dropdown.classList.toggle('open');
-                return;
-            }
-            /* Dropdown level 2 */
-            const submenuLink = e.target.closest(
-                '.nav-menu .dropdown-submenu > a'
-            );
-            if (submenuLink && window.innerWidth <= 768) {
-                e.preventDefault();
-                e.stopPropagation();
-                const submenu = submenuLink.parentElement;
-                const parentDropdown = submenu.parentElement;
-                parentDropdown.querySelectorAll(
-                    ':scope > .dropdown-submenu.open'
-                ).forEach(function (item) {
-                    if (item !== submenu) {
-                        item.classList.remove('open');
-                    }
-                });
-                submenu.classList.toggle('open');
-                return;
-            }
-            /* Click outside navigation */
-            if (window.innerWidth <= 768) {
-                const clickedInsideNav = e.target.closest('.nav');
-                if (!clickedInsideNav) {
-                    document.querySelectorAll('.nav-menu.open')
-                        .forEach(function (menu) {
-                            menu.classList.remove('open');
-                        });
-                    document.querySelectorAll(
-                        '.dropdown.open, .dropdown-submenu.open'
-                    ).forEach(function (item) {
-                        item.classList.remove('open');
-                    });
-                    document.querySelectorAll(
-                        '.menu-toggle[aria-expanded="true"]'
-                    ).forEach(function (button) {
-                        button.setAttribute('aria-expanded', 'false');
-                        button.setAttribute('aria-label', 'เปิดเมนู');
-                    });
-                }
-            }
-        });
-        /* Reset mobile state when returning to desktop */
-        window.addEventListener('resize', function () {
-            if (window.innerWidth > 768) {
-                document.querySelectorAll('.nav-menu.open')
-                    .forEach(function (menu) {
-                        menu.classList.remove('open');
-                    });
-                document.querySelectorAll(
-                    '.dropdown.open, .dropdown-submenu.open'
-                ).forEach(function (item) {
-                    item.classList.remove('open');
-                });
-                document.querySelectorAll('.menu-toggle')
-                    .forEach(function (button) {
-                        button.setAttribute('aria-expanded', 'false');
-                        button.setAttribute('aria-label', 'เปิดเมนู');
-                    });
-            }
-        });
-    </script>
-    <script src="/js/components.js"></script>
+<script src="/js/components.js"></script>
 </body>
+
 </html>

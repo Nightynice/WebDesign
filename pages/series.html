@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    
+
     <div id="navbar"></div>
 
     <main>
@@ -46,14 +46,20 @@
                     </div>
                     <div class="filter-options">
                         <div class="country-filter">
-                            <label for="countryFilter">ประเทศ</label>
-                            <select id="countryFilter">
-                                <option value="all">ทุกประเทศ</option>
-                                <option value="ไทย">ไทย</option>
-                                <option value="เกาหลีใต้">เกาหลีใต้</option>
-                                <option value="ญี่ปุ่น">ญี่ปุ่น</option>
-                                <option value="จีน">จีน</option>
-                            </select>
+                            <label>ประเทศ</label>
+                            <div class="custom-select">
+                                <button type="button" class="custom-select-button">
+                                    <span>ทุกประเทศ</span>
+                                    <i class="bi bi-chevron-down"></i>
+                                </button>
+                                <div class="custom-select-menu">
+                                    <button type="button" data-value="all" class="active">ทุกประเทศ</button>
+                                    <button type="button" data-value="ไทย">ไทย</button>
+                                    <button type="button" data-value="เกาหลีใต้">เกาหลีใต้</button>
+                                    <button type="button" data-value="ญี่ปุ่น">ญี่ปุ่น</button>
+                                    <button type="button" data-value="จีน">จีน</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="search-filter">
                             <label for="searchInput">ค้นหา</label>

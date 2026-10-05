@@ -15,11 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const noResult =
         document.getElementById("faqNoResult");
 
-
-    /* =========================
-       ACCORDION
-    ========================= */
-
     questions.forEach(question => {
 
         question.addEventListener("click", () => {
@@ -52,11 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-
-    /* =========================
-       SEARCH
-    ========================= */
-
     if (searchInput) {
 
         searchInput.addEventListener("input", () => {
@@ -67,7 +57,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     .toLowerCase();
 
             let visibleCount = 0;
-
 
             faqItems.forEach(item => {
 
@@ -104,7 +93,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             });
 
-
             faqGroups.forEach(group => {
 
                 const visibleItems =
@@ -120,7 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             });
 
-
             if (keyword && visibleCount === 0) {
                 noResult.classList.add("show");
             } else {
@@ -130,11 +117,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     }
-
-
-    /* =========================
-       CATEGORY LINKS
-    ========================= */
 
     const categoryLinks =
         document.querySelectorAll(".faq-category-link");

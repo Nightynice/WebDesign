@@ -1,5 +1,4 @@
 const placesData = [
-    // ==================== THAILAND ====================
 
     {
         id: "phuket-old-town",
@@ -97,9 +96,6 @@ const placesData = [
         detail: "place_detail.html?place=wat-lok-molee"
     },
 
-
-    // ==================== SOUTH KOREA ====================
-
     {
         id: "cheongha-market",
         category: "places",
@@ -196,9 +192,6 @@ const placesData = [
         detail: "place_detail.html?place=guryongpo-modern-history-museum"
     },
 
-
-    // ==================== JAPAN ====================
-
     {
         id: "otaru-canal",
         category: "places",
@@ -294,9 +287,6 @@ const placesData = [
         description: "สวนและจุดชมวิวในมัตสึดะที่ใช้เป็นสถานที่ถ่ายทำของเรื่อง",
         detail: "place_detail.html?place=nishihirabatake-park"
     },
-
-
-    // ==================== CHINA ====================
 
     {
         id: "shapowei",

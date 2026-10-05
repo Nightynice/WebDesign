@@ -48,7 +48,6 @@ const hotelExtraData = {
         mapQuery: "เมืองเก่าภูเก็ต จังหวัดภูเก็ต"
     },
 
-
     "promthep-hotel": {
         hotelId: "promthep-hotel",
 
@@ -93,7 +92,6 @@ const hotelExtraData = {
 
         mapQuery: "The Nai Harn Phuket"
     },
-
 
     "cheongha-market-hotel": {
         hotelId: "cheongha-market-hotel",
@@ -140,7 +138,6 @@ const hotelExtraData = {
         mapQuery: "Cheongha Market Pohang South Korea"
     },
 
-
     "wolpo-beach-hotel": {
         hotelId: "wolpo-beach-hotel",
 
@@ -185,7 +182,6 @@ const hotelExtraData = {
 
         mapQuery: "Wolpo Beach Pohang South Korea"
     },
-
 
     "otaru-canal-hotel": {
         hotelId: "otaru-canal-hotel",
@@ -232,7 +228,6 @@ const hotelExtraData = {
         mapQuery: "Otaru Canal Hokkaido Japan"
     },
 
-
     "yuigahama-hotel": {
         hotelId: "yuigahama-hotel",
 
@@ -278,7 +273,6 @@ const hotelExtraData = {
         mapQuery: "Yuigahama Beach Kamakura Japan"
     },
 
-
     "shapowei-hotel": {
         hotelId: "shapowei-hotel",
 
@@ -323,7 +317,6 @@ const hotelExtraData = {
 
         mapQuery: "Shapowei Xiamen China"
     },
-
 
     "erhai-lake-hotel": {
         hotelId: "erhai-lake-hotel",
@@ -371,7 +364,6 @@ const hotelExtraData = {
     }
 };
 
-
 const hotel = hotelsData.find(item => item.id === hotelId);
 const extra = hotelExtraData[hotelId];
 
@@ -380,7 +372,6 @@ if (!hotel || !extra) {
 } else {
     renderHotelDetail(hotel, extra);
 }
-
 
 function renderHotelDetail(hotel, extra) {
 
@@ -429,7 +420,6 @@ function renderHotelDetail(hotel, extra) {
     renderPlaceLink(hotel);
 }
 
-
 function renderGallery(hotel) {
 
     const container = document.getElementById("hotelGallery");
@@ -472,7 +462,6 @@ function renderGallery(hotel) {
     });
 }
 
-
 function renderRooms(rooms) {
 
     const container = document.getElementById("hotelRooms");
@@ -509,7 +498,6 @@ function renderRooms(rooms) {
     `).join("");
 }
 
-
 function renderPlanningInfo(items) {
 
     const container =
@@ -534,7 +522,6 @@ function renderPlanningInfo(items) {
     `).join("");
 }
 
-
 function renderFacilities(items) {
 
     const container =
@@ -558,7 +545,6 @@ function renderFacilities(items) {
     `).join("");
 }
 
-
 function renderPlaceLink(hotel) {
 
     const button =
@@ -578,7 +564,6 @@ function renderPlaceLink(hotel) {
     button.href =
         `/pages/place_detail.html?place=${hotel.placeId}`;
 }
-
 
 function showNotFound() {
 

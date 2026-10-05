@@ -1,101 +1,74 @@
-async function loadComponent(id, path) {
-    const response = await fetch(path);
-    const html = await response.text();
-
-    document.getElementById(id).innerHTML = html;
-
-    if (id === "navbar") {
-        initNavbar();
-    }
+async function loadComponent(id,path){
+    const response=await fetch(path);
+    if(!response.ok)return;
+    document.getElementById(id).innerHTML=await response.text();
+    if(id==="navbar")initNavbar();
 }
 
-function initNavbar() {
-    const menuToggle = document.querySelector(".menu-toggle");
-    const navMenu = document.querySelector(".nav-menu");
-
-    if (!menuToggle || !navMenu) return;
-
-    menuToggle.addEventListener("click", () => {
-        const isOpen = navMenu.classList.toggle("open");
-        menuToggle.setAttribute("aria-expanded", isOpen);
+function initNavbar(){
+    const toggle=document.querySelector(".menu-toggle");
+    const menu=document.querySelector(".nav-menu");
+    if(!toggle||!menu)return;
+    const isTablet=()=>window.innerWidth<=1024;
+    toggle.addEventListener("click",()=>{
+        const open=menu.classList.toggle("open");
+        toggle.setAttribute("aria-expanded",String(open));
+        toggle.setAttribute("aria-label",open?"ปิดเมนู":"เปิดเมนู");
     });
-
-    document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
-        toggle.addEventListener("click", event => {
-            if (window.innerWidth <= 768) {
-                event.preventDefault();
-
-                const parent = toggle.parentElement;
-
-                parent.classList.toggle("open");
-            }
-        });
-    });
-
-    initCountryMegaMenu();
-
-    window.addEventListener("scroll", () => {
-        const header = document.querySelector(".site-header");
-
-        if (!header) return;
-
-        if (window.scrollY > 20) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
+    document.querySelectorAll(".dropdown-toggle").forEach(link=>link.addEventListener("click",e=>{
+        if(!isTablet())return;
+        e.preventDefault();
+        e.stopPropagation();
+        const parent=link.parentElement;
+        parent.classList.toggle("open");
+        if(!parent.classList.contains("dropdown-submenu")){
+            parent.parentElement.querySelectorAll(":scope > .dropdown.open").forEach(item=>{
+                if(item!==parent)item.classList.remove("open");
+            });
         }
+    }));
+    initCountryMegaMenu();
+    document.addEventListener("click",e=>{
+        if(isTablet()&&!e.target.closest(".nav"))closeMenu();
+    });
+    window.addEventListener("resize",()=>{
+        if(!isTablet())closeMenu();
+    });
+    window.addEventListener("scroll",()=>{
+        const header=document.querySelector(".site-header");
+        if(header)header.classList.toggle("scrolled",window.scrollY>20);
     });
 }
 
-function initCountryMegaMenu() {
+function closeMenu(){
+    document.querySelectorAll(".nav-menu.open").forEach(menu=>menu.classList.remove("open"));
+    document.querySelectorAll(".dropdown.open,.dropdown-submenu.open").forEach(item=>item.classList.remove("open"));
+    document.querySelectorAll(".menu-toggle").forEach(btn=>{
+        btn.setAttribute("aria-expanded","false");
+        btn.setAttribute("aria-label","เปิดเมนู");
+    });
+}
 
-    const countryItems =
-        document.querySelectorAll(".country-item");
-
-    const countryTitle =
-        document.getElementById("countryTitle");
-
-    const countryLinks =
-        document.querySelectorAll("#countryLinks a");
-
-    if (!countryItems.length || !countryTitle) return;
-
-    countryItems.forEach(item => {
-
-        item.addEventListener("mouseenter", () => {
-
-            const country =
-                item.dataset.country;
-
-            countryTitle.textContent = country;
-
-            countryItems.forEach(countryItem => {
-                countryItem.classList.remove("active");
-            });
-
-            item.classList.add("active");
-
-            countryLinks.forEach(link => {
-
-                const url =
-                    new URL(
-                        link.href,
-                        window.location.origin
-                    );
-
-                url.searchParams.set(
-                    "country",
-                    country
-                );
-
-                link.href =
-                    url.pathname + url.search;
-            });
-
+function initCountryMegaMenu(){
+    const items=document.querySelectorAll(".country-item");
+    const title=document.getElementById("countryTitle");
+    const links=document.querySelectorAll("#countryLinks a");
+    if(!items.length||!title)return;
+    const update=item=>{
+        const country=item.dataset.country;
+        title.textContent=country;
+        items.forEach(x=>x.classList.toggle("active",x===item));
+        links.forEach(link=>{
+            const url=new URL(link.href,window.location.origin);
+            url.searchParams.set("country",country);
+            link.href=url.pathname+url.search;
         });
-
+    };
+    items.forEach(item=>{
+        item.addEventListener("mouseenter",()=>update(item));
+        item.addEventListener("click",()=>update(item));
     });
 }
 
-loadComponent("navbar", "/components/navbar.html");
-loadComponent("footer", "/components/footer.html");
+loadComponent("navbar","/components/navbar.html");
+loadComponent("footer","/components/footer.html");

@@ -320,76 +320,84 @@
     color:var(--color-secondary);
 }
 
-@media(max-width:900px){
-    .place-detail-layout{
-        grid-template-columns:1fr;
-    }
+@media (max-width:1024px){
+.place-detail-container{width:90%}
+.place-detail-layout{grid-template-columns:minmax(0,1fr) 260px;gap:22px}
+.place-detail-hero-content{left:5%;bottom:40px}
+.nearby-grid{grid-template-columns:repeat(2,1fr)}
 }
 
-@media(max-width:700px){
-    .place-detail-hero,
-    .place-detail-hero-image{
-        min-height:380px;
-        height:380px;
-    }
+@media (max-width:767px){
+.place-detail-hero {
+    min-height: 400px;
+  }
 
-    .place-detail-hero-content{
-        left:5%;
-        right:5%;
-        bottom:30px;
-    }
+  .place-detail-hero-image {
+    height: 400px;
+  }
 
-    .place-detail-hero-content h1{
-        font-size:34px;
-    }
+  .place-detail-hero-content {
+    padding: 25px 20px;
+  }
 
-    .place-detail-container{
-        width:90%;
-        padding-top:35px;
-    }
+  .place-detail-hero-content h1 {
+    font-size: 2.1rem;
+    line-height: 1.25;
+  }
 
-    .place-section h2,
-    .nearby-section h2{
-        font-size:23px;
-    }
+  .place-detail-hero-content p {
+    font-size: 13px;
+  }
 
-    .scene-item{
-        grid-template-columns:90px 1fr;
-        gap:12px;
-        padding:12px 15px;
-    }
+  .place-detail-container {
+    width: 90%;
+    padding: 30px 0 45px;
+  }
 
-    .place-gallery{
-        grid-template-columns:1fr;
-    }
+  .place-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
-    .nearby-grid{
-        grid-template-columns:1fr;
-    }
-}
+  .scene-item {
+    grid-template-columns: 85px 1fr;
+    gap: 12px;
+    padding: 12px 10px;
+  }
 
-@media(max-width:480px){
-    .place-detail-hero,
-    .place-detail-hero-image{
-        min-height:330px;
-        height:330px;
-    }
+  .scene-item strong,
+  .scene-item p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
 
-    .place-detail-hero-content h1{
-        font-size:28px;
-    }
+  .place-detail-actions {
+    flex-wrap: wrap;
+  }
 
-    .scene-item{
-        grid-template-columns:1fr;
-        gap:4px;
-    }
+  .place-map-button {
+    flex: 1;
+  }
 
-    .nearby-card{
-        grid-template-columns:1fr;
-    }
+  .place-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
 
-    .nearby-card img{
-        height:180px;
-        min-height:0;
-    }
+  .gallery-item {
+    height: 160px;
+  }
+
+  .nearby-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nearby-card {
+    grid-template-columns: 110px 1fr;
+  }
+
+  .nearby-card img {
+    min-height: 130px;
+  }
+
 }

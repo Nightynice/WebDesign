@@ -362,80 +362,77 @@
     text-decoration:none;
 }
 
-@media(max-width:900px){
+/* =========================================================
+   RESPONSIVE - MAX WIDTH 760px
+   ========================================================= */
 
-    .restaurant-layout{
-        grid-template-columns:1fr;
-    }
+@media (max-width: 760px) {
 
-    .restaurant-sidebar{
-        order:-1;
-    }
+  .restaurant-hero-image {
+    height: 300px;
+  }
 
-    .restaurant-info-card{
-        width:100%;
-    }
-}
 
-@media(max-width:700px){
+  .restaurant-gallery-section {
+    width: 90%;
+  }
 
-    .restaurant-hero-image{
-        height:320px;
-    }
+  .restaurant-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+  }
 
-    .restaurant-gallery-section{
-        width:90%;
-    }
+  .restaurant-gallery-item {
+    height: 65px;
+  }
 
-    .restaurant-gallery{
-        grid-template-columns:repeat(3,1fr);
-    }
 
-    .restaurant-gallery-item{
-        height:70px;
-    }
+  .restaurant-container {
+    width: 90%;
+    padding: 30px 0 50px;
+  }
 
-    .restaurant-container{
-        width:90%;
-        padding-top:35px;
-    }
+  .restaurant-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
-    .restaurant-section h2{
-        font-size:22px;
-    }
-}
 
-@media(max-width:480px){
+  .restaurant-info-card {
+    padding: 20px;
+  }
 
-    .restaurant-hero-image{
-        height:260px;
-    }
+  .restaurant-info-card h1 {
+    font-size: 22px;
+  }
 
-    .restaurant-gallery{
-        grid-template-columns:repeat(2,1fr);
-    }
 
-    .restaurant-gallery-item{
-        height:85px;
-    }
+  .restaurant-detail-actions {
+    flex-wrap: wrap;
+  }
 
-    .restaurant-container{
-        padding-bottom:50px;
-    }
+  .restaurant-map-button {
+    flex: 1;
+  }
 
-    .restaurant-info-card{
-        padding:20px;
-    }
 
-    .menu-item-top{
-        align-items:flex-start;
-    }
+  .menu-item {
+    padding: 13px 14px;
+  }
 
-    .menu-price{
-        font-size:13px;
-    }
+  .menu-item-top {
+    align-items: flex-start;
+    gap: 10px;
+  }
 
-    .trail-card{
-        padding:15px;
-    }
+
+  .trail-card {
+    padding: 14px;
+  }
+
+
+  .review-top {
+    align-items: flex-start;
+  }
+
 }

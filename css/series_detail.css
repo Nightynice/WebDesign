@@ -339,153 +339,94 @@
     font-size:18px;
 }
 
-@media(max-width:900px){
+/* =========================================================
+   RESPONSIVE - MAX WIDTH 760px
+   ========================================================= */
 
-    .series-detail-hero{
-        grid-template-columns:300px minmax(0,1fr);
-        gap:30px;
-    }
+@media (max-width: 760px) {
 
-    .series-detail-poster{
-        height:430px;
-    }
+  .series-detail-hero {
+    width: 90%;
+    padding: 90px 0 35px;
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
 
-    .series-detail-info h1{
-        font-size:32px;
-    }
+  .series-detail-poster {
+    height: 380px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
 
-    .summary-item{
-        padding:12px 14px;
-    }
+  .series-detail-info h1 {
+    font-size: 30px;
+  }
 
-}
+  .series-synopsis p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
 
-@media(max-width:700px){
 
-    .series-detail-hero{
-        width:90%;
-        grid-template-columns:1fr;
-        gap:28px;
-        padding:35px 0 40px;
-    }
+  .series-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .series-detail-poster{
-        width:min(330px,100%);
-        height:430px;
-        margin:0 auto;
-    }
+  .summary-item {
+    min-width: 0;
+    padding: 12px;
+    border-right: 1px solid var(--color-border);
+  }
 
-    .series-detail-info h1{
-        font-size:30px;
-    }
+  .summary-item:nth-child(2n) {
+    border-right: 0;
+  }
 
-    .series-synopsis p{
-        line-height:1.7;
-    }
 
-    .series-summary{
-        display:grid;
-        grid-template-columns:repeat(3,1fr);
-    }
+  .series-detail-actions {
+    flex-wrap: wrap;
+  }
 
-    .summary-item{
-        min-width:0;
-        padding:12px;
-    }
+  .series-map-button {
+    margin: 0;
+    flex: 1;
+  }
 
-    .summary-item:first-child{
-        padding-left:12px;
-    }
 
-    .summary-item span{
-        font-size:11px;
-    }
+  .filming-section,
+  .similar-section {
+    width: 90%;
+  }
 
-    .summary-item strong{
-        font-size:13px;
-    }
 
-    .filming-section,
-    .similar-section{
-        width:90%;
-    }
+  .filming-card {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
 
-    .filming-section{
-        padding-top:25px;
-    }
+  .filming-image {
+    width: 100%;
+    height: 220px;
+  }
 
-    .filming-card{
-        grid-template-columns:140px minmax(0,1fr);
-        gap:18px;
-    }
+  .filming-content h3 {
+    font-size: 19px;
+  }
 
-    .filming-image{
-        width:140px;
-        height:130px;
-    }
+  .filming-scene {
+    font-size: 13px;
+  }
 
-    .filming-content h3{
-        font-size:18px;
-    }
 
-    .similar-grid{
-        grid-template-columns:1fr 1fr;
-    }
+  .similar-grid {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
 
-    .similar-image{
-        height:200px;
-    }
-
-}
-
-@media(max-width:480px){
-
-    .series-detail-poster{
-        height:380px;
-    }
-
-    .series-detail-info h1{
-        font-size:27px;
-    }
-
-    .series-summary{
-        grid-template-columns:1fr;
-    }
-
-    .summary-item{
-        border-right:0;
-        border-bottom:1px solid var(--color-border);
-        padding:10px 0;
-    }
-
-    .summary-item:first-child{
-        padding-left:0;
-    }
-
-    .summary-item:last-child{
-        border-bottom:0;
-    }
-
-    .filming-card{
-        grid-template-columns:1fr;
-        gap:14px;
-    }
-
-    .filming-image{
-        width:100%;
-        height:190px;
-    }
-
-    .filming-number{
-        grid-column:auto;
-    }
-
-    .similar-grid{
-        grid-template-columns:1fr;
-    }
-
-    .similar-image{
-        height:240px;
-    }
+  .similar-image {
+    height: 220px;
+  }
 
 }
