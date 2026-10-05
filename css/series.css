@@ -19,21 +19,11 @@
     line-height: 1.7;
 }
 
-
-/* =========================================================
-   EXPLORER
-   ========================================================= */
-
 .series-explorer {
     width: min(1180px, 88%);
     margin: 20px auto;
     padding: 8px 0 45px;
 }
-
-
-/* =========================================================
-   FILTER SECTION
-   ========================================================= */
 
 .filter-section {
     margin-bottom: 25px;
@@ -47,11 +37,6 @@
     font-size: 20px;
     line-height: 1.3;
 }
-
-
-/* =========================================================
-   CATEGORY BUTTONS
-   ========================================================= */
 
 .category-filter {
     display: flex;
@@ -120,11 +105,6 @@
     transform: translateY(-2px);
 }
 
-
-/* =========================================================
-   FILTER OPTIONS
-   ========================================================= */
-
 .filter-options {
     display: grid;
 
@@ -151,17 +131,11 @@
     font-weight: 600;
 }
 
-
-/* =========================
-   CUSTOM COUNTRY DROPDOWN
-========================= */
-
 .custom-select {
     position: relative;
     width: 100%;
 }
 
-/* ปุ่มหลัก */
 .custom-select-button {
     width: 100%;
     height: 42px;
@@ -203,8 +177,6 @@
         color .25s ease;
 }
 
-
-/* ตอนเปิด */
 .custom-select.open .custom-select-button {
     border-color: var(--color-primary);
     box-shadow: 0 0 0 3px rgba(22, 143, 196, .08);
@@ -215,8 +187,6 @@
     transform: rotate(180deg);
 }
 
-
-/* รายการ */
 .custom-select-menu {
     position: absolute;
 
@@ -245,16 +215,12 @@
         visibility .2s ease;
 }
 
-
-/* ตอนเปิด */
 .custom-select.open .custom-select-menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-
-/* รายการแต่ละประเทศ */
 .custom-select-menu button {
     width: 100%;
 
@@ -281,30 +247,19 @@
         color .2s ease;
 }
 
-
-/* Hover */
 .custom-select-menu button:hover {
     background: var(--color-surface-blue);
     color: var(--color-primary);
 }
 
-
-/* ตัวที่เลือกอยู่ */
 .custom-select-menu button.active {
     background: var(--color-primary);
     color: #fff;
 }
 
-
-/* ไม่ให้ปุ่มแรกเกิด margin แปลก ๆ */
 .custom-select-menu button + button {
     margin-top: 2px;
 }
-
-
-/* =========================================================
-   SEARCH BOX
-   ========================================================= */
 
 .search-box {
     display: flex;
@@ -370,11 +325,6 @@
     color: var(--color-muted);
 }
 
-
-/* =========================================================
-   RESULT HEADER
-   ========================================================= */
-
 .result-header {
     margin-bottom: 15px;
 }
@@ -387,11 +337,6 @@
     font-size: 12px;
 }
 
-
-/* =========================================================
-   SERIES GRID
-   ========================================================= */
-
 .content-grid {
     display: grid;
 
@@ -399,11 +344,6 @@
 
     gap: 18px;
 }
-
-
-/* =========================================================
-   SERIES CARD
-   ========================================================= */
 
 .content-card {
     overflow: hidden;
@@ -431,11 +371,6 @@
         0 12px 28px rgba(40, 130, 170, .14);
 }
 
-
-/* =========================================================
-   CARD IMAGE
-   ========================================================= */
-
 .content-card img {
     width: 100%;
     height: 190px;
@@ -453,11 +388,6 @@
     transform: scale(1.05);
 }
 
-
-/* =========================================================
-   CARD BODY
-   ========================================================= */
-
 .content-card-body {
     display: flex;
     flex-direction: column;
@@ -466,11 +396,6 @@
 
     padding: 16px 17px 17px;
 }
-
-
-/* =========================================================
-   COUNTRY
-   ========================================================= */
 
 .content-country {
     align-self: flex-start;
@@ -497,10 +422,6 @@
         transform .25s ease;
 }
 
-/* =========================================================
-   CARD TITLE
-   ========================================================= */
-
 .content-card h3 {
     margin: 9px 0 7px;
 
@@ -516,11 +437,6 @@
 .content-card:hover h3 {
     color: var(--color-primary);
 }
-
-
-/* =========================================================
-   CARD META
-   ========================================================= */
 
 .content-meta {
     display: flex;
@@ -553,11 +469,6 @@
     background: #eefaff;
 }
 
-
-/* =========================================================
-   LOCATION
-   ========================================================= */
-
 .content-location {
     display: block;
 
@@ -568,11 +479,6 @@
     font-size: 10px;
 }
 
-
-/* =========================================================
-   DESCRIPTION
-   ========================================================= */
-
 .content-description {
     margin: 0 0 12px;
 
@@ -581,11 +487,6 @@
     font-size: 11px;
     line-height: 1.65;
 }
-
-
-/* =========================================================
-   DETAIL LINK
-   ========================================================= */
 
 .content-detail {
     display: inline-flex;
@@ -612,11 +513,6 @@
     transform: translateX(3px);
 }
 
-
-/* =========================================================
-   NO RESULT
-   ========================================================= */
-
 .no-result {
     grid-column: 1 / -1;
 
@@ -636,11 +532,6 @@
 
     color: var(--color-secondary);
 }
-
-
-/* =========================================================
-   PAGINATION
-   ========================================================= */
 
 .pagination {
     display: flex;
@@ -705,13 +596,14 @@
     cursor: not-allowed;
 }
 
-/* =========================================================
-   RESPONSIVE - MAX WIDTH 760px
-   ========================================================= */
+@media (max-width:1024px){
+.series-explorer{width:90%}
+.content-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.filter-options{grid-template-columns:190px 1fr}
+}
 
-@media (max-width: 760px) {
-
-  .series-hero {
+@media (max-width:767px){
+.series-hero {
     padding: 100px 20px 30px;
   }
 
@@ -723,11 +615,9 @@
     font-size: 13px;
   }
 
-
   .series-explorer {
     width: 90%;
   }
-
 
   .filter-section {
     padding: 20px 0;
@@ -745,7 +635,6 @@
     font-size: 11px;
   }
 
-
   .filter-options {
     grid-template-columns: 1fr;
     gap: 10px;
@@ -756,13 +645,11 @@
     width: 100%;
   }
 
-
   .result-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
   }
-
 
   .content-grid {
     grid-template-columns: 1fr 1fr;
@@ -790,7 +677,6 @@
     font-size: 9px;
     padding: 3px 6px;
   }
-
 
   .pagination {
     margin-top: 25px;

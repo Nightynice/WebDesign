@@ -1,13 +1,3 @@
-/* =========================================================
-   TRIP DETAIL
-   COMPACT VERSION
-   ========================================================= */
-
-
-/* =========================================================
-   HERO
-   ========================================================= */
-
 .trip-hero {
     position: relative;
     min-height: 330px;
@@ -88,11 +78,6 @@
     backdrop-filter: blur(5px);
 }
 
-
-/* =========================================================
-   INTRO
-   ========================================================= */
-
 .trip-intro {
     display: flex;
     align-items: center;
@@ -163,11 +148,6 @@
     transform: translateY(-1px);
 }
 
-
-/* =========================================================
-   SECTIONS
-   ========================================================= */
-
 .itinerary-section,
 .trip-extra-section {
     padding: 28px 0;
@@ -194,11 +174,6 @@
 .section-heading.left {
     text-align: left;
 }
-
-
-/* =========================================================
-   ITINERARY
-   ========================================================= */
 
 .itinerary-list {
     max-width: 900px;
@@ -288,11 +263,6 @@
     font-size: 0.58rem;
 }
 
-
-/* =========================================================
-   PLACE CARDS
-   ========================================================= */
-
 .trip-card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -344,11 +314,6 @@
     line-height: 1.45;
 }
 
-
-/* =========================================================
-   RESTAURANT / HOTEL
-   ========================================================= */
-
 .trip-extra-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -398,11 +363,6 @@
     color: #6b8492;
     font-size: 0.62rem;
 }
-
-
-/* =========================================================
-   CTA
-   ========================================================= */
 
 .trip-bottom-cta {
     padding: 25px 0;
@@ -455,13 +415,14 @@
     transform: translateY(-2px);
 }
 
-/* =========================================================
-   RESPONSIVE - MAX WIDTH 760px
-   ========================================================= */
+@media (max-width:1024px){
+.trip-intro{align-items:flex-start}
+.trip-card-grid{grid-template-columns:repeat(2,1fr)}
+.trip-extra-grid{grid-template-columns:repeat(2,1fr)}
+}
 
-@media (max-width: 760px) {
-
-  .trip-hero {
+@media (max-width:767px){
+.trip-hero {
     min-height: 430px;
   }
 
@@ -478,7 +439,6 @@
     font-size: 12px;
   }
 
-
   .trip-meta {
     gap: 5px;
   }
@@ -486,7 +446,6 @@
   .trip-meta span {
     font-size: 10px;
   }
-
 
   .trip-intro {
     padding: 30px 0;
@@ -496,7 +455,6 @@
   .section-heading h2 {
     font-size: 1.6rem;
   }
-
 
   .trip-actions {
     width: 100%;
@@ -508,24 +466,20 @@
     width: 100%;
   }
 
-
   .itinerary-section,
   .trip-extra-section,
   .trip-places-section {
     padding: 25px 0;
   }
 
-
   .itinerary-day {
     padding: 12px;
   }
-
 
   .day-stop {
     grid-template-columns: 48px 1fr;
     gap: 8px;
   }
-
 
   .trip-card-grid {
     grid-template-columns: 1fr 1fr;
@@ -536,12 +490,10 @@
     height: 120px;
   }
 
-
   .trip-extra-grid {
     grid-template-columns: 1fr;
     gap: 15px;
   }
-
 
   .cta-box {
     flex-direction: column;

@@ -1,7 +1,3 @@
-/* =========================
-   FAQ PAGE
-========================= */
-
 .faq-page {
     background: #f1fbff;
     color: #28506a;
@@ -10,11 +6,6 @@
 .faq-main {
     padding: 105px 0 80px;
 }
-
-
-/* =========================
-   BREADCRUMB
-========================= */
 
 .faq-breadcrumb {
     display: flex;
@@ -39,22 +30,12 @@
     color: #8aa5b3;
 }
 
-
-/* =========================
-   LAYOUT
-========================= */
-
 .faq-layout {
     display: grid;
     grid-template-columns: 270px minmax(0, 1fr);
     gap: 65px;
     align-items: start;
 }
-
-
-/* =========================
-   SIDEBAR
-========================= */
 
 .faq-sidebar {
     position: static;
@@ -77,11 +58,6 @@
     line-height: 1.2;
     font-weight: 700;
 }
-
-
-/* =========================
-   SEARCH
-========================= */
 
 .faq-search {
     position: relative;
@@ -125,11 +101,6 @@
     box-shadow: 0 0 0 3px rgba(22, 143, 196, 0.08);
 }
 
-
-/* =========================
-   CATEGORIES
-========================= */
-
 .faq-categories {
     display: flex;
     flex-direction: column;
@@ -169,11 +140,6 @@
     font-size: 0.65rem;
     font-weight: 500;
 }
-
-
-/* =========================
-   CONTACT BOX
-========================= */
 
 .faq-contact-box {
     margin-top: 20px;
@@ -225,11 +191,6 @@
     transform: translateY(-1px);
 }
 
-
-/* =========================
-   CONTENT
-========================= */
-
 .faq-content {
     min-width: 0;
 }
@@ -253,11 +214,6 @@
     font-size: 1.15rem;
     font-weight: 700;
 }
-
-
-/* =========================
-   FAQ ITEM
-========================= */
 
 .faq-list {
     border-bottom: 1px solid #dceff7;
@@ -324,11 +280,6 @@
     transform: rotate(45deg);
 }
 
-
-/* =========================
-   ANSWER
-========================= */
-
 .faq-answer {
     display: grid;
     grid-template-rows: 0fr;
@@ -354,11 +305,6 @@
 .faq-item.open .faq-answer p {
     padding-bottom: 17px;
 }
-
-
-/* =========================
-   NO RESULT
-========================= */
 
 .faq-no-result {
     display: none;
@@ -397,13 +343,13 @@
     text-decoration: none;
 }
 
-/* =========================================================
-   RESPONSIVE - MAX WIDTH 760px
-   ========================================================= */
+@media (max-width:1024px){
+.faq-layout{grid-template-columns:220px minmax(0,1fr);gap:24px}
+.faq-main{width:92%;}
+}
 
-@media (max-width: 760px) {
-
-  .faq-main {
+@media (max-width:767px){
+.faq-main {
     padding-top: 100px;
   }
 
@@ -416,7 +362,6 @@
     gap: 30px;
   }
 
-
   .faq-sidebar {
     width: 100%;
   }
@@ -424,7 +369,6 @@
   .faq-sidebar-heading h1 {
     font-size: 1.8rem;
   }
-
 
   .faq-categories {
     display: grid;
@@ -437,11 +381,9 @@
     font-size: 0.72rem;
   }
 
-
   .faq-contact-box {
     margin-top: 20px;
   }
-
 
   .faq-content {
     width: 100%;

@@ -1,9 +1,5 @@
-/* =========================================================
-   ROOT / THEME
-   ========================================================= */
-
 :root {
-  /* Brand & Text */
+
   --color-primary: #168fc4;
   --color-primary-hover: #0878a9;
   --color-heading: #164b68;
@@ -11,7 +7,6 @@
   --color-secondary: #496d7e;
   --color-muted: #6b8492;
 
-  /* Surfaces */
   --color-white: #ffffff;
   --color-page: #f1fbff;
   --color-surface: #f7fcff;
@@ -19,24 +14,20 @@
   --color-surface-hover: #eefaff;
   --color-hero-light: #dff6ff;
 
-  /* Borders & Footer */
   --color-border: #dceff7;
   --color-border-light: #d9eef7;
   --color-border-accent: #8fcde5;
   --color-footer: #166b91;
 
-  /* Status */
   --color-error: #c2410c;
   --color-success: #15803d;
 
-  /* Radius */
   --radius-card: 18px;
   --radius-button: 22px;
   --radius-nav: 18px;
   --radius-dropdown: 12px;
   --radius-pill: 20px;
 
-  /* Spacing */
   --space-sm: 14px;
   --space-md: 24px;
   --space-lg: 40px;
@@ -44,17 +35,11 @@
   --space-2xl: 80px;
   --space-3xl: 90px;
 
-  /* Shadow & Font */
   --shadow-card: 0 6px 22px rgba(40, 150, 200, 0.08);
   --shadow-nav: 0 6px 22px rgba(0, 40, 60, 0.12);
   --shadow-dropdown: 0 12px 30px rgba(40, 130, 170, 0.12);
   --font-sans: Arial, Helvetica, sans-serif;
 }
-
-
-/* =========================================================
-   GLOBAL
-   ========================================================= */
 
 *,
 *::before,
@@ -91,11 +76,6 @@ button {
   width: min(1180px, 90%);
   margin: 0 auto;
 }
-
-
-/* =========================================================
-   HEADER / NAVIGATION
-   ========================================================= */
 
 .site-header {
   position: fixed;
@@ -143,11 +123,6 @@ button {
   height: auto;
 }
 
-
-/* =========================================================
-   HAMBURGER
-   ========================================================= */
-
 .menu-toggle {
   display: none;
   width: 42px;
@@ -168,11 +143,6 @@ button {
   border-radius: 2px;
   transition: 0.25s ease;
 }
-
-
-/* =========================================================
-   MAIN NAV
-   ========================================================= */
 
 .nav-menu {
   display: flex;
@@ -268,11 +238,6 @@ button {
   width: 100%;
 }
 
-
-/* =========================================================
-   FAVORITES
-   ========================================================= */
-
 .nav-favorite {
   margin-left: 2px;
 }
@@ -309,11 +274,6 @@ button {
   transform: scale(1.1);
 }
 
-
-/* =========================================================
-   TRIP PLANNER BUTTON
-   ========================================================= */
-
 .nav-planner {
   margin-left: 2px;
 }
@@ -349,11 +309,6 @@ button {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(8, 120, 169, 0.2);
 }
-
-
-/* =========================================================
-   DROPDOWN
-   ========================================================= */
 
 .dropdown-menu {
   position: absolute;
@@ -398,11 +353,6 @@ button {
   color: var(--color-primary);
   background: var(--color-surface-hover);
 }
-
-
-/* =========================================================
-   SUBMENU
-   ========================================================= */
 
 .dropdown-submenu {
   position: relative;
@@ -459,10 +409,6 @@ button {
   background: var(--color-surface-hover);
 }
 
-/* =========================================================
-   COUNTRY MEGA MENU
-   ========================================================= */
-
 .country-dropdown {
   position: relative;
 }
@@ -493,9 +439,6 @@ button {
   pointer-events: auto;
   transform: translateX(0) translateY(0);
 }
-
-
-/* LEFT — ประเทศ */
 
 .country-list {
   margin: 0;
@@ -548,9 +491,6 @@ button {
 .country-item.active a {
   color: var(--color-primary);
 }
-
-
-/* RIGHT — รายการของประเทศ */
 
 .country-content {
   min-height: 100%;
@@ -680,13 +620,8 @@ button {
   font-size: 0.75rem;
 }
 
-/* =========================================================
-   SEASON NAVBAR THEME
-   ใช้เฉพาะหน้า Season เท่านั้น
-   ========================================================= */
-
 .season-page {
-  /* ค่าเริ่มต้น */
+
   --season-nav-bg: rgba(24, 100, 133, 0.35);
   --season-nav-bg-scrolled: rgba(24, 100, 133, 0.48);
 
@@ -701,11 +636,6 @@ button {
 
   --season-nav-border: rgba(255, 255, 255, 0.20);
 }
-
-
-/* =========================================================
-   RAINY — น้ำเงิน / ฟ้าหม่น
-   ========================================================= */
 
 .season-page.rainy-page {
   --season-nav-bg: rgba(31, 91, 111, 0.48);
@@ -723,11 +653,6 @@ button {
   --season-nav-border: rgba(191, 226, 236, 0.28);
 }
 
-
-/* =========================================================
-   SUMMER — ส้ม / อบอุ่น
-   ========================================================= */
-
 .season-page.summer-page {
   --season-nav-bg: rgba(135, 67, 27, 0.42);
   --season-nav-bg-scrolled: rgba(135, 67, 27, 0.68);
@@ -743,11 +668,6 @@ button {
 
   --season-nav-border: rgba(255, 224, 194, 0.30);
 }
-
-
-/* =========================================================
-   WINTER — ฟ้าขาว / เย็น
-   ========================================================= */
 
 .season-page.winter-page {
   --season-nav-bg: rgba(74, 119, 143, 0.32);
@@ -765,20 +685,10 @@ button {
   --season-nav-border: rgba(255, 255, 255, 0.40);
 }
 
-
-/* =========================================================
-   NAVBAR
-   ========================================================= */
-
 .season-page .nav {
   background: var(--season-nav-bg);
-  /* border: 1px solid var(--season-nav-border); */
+
 }
-
-
-/* =========================================================
-   NAVBAR — SCROLLED
-   ========================================================= */
 
 .season-page .site-header.scrolled .nav {
   background: var(--season-nav-bg-scrolled);
@@ -789,19 +699,9 @@ button {
   box-shadow: var(--shadow-nav);
 }
 
-
-/* =========================================================
-   LOGO
-   ========================================================= */
-
 .season-page .logo {
   color: var(--season-nav-text);
 }
-
-
-/* =========================================================
-   MAIN NAV TEXT
-   ========================================================= */
 
 .season-page .nav-menu a {
   color: var(--season-nav-text);
@@ -815,11 +715,6 @@ button {
   color: var(--season-nav-text);
 }
 
-
-/* =========================================================
-   FAVORITE
-   ========================================================= */
-
 .season-page .favorite-icon {
   color: var(--season-nav-text);
 }
@@ -832,11 +727,6 @@ button {
   color: var(--season-nav-hover);
 }
 
-
-/* =========================================================
-   TRIP PLANNER BUTTON
-   ========================================================= */
-
 .season-page .planner-button {
   background: var(--season-nav-button);
   border-color: var(--season-nav-button);
@@ -847,11 +737,6 @@ button {
   border-color: var(--season-nav-button-hover);
 }
 
-
-/* =========================================================
-   DROPDOWN
-   ========================================================= */
-
 .season-page .dropdown-menu,
 .season-page .submenu {
   border-color: var(--season-nav-border);
@@ -859,34 +744,17 @@ button {
 
 .season-page .dropdown-menu a,
 .season-page .submenu a {
-  color: var(--season-nav-text);
+  color: var(--color-secondary);
 }
 
+@media (max-width:1024px){
+.nav{width:92%;min-height:58px}.menu-toggle{display:block;margin-left:auto}.nav-menu{position:absolute;top:calc(100% + 8px);left:0;right:0;width:100%;display:none;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;margin:0;padding:8px;background:rgba(255,255,255,.98);border:1px solid var(--color-border);border-radius:16px;box-shadow:var(--shadow-dropdown);max-height:calc(100vh - 80px);overflow-y:auto}.nav-menu.open{display:flex}.nav-menu>li{width:100%;flex-shrink:0}.nav-menu a{color:var(--color-text);font-size:.88rem}.nav-menu>li>a{padding:11px 12px;border-radius:10px}.nav-menu>li>a:hover{color:var(--color-primary);background:var(--color-surface-hover)}.dropdown:hover>.dropdown-menu,.dropdown-submenu:hover>.submenu,.country-dropdown:hover .country-mega-menu{opacity:0;visibility:hidden;pointer-events:none;transform:none}.dropdown.open>.dropdown-menu,.dropdown-submenu.open>.submenu,.country-dropdown.open .country-mega-menu{opacity:1;visibility:visible;pointer-events:auto;transform:none}.dropdown-menu,.submenu{position:static;display:none;width:100%;min-width:0;margin:0;padding:4px 0 4px 12px;background:transparent;border:0;box-shadow:none;opacity:1;visibility:visible;transform:none}.dropdown.open>.dropdown-menu,.dropdown-submenu.open>.submenu{display:block}.dropdown-menu a,.submenu a{padding:9px 14px;color:var(--color-secondary);white-space:normal}.country-mega-menu{position:static;display:grid;grid-template-columns:1fr;width:100%;padding:5px 0;background:transparent}.country-list,.country-content{box-shadow:none;background:rgba(245,251,254,.9)}.country-content{display:block}.country-content h4{margin-top:8px}.nav-favorite,.nav-planner{margin-left:0}.nav-favorite>a,.nav-planner>a{display:flex!important;justify-content:flex-start;width:100%}.planner-button{width:100%;margin-top:4px}.menu-toggle{width:42px;height:42px;padding:8px;border:1px solid rgba(255,255,255,.25);border-radius:10px;background:rgba(255,255,255,.16)}.menu-toggle span{background:var(--color-text)}.season-page .nav-menu{background:var(--season-nav-mobile-bg)}.season-page .nav-menu a{color:var(--season-nav-mobile-text)}.season-page .planner-button{color:#fff!important}.season-page .nav{background:var(--season-nav-bg)}.season-page .menu-toggle{border-color:var(--season-nav-border);background:rgba(255,255,255,.14)}.season-page .menu-toggle span{background:var(--season-nav-text)}.footer-grid{grid-template-columns:1.5fr 1fr 1fr;gap:30px}.footer-brand{max-width:300px}
+}
 
-/* =========================================================
-   RESPONSIVE - MAX WIDTH 760px
-   ========================================================= */
+@media (max-width:767px){
+.container{width:90%;max-width:none}.nav{width:92%;min-height:54px;padding:0 12px 0 14px;gap:10px}.logo img{width:92px}.footer-main{padding:40px 0 30px}.footer-grid{grid-template-columns:1fr 1fr;gap:28px 20px}.footer-bottom-inner{flex-direction:column;align-items:flex-start;gap:8px;padding:10px 0}
+}
 
-@media (max-width: 760px) {
-
-  .container {
-    width: 90%;
-    max-width: none;
-  }
-
-  .footer-main {
-    padding: 40px 0 30px;
-  }
-
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 20px;
-  }
-
-  .footer-bottom-inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
+@media (max-width:480px){
+.nav{width:94%}.footer-grid{grid-template-columns:1fr}.footer-brand{max-width:none}.footer-column a{font-size:.82rem}
 }

@@ -4,129 +4,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ติดต่อเรา | Series Trail</title>
+    <title>คำถามที่พบบ่อย | Series Trail</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/faq.css">
 </head>
 
-<body>
+<body class="faq-page">
 
     <div id="navbar"></div>
 
-    <main class="contact-page">
-        <section class="contact-hero">
-            <div class="container">
-                <span class="section-label">
-                    CONTACT US
-                </span>
-                <h1>
-                    อยากพูดคุยกับเรา?
-                </h1>
-                <p>
-                    หากมีคำถาม ข้อเสนอแนะ หรืออยากพูดคุยเกี่ยวกับ Series Trail
-                    สามารถติดต่อเราได้ทางอีเมล
-                </p>
-            </div>
-        </section>
+    <main class="faq-main">
+        <div class="container">
+            <div class="faq-layout">
+                <aside class="faq-sidebar">
+                    <div class="faq-sidebar-heading">
+                        <span>FAQ</span>
+                        <h1>คำถามที่พบบ่อย</h1>
+                    </div>
+                    <div class="faq-search">
+                        <i class="bi bi-search"></i>
 
-        <section class="contact-section">
-            <div class="container">
-                <div class="contact-layout">
-                    <div class="contact-intro">
-                        <span class="section-label">
-                            GET IN TOUCH
-                        </span>
-                        <h2>
-                            เราพร้อมพูดคุย
-                            <br>
-                            กับคุณ
-                        </h2>
+                        <input type="search" id="faqSearch" placeholder="ค้นหาคำถาม..." aria-label="ค้นหาคำถาม">
+                    </div>
+                    <nav class="faq-categories" aria-label="หมวดคำถาม">
+                        <a href="#usage" class="faq-category-link active">
+                            <span>การใช้งานเว็บไซต์</span>
+                            <small>3</small>
+                        </a>
+                        <a href="#travel" class="faq-category-link">
+                            <span>การเดินทาง</span>
+                            <small>3</small>
+                        </a>
+                        <a href="#work" class="faq-category-link">
+                            <span>ร่วมงานกับเรา</span>
+                            <small>2</small>
+                        </a>
+                    </nav>
+
+                    <div class="faq-contact-box">
+                        <h2>ไม่เจอคำตอบ?</h2>
                         <p>
-                            Series Trail เป็นเว็บไซต์ที่รวบรวมสถานที่
-                            และเรื่องราวจากซีรีย์ที่น่าสนใจ
-                            เพื่อให้คุณได้ออกไปสัมผัสสถานที่จริงด้วยตัวเอง
+                            ส่งคำถามมาหาทีมงานได้เลย
                         </p>
-                        <p>
-                            หากมีคำถามเกี่ยวกับเว็บไซต์
-                            ต้องการพูดคุย หรือมีความคิดเห็นที่อยากแบ่งปัน
-                            ติดต่อเราได้โดยตรงผ่านอีเมล
-                        </p>
-                        <div class="contact-note">
-                            <i class="bi bi-chat-heart"></i>
-                            <span>
-                                ทุกข้อความของคุณมีความหมาย
-                                และช่วยให้ Series Trail พัฒนาขึ้น
-                            </span>
+                        <a href="/pages/contact.html" class="faq-contact-button">
+                            ติดต่อเรา
+                        </a>
+                    </div>
+                </aside>
+
+                <section class="faq-content" aria-label="คำถามที่พบบ่อย">
+                    <section class="faq-group" id="usage">
+                        <div class="faq-group-heading">
+                            <h2>การใช้งานเว็บไซต์</h2>
                         </div>
+                        <div class="faq-list">
+                            <article class="faq-item">
+                                <button type="button" class="faq-question" aria-expanded="false">
+                                    <span>SeriesTrail คืออะไร?</span>
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        Series Trail คือเว็บไซต์รวบรวมสถานที่จริง
+                                        ที่ปรากฏในซีรีย์จากหลายประเทศ พร้อมข้อมูล
+                                        สถานที่ ร้านอาหาร คาเฟ่ และที่พัก
+                                        เพื่อช่วยให้คุณออกไปตามรอยเรื่องราวที่ชื่นชอบได้จริง
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="faq-item">
+                                <button type="button" class="faq-question" aria-expanded="false">
+                                    <span>ต้องสมัครสมาชิกไหม?</span>
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        ไม่จำเป็นต้องสมัครสมาชิกเพื่อใช้งานเว็บไซต์
+                                        สามารถเข้าชมข้อมูลซีรีย์ สถานที่ท่องเที่ยว
+                                        และข้อมูลต่าง ๆ ได้โดยไม่ต้องเข้าสู่ระบบ
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="faq-item">
+                                <button type="button" class="faq-question" aria-expanded="false">
+                                    <span>ข้อมูลอัปเดตบ่อยแค่ไหน?</span>
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        ทีมงานพยายามตรวจสอบและอัปเดตข้อมูลอย่างต่อเนื่อง
+                                        โดยสามารถดูข้อมูลอัปเดตล่าสุดได้จากเนื้อหา
+                                        และข้อมูลต่าง ๆ ภายในเว็บไซต์
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="faq-group" id="travel">
+                        <div class="faq-group-heading">
+                            <h2>การเดินทาง</h2>
+                        </div>
+                        <div class="faq-list">
+                            <article class="faq-item">
+                                <button type="button" class="faq-question" aria-expanded="false">
+                                    <span>สถานที่ถ่ายทำเข้าไปได้ทุกที่ไหม?</span>
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        สถานที่บางแห่งเป็นพื้นที่ส่วนบุคคลหรือพื้นที่
+                                        ที่มีข้อจำกัดในการเข้าชม ควรตรวจสอบข้อมูล
+                                        และกฎของสถานที่ก่อนเดินทางทุกครั้ง
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="faq-item">
+                                <button type="button" class="faq-question" aria-expanded="false">
+                                    <span>ควรไปช่วงไหนดี?</span>
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        ขึ้นอยู่กับสถานที่และฤดูกาลที่ต้องการเดินทาง
+                                        สามารถดูคำแนะนำเกี่ยวกับฤดูที่เหมาะสม
+                                        และบรรยากาศของสถานที่ได้จากข้อมูลในซีรีย์ Trail
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="faq-item">
+                                <button type="button" class="faq-question" aria-expanded="false">
+                                    <span>ตัวอย่างทริปมีไว้ทำอะไร?</span>
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        ตัวอย่างทริปเป็นแนวทางสำหรับวางแผนเส้นทาง
+                                        ด้วยตัวเอง โดยสามารถนำข้อมูลสถานที่ต่าง ๆ
+                                        ไปปรับใช้ให้เหมาะกับแผนการเดินทางของคุณได้
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="faq-group" id="work">
+                        <div class="faq-group-heading">
+                            <h2>ร่วมงานกับเรา</h2>
+                        </div>
+                        <div class="faq-list">
+                            <article class="faq-item">
+                                <button type="button" class="faq-question" aria-expanded="false">
+                                    <span>แนะนำสถานที่ใหม่ได้ไหม?</span>
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        ได้เลยค่ะ หากมีสถานที่หรือข้อมูลที่น่าสนใจ
+                                        สามารถติดต่อทีมงานผ่านหน้าติดต่อเรา
+                                        พร้อมระบุรายละเอียดของสถานที่ที่ต้องการแนะนำ
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="faq-item">
+                                <button type="button" class="faq-question" aria-expanded="false">
+                                    <span>สนใจร่วมงานหรือโฆษณา</span>
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                                <div class="faq-answer">
+                                    <p>
+                                        ติดต่อผ่านหน้าติดต่อเรา
+                                        และเลือกหัวข้อ “ร่วมงาน”
+                                        ทีมงานจะติดต่อกลับตามรายละเอียดที่แจ้งไว้
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <div class="faq-no-result" id="faqNoResult">
+                        <i class="bi bi-search"></i>
+                        <h2>ไม่พบคำถามที่ค้นหา</h2>
+                        <p>
+                            ลองใช้คำค้นอื่น หรือส่งคำถามให้ทีมงาน
+                        </p>
+                        <a href="/pages/contact.html">
+                            ติดต่อเรา
+                        </a>
                     </div>
-
-                    <div class="contact-people">
-                        <article class="contact-person">
-                            <div class="contact-person-icon">
-                                <i class="bi bi-person"></i>
-                            </div>
-                            <div class="contact-person-info">
-                                <span class="contact-role">
-                                    TEAM MEMBER
-                                </span>
-                                <h3>
-                                    นางสาววิชญาดา ศรีนาม
-                                </h3>
-                                <a href="mailto:wichayada.sr@kkumail.com">
-                                    <i class="bi bi-envelope"></i>
-                                    wichayada.sr@kkumail.com
-                                </a>
-                            </div>
-                        </article>
-
-                        <article class="contact-person">
-                            <div class="contact-person-icon">
-                                <i class="bi bi-person"></i>
-                            </div>
-                            <div class="contact-person-info">
-                                <span class="contact-role">
-                                    TEAM MEMBER
-                                </span>
-                                <h3>
-                                    นายธนพัฒน์ เก้านพรัตน์
-                                </h3>
-                                <a href="mailto:thanapat.kow@kkumail.com">
-                                    <i class="bi bi-envelope"></i>
-                                    thanapat.kow@kkumail.com
-                                </a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
+                </section>
             </div>
-        </section>
-
-        <section class="contact-cta">
-            <div class="container">
-                <div class="contact-cta-content">
-                    <span class="section-label">
-                        HAVE SOMETHING TO SAY?
-                    </span>
-                    <h2>
-                        มีอะไรอยากบอกเรา?
-                    </h2>
-                    <p>
-                        หากพบปัญหาหรือมีข้อเสนอแนะ
-                        สามารถส่งความคิดเห็นให้เราได้
-                    </p>
-                    <a href="/pages/report.html" class="contact-cta-button">
-                        แจ้งปัญหา / ข้อเสนอแนะ
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <div id="footer"></div>
 
     <script src="/js/components.js"></script>
+    <script src="/js/faq.js"></script>
 
 </body>
 
